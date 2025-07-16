@@ -1,0 +1,742 @@
+2025-07-16 23:11:16,871 - INFO - ============================================================
+2025-07-16 23:11:16,871 - INFO - GOOGLE SCHOLAR SCRAPER STARTED
+2025-07-16 23:11:16,871 - INFO - ============================================================
+2025-07-16 23:11:16,871 - INFO - Starting to scrape Google Scholar profile for user: LsZIhbcAAAAJ
+2025-07-16 23:11:16,871 - INFO - Setting up Chrome browser in headless mode...
+2025-07-16 23:11:16,872 - INFO - Installing ChromeDriver...
+2025-07-16 23:11:16,872 - INFO - ====== WebDriver manager ======
+2025-07-16 23:11:16,925 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-16 23:11:17,042 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-16 23:11:17,126 - INFO - Driver [/home/danylaksono/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+2025-07-16 23:11:17,463 - INFO - Chrome browser setup completed successfully
+2025-07-16 23:11:17,464 - INFO - Navigating to: https://scholar.google.com/citations?user=LsZIhbcAAAAJ&hl=en
+2025-07-16 23:11:18,855 - INFO - Loading all publications by clicking 'Load More' button...
+2025-07-16 23:11:18,933 - INFO - Clicked 'Load More' button (attempt 1)
+2025-07-16 23:11:35,865 - INFO - No more 'Load More' button found or error occurred: Message: 
+
+2025-07-16 23:11:35,865 - INFO - Parsing publication list from page...
+2025-07-16 23:11:35,887 - INFO - Found 49 publication rows to process
+2025-07-16 23:11:35,888 - INFO - Row 1: Added publication 'Utilizing a game engine for interactive 3D topogra...' (Year: 2019, Citations: 75)
+2025-07-16 23:11:35,888 - INFO - Row 2: Added publication 'Testing spatial data deliverance in SQL and NoSQL ...' (Year: 2018, Citations: 35)
+2025-07-16 23:11:35,888 - INFO - Row 3: Added publication '3D cadastre web map: Prospects and developments...' (Year: 2011, Citations: 23)
+2025-07-16 23:11:35,888 - INFO - Row 4: Added publication 'Visualization of 3D survey data for strata titles...' (Year: 2020, Citations: 16)
+2025-07-16 23:11:35,888 - INFO - Row 5: Added publication 'Comprehensive integration system of saltwater envi...' (Year: 2018, Citations: 16)
+2025-07-16 23:11:35,889 - INFO - Row 6: Added publication 'Hasil Studi Pola Kebakaran Lahan Gambut melalui Ci...' (Year: 2021, Citations: 9)
+2025-07-16 23:11:35,889 - INFO - Row 7: Added publication 'Crowdsourced hotspot validation and data visualisa...' (Year: 2019, Citations: 9)
+2025-07-16 23:11:35,889 - INFO - Row 8: Added publication 'Open source stack for Structure from Motion 3D rec...' (Year: 2016, Citations: 9)
+2025-07-16 23:11:35,889 - INFO - Row 9: Added publication 'A usability evaluation of a 3D map display for ped...' (Year: 2018, Citations: 8)
+2025-07-16 23:11:35,889 - INFO - Row 10: Added publication 'LOD 1: 3D CityModel for Implementing SmartCity Con...' (Year: 2017, Citations: 8)
+2025-07-16 23:11:35,889 - INFO - Row 11: Added publication 'Interactive 3D city visualization from structure m...' (Year: 2019, Citations: 6)
+2025-07-16 23:11:35,890 - INFO - Row 12: Added publication 'Expedition Oe: A visual-storytelling map on Rote I...' (Year: 2018, Citations: 6)
+2025-07-16 23:11:35,890 - INFO - Row 13: Added publication 'I-SRI, an SDI Readiness Index for Local Government...' (Year: 2014, Citations: 4)
+2025-07-16 23:11:35,890 - INFO - Row 14: Added publication '3D modelling, validation and visualization of 3D p...' (Year: 2021, Citations: 3)
+2025-07-16 23:11:35,890 - INFO - Row 15: Added publication 'The development of WebGIS for the cultural sites i...' (Year: 2020, Citations: 3)
+2025-07-16 23:11:35,890 - INFO - Row 16: Added publication 'Geogame on the peat: Designing effective gameplay ...' (Year: 2018, Citations: 3)
+2025-07-16 23:11:35,891 - INFO - Row 17: Added publication 'CloudSfM: 3D Reconstruction using structure from m...' (Year: 2016, Citations: 3)
+2025-07-16 23:11:35,891 - INFO - Row 18: Added publication 'Sistem Penentuan Posisi dan Navigasi...' (Year: 2014, Citations: 3)
+2025-07-16 23:11:35,891 - INFO - Row 19: Added publication 'The Misclassification Likelihood Matrix: Some Clas...' (Year: 2024, Citations: 2)
+2025-07-16 23:11:35,891 - INFO - Row 20: Added publication 'Konsep AUPB untuk Keamanan Data dalam Standardisas...' (Year: 2023, Citations: 2)
+2025-07-16 23:11:35,891 - INFO - Row 21: Added publication 'THE LATEST BATHYMETRY AND TOPOGRAPHY EXTRACTION OF...' (Year: 2023, Citations: 2)
+2025-07-16 23:11:35,891 - INFO - Row 22: Added publication 'Pemanfaatan Citra Sentinel-5P untuk Pembuatan Peta...' (Year: 2020, Citations: 2)
+2025-07-16 23:11:35,891 - INFO - Row 23: Added publication 'Survey Pemetaan Batas Bidang Tanah Kolaboratif Lin...' (Year: 2019, Citations: 2)
+2025-07-16 23:11:35,892 - INFO - Row 24: Added publication 'NATURAL COMPOUNDS AQUATIC PLANT BIODIVERSITY OF LA...' (Year: 2022, Citations: 1)
+2025-07-16 23:11:35,892 - INFO - Row 25: Added publication 'Evaluasi Daerah Layanan Rumah Sakit di Yogyakarta ...' (Year: 2015, Citations: 1)
+2025-07-16 23:11:35,892 - INFO - Row 26: Added publication 'VisUnit: Literate Visualisation Studies Assembled ...' (Year: 2025, Citations: )
+2025-07-16 23:11:35,892 - INFO - Row 27: Added publication 'Exploring the Evolution of Decarbonisation Scenari...' (Year: 2024, Citations: )
+2025-07-16 23:11:35,892 - INFO - Row 28: Added publication 'One Stop Investment and Services...' (Year: 2024, Citations: )
+2025-07-16 23:11:35,892 - INFO - Row 29: Added publication 'Gridded-glyphmaps for supporting Geographic Multic...' (Year: 2024, Citations: )
+2025-07-16 23:11:35,892 - INFO - Row 30: Added publication 'The 15-minute city of mass public transportation i...' (Year: 2024, Citations: )
+2025-07-16 23:11:35,893 - INFO - Row 31: Added publication 'Developing Address Model and Geocoding Framework f...' (Year: 2023, Citations: )
+2025-07-16 23:11:35,893 - INFO - Row 32: Added publication 'Sharpening of Sentinel-2 imagery for updating them...' (Year: 2021, Citations: )
+2025-07-16 23:11:35,893 - INFO - Row 33: Added publication 'Realizing the Dead Sea Lakes Region in Rote Island...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,893 - INFO - Row 34: Added publication 'Estimasi Potensi Energi Photovoltaic di Wilayah Un...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,893 - INFO - Row 35: Added publication 'Pemanfaatan Citra Landsat 8 untuk Estimasi Tingkat...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,893 - INFO - Row 36: Added publication 'PEMANTAUAN PERGESERAN PERMUKAAN LERENG AREA TAMBAN...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,893 - INFO - Row 37: Added publication 'PEMBUATAN SISTEM INFORMASI GEOSPASIAL BERBASIS WEB...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 38: Added publication 'VISUALISASI PERJALANAN KERETA API BERDASARKAN GRAF...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 39: Added publication 'ANALISIS KESESUAIAN LOKASI MINIMARKET WARALABA TER...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 40: Added publication 'PEMBUATAN STORY MAP PASTI UNTUK VISUALISASI POTENS...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 41: Added publication 'PEMANFAATAN GAME ENGINE DALAM PEMBUATAN TABLETOP-A...' (Year: 2020, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 42: Added publication 'PEMETAAN PERUBAHAN DELTA DI MUARA KALI PORONG DENG...' (Year: 2019, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 43: Added publication 'Analisis Dan Evaluasi Perubahan Penggunaan Lahan R...' (Year: 2019, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 44: Added publication 'PEMBUATAN WEBGIS SITUS BUDAYA DI KECAMATAN KOTAGED...' (Year: 2019, Citations: )
+2025-07-16 23:11:35,894 - INFO - Row 45: Added publication 'Ride-Hailing Origin-Destination Geovisual Analytic...' (Year: 2019, Citations: )
+2025-07-16 23:11:35,895 - INFO - Row 46: Added publication 'IDENTIFIKASI PENGARUH AKTIVITAS TAMBANG INKONVENSI...' (Year: 2018, Citations: )
+2025-07-16 23:11:35,895 - INFO - Row 47: Added publication 'Exploring the Evolution of Decarbonisation Scenari...' (Year: , Citations: )
+2025-07-16 23:11:35,895 - INFO - Row 48: Added publication 'Geodesi Fisis...' (Year: , Citations: )
+2025-07-16 23:11:35,895 - INFO - Row 49: Added publication 'ANALITIS VISUAL GASETIR GEONAMES INDONESIA MENGGUN...' (Year: , Citations: )
+2025-07-16 23:11:35,895 - INFO - Successfully parsed 49 publications from the main page
+2025-07-16 23:11:35,895 - INFO - Starting to fetch detailed information for each publication...
+2025-07-16 23:11:35,895 - INFO - Processing publication 1/49: Utilizing a game engine for interactive 3D topogra...
+2025-07-16 23:11:35,895 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:4JMBOYKVnBMC
+2025-07-16 23:11:36,317 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:4JMBOYKVnBMC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:4JMBOYKVnBMC
+2025-07-16 23:11:36,317 - WARNING - ✗ Failed to get details for publication 1
+2025-07-16 23:11:38,901 - INFO - Processing publication 2/49: Testing spatial data deliverance in SQL and NoSQL ...
+2025-07-16 23:11:38,902 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TQgYirikUcIC
+2025-07-16 23:11:39,426 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TQgYirikUcIC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TQgYirikUcIC
+2025-07-16 23:11:39,426 - WARNING - ✗ Failed to get details for publication 2
+2025-07-16 23:11:41,416 - INFO - Processing publication 3/49: 3D cadastre web map: Prospects and developments...
+2025-07-16 23:11:41,416 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:7PzlFSSx8tAC
+2025-07-16 23:11:41,932 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:7PzlFSSx8tAC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:7PzlFSSx8tAC
+2025-07-16 23:11:41,932 - WARNING - ✗ Failed to get details for publication 3
+2025-07-16 23:11:43,379 - INFO - Processing publication 4/49: Visualization of 3D survey data for strata titles...
+2025-07-16 23:11:43,380 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TFP_iSt0sucC
+2025-07-16 23:11:43,839 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TFP_iSt0sucC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TFP_iSt0sucC
+2025-07-16 23:11:43,840 - WARNING - ✗ Failed to get details for publication 4
+2025-07-16 23:11:46,388 - INFO - Processing publication 5/49: Comprehensive integration system of saltwater envi...
+2025-07-16 23:11:46,389 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:mB3voiENLucC
+2025-07-16 23:11:46,837 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:mB3voiENLucC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:mB3voiENLucC
+2025-07-16 23:11:46,837 - WARNING - ✗ Failed to get details for publication 5
+2025-07-16 23:11:47,989 - INFO - Processing publication 6/49: Hasil Studi Pola Kebakaran Lahan Gambut melalui Ci...
+2025-07-16 23:11:47,989 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:JV2RwH3_ST0C
+2025-07-16 23:11:48,433 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:JV2RwH3_ST0C: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:JV2RwH3_ST0C
+2025-07-16 23:11:48,434 - WARNING - ✗ Failed to get details for publication 6
+2025-07-16 23:11:50,530 - INFO - Processing publication 7/49: Crowdsourced hotspot validation and data visualisa...
+2025-07-16 23:11:50,530 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:RHpTSmoSYBkC
+2025-07-16 23:11:51,078 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:RHpTSmoSYBkC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:RHpTSmoSYBkC
+2025-07-16 23:11:51,078 - WARNING - ✗ Failed to get details for publication 7
+2025-07-16 23:11:52,644 - INFO - Processing publication 8/49: Open source stack for Structure from Motion 3D rec...
+2025-07-16 23:11:52,645 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:ZeXyd9-uunAC
+2025-07-16 23:11:53,023 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:ZeXyd9-uunAC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:ZeXyd9-uunAC
+2025-07-16 23:11:53,023 - WARNING - ✗ Failed to get details for publication 8
+2025-07-16 23:11:54,914 - INFO - Processing publication 9/49: A usability evaluation of a 3D map display for ped...
+2025-07-16 23:11:54,915 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:-f6ydRqryjwC
+2025-07-16 23:11:55,464 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:-f6ydRqryjwC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:-f6ydRqryjwC
+2025-07-16 23:11:55,464 - WARNING - ✗ Failed to get details for publication 9
+2025-07-16 23:11:56,522 - INFO - Processing publication 10/49: LOD 1: 3D CityModel for Implementing SmartCity Con...
+2025-07-16 23:11:56,522 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:L8Ckcad2t8MC
+2025-07-16 23:11:57,082 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:L8Ckcad2t8MC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:L8Ckcad2t8MC
+2025-07-16 23:11:57,083 - WARNING - ✗ Failed to get details for publication 10
+2025-07-16 23:11:59,591 - INFO - Processing publication 11/49: Interactive 3D city visualization from structure m...
+2025-07-16 23:11:59,592 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:j3f4tGmQtD8C
+2025-07-16 23:11:59,937 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:j3f4tGmQtD8C: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:j3f4tGmQtD8C
+2025-07-16 23:11:59,937 - WARNING - ✗ Failed to get details for publication 11
+2025-07-16 23:12:00,991 - INFO - Processing publication 12/49: Expedition Oe: A visual-storytelling map on Rote I...
+2025-07-16 23:12:00,991 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:e5wmG9Sq2KIC
+2025-07-16 23:12:04,387 - ERROR - Error fetching publication details from https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:e5wmG9Sq2KIC: 429 Client Error: Too Many Requests for url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:e5wmG9Sq2KIC
+2025-07-16 23:12:04,388 - WARNING - ✗ Failed to get details for publication 12
+2025-07-16 23:12:06,222 - INFO - Closing browser...
+2025-07-16 23:12:06,224 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /session/bd9a3de5a3ba5638ee461377c56b78b5
+2025-07-16 23:12:06,224 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fcea0ba80a0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/bd9a3de5a3ba5638ee461377c56b78b5
+2025-07-16 23:12:06,225 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fcea0ba8b20>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/bd9a3de5a3ba5638ee461377c56b78b5
+2025-07-16 23:17:09,187 - INFO - Starting to scrape Google Scholar profile for user: LsZIhbcAAAAJ
+2025-07-16 23:17:09,187 - INFO - Setting up Chrome browser...
+2025-07-16 23:17:09,187 - INFO - Installing ChromeDriver...
+2025-07-16 23:17:09,187 - INFO - ====== WebDriver manager ======
+2025-07-16 23:17:09,235 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-16 23:17:09,337 - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-16 23:17:09,407 - INFO - Driver [/home/danylaksono/.wdm/drivers/chromedriver/linux64/138.0.7204.157/chromedriver-linux64/chromedriver] found in cache
+2025-07-16 23:17:09,714 - INFO - Chrome browser setup completed successfully
+2025-07-16 23:17:09,714 - INFO - Navigating to: https://scholar.google.com/citations?user=LsZIhbcAAAAJ&hl=en
+2025-07-16 23:17:17,619 - INFO - Loading all publications by clicking 'Load More' button...
+2025-07-16 23:17:22,439 - INFO - Clicked 'Load More' button (attempt 1)
+2025-07-16 23:17:36,487 - INFO - No more 'Load More' button found or error occurred: Message: 
+
+2025-07-16 23:17:36,487 - INFO - Parsing publication list from page...
+2025-07-16 23:17:36,517 - INFO - Found 49 publication rows to process
+2025-07-16 23:17:36,517 - INFO - Row 1: Added publication 'Utilizing a game engine for interactive 3D topogra...' (Year: 2019, Citations: 75)
+2025-07-16 23:17:36,518 - INFO - Row 2: Added publication 'Testing spatial data deliverance in SQL and NoSQL ...' (Year: 2018, Citations: 35)
+2025-07-16 23:17:36,518 - INFO - Row 3: Added publication '3D cadastre web map: Prospects and developments...' (Year: 2011, Citations: 23)
+2025-07-16 23:17:36,518 - INFO - Row 4: Added publication 'Visualization of 3D survey data for strata titles...' (Year: 2020, Citations: 16)
+2025-07-16 23:17:36,518 - INFO - Row 5: Added publication 'Comprehensive integration system of saltwater envi...' (Year: 2018, Citations: 16)
+2025-07-16 23:17:36,518 - INFO - Row 6: Added publication 'Hasil Studi Pola Kebakaran Lahan Gambut melalui Ci...' (Year: 2021, Citations: 9)
+2025-07-16 23:17:36,519 - INFO - Row 7: Added publication 'Crowdsourced hotspot validation and data visualisa...' (Year: 2019, Citations: 9)
+2025-07-16 23:17:36,519 - INFO - Row 8: Added publication 'Open source stack for Structure from Motion 3D rec...' (Year: 2016, Citations: 9)
+2025-07-16 23:17:36,519 - INFO - Row 9: Added publication 'A usability evaluation of a 3D map display for ped...' (Year: 2018, Citations: 8)
+2025-07-16 23:17:36,519 - INFO - Row 10: Added publication 'LOD 1: 3D CityModel for Implementing SmartCity Con...' (Year: 2017, Citations: 8)
+2025-07-16 23:17:36,519 - INFO - Row 11: Added publication 'Interactive 3D city visualization from structure m...' (Year: 2019, Citations: 6)
+2025-07-16 23:17:36,520 - INFO - Row 12: Added publication 'Expedition Oe: A visual-storytelling map on Rote I...' (Year: 2018, Citations: 6)
+2025-07-16 23:17:36,520 - INFO - Row 13: Added publication 'I-SRI, an SDI Readiness Index for Local Government...' (Year: 2014, Citations: 4)
+2025-07-16 23:17:36,520 - INFO - Row 14: Added publication '3D modelling, validation and visualization of 3D p...' (Year: 2021, Citations: 3)
+2025-07-16 23:17:36,520 - INFO - Row 15: Added publication 'The development of WebGIS for the cultural sites i...' (Year: 2020, Citations: 3)
+2025-07-16 23:17:36,520 - INFO - Row 16: Added publication 'Geogame on the peat: Designing effective gameplay ...' (Year: 2018, Citations: 3)
+2025-07-16 23:17:36,521 - INFO - Row 17: Added publication 'CloudSfM: 3D Reconstruction using structure from m...' (Year: 2016, Citations: 3)
+2025-07-16 23:17:36,521 - INFO - Row 18: Added publication 'Sistem Penentuan Posisi dan Navigasi...' (Year: 2014, Citations: 3)
+2025-07-16 23:17:36,521 - INFO - Row 19: Added publication 'The Misclassification Likelihood Matrix: Some Clas...' (Year: 2024, Citations: 2)
+2025-07-16 23:17:36,521 - INFO - Row 20: Added publication 'Konsep AUPB untuk Keamanan Data dalam Standardisas...' (Year: 2023, Citations: 2)
+2025-07-16 23:17:36,521 - INFO - Row 21: Added publication 'THE LATEST BATHYMETRY AND TOPOGRAPHY EXTRACTION OF...' (Year: 2023, Citations: 2)
+2025-07-16 23:17:36,521 - INFO - Row 22: Added publication 'Pemanfaatan Citra Sentinel-5P untuk Pembuatan Peta...' (Year: 2020, Citations: 2)
+2025-07-16 23:17:36,522 - INFO - Row 23: Added publication 'Survey Pemetaan Batas Bidang Tanah Kolaboratif Lin...' (Year: 2019, Citations: 2)
+2025-07-16 23:17:36,522 - INFO - Row 24: Added publication 'NATURAL COMPOUNDS AQUATIC PLANT BIODIVERSITY OF LA...' (Year: 2022, Citations: 1)
+2025-07-16 23:17:36,522 - INFO - Row 25: Added publication 'Evaluasi Daerah Layanan Rumah Sakit di Yogyakarta ...' (Year: 2015, Citations: 1)
+2025-07-16 23:17:36,522 - INFO - Row 26: Added publication 'VisUnit: Literate Visualisation Studies Assembled ...' (Year: 2025, Citations: )
+2025-07-16 23:17:36,522 - INFO - Row 27: Added publication 'Exploring the Evolution of Decarbonisation Scenari...' (Year: 2024, Citations: )
+2025-07-16 23:17:36,522 - INFO - Row 28: Added publication 'One Stop Investment and Services...' (Year: 2024, Citations: )
+2025-07-16 23:17:36,522 - INFO - Row 29: Added publication 'Gridded-glyphmaps for supporting Geographic Multic...' (Year: 2024, Citations: )
+2025-07-16 23:17:36,523 - INFO - Row 30: Added publication 'The 15-minute city of mass public transportation i...' (Year: 2024, Citations: )
+2025-07-16 23:17:36,523 - INFO - Row 31: Added publication 'Developing Address Model and Geocoding Framework f...' (Year: 2023, Citations: )
+2025-07-16 23:17:36,523 - INFO - Row 32: Added publication 'Sharpening of Sentinel-2 imagery for updating them...' (Year: 2021, Citations: )
+2025-07-16 23:17:36,523 - INFO - Row 33: Added publication 'Realizing the Dead Sea Lakes Region in Rote Island...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,523 - INFO - Row 34: Added publication 'Estimasi Potensi Energi Photovoltaic di Wilayah Un...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,523 - INFO - Row 35: Added publication 'Pemanfaatan Citra Landsat 8 untuk Estimasi Tingkat...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,524 - INFO - Row 36: Added publication 'PEMANTAUAN PERGESERAN PERMUKAAN LERENG AREA TAMBAN...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,524 - INFO - Row 37: Added publication 'PEMBUATAN SISTEM INFORMASI GEOSPASIAL BERBASIS WEB...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,524 - INFO - Row 38: Added publication 'VISUALISASI PERJALANAN KERETA API BERDASARKAN GRAF...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,524 - INFO - Row 39: Added publication 'ANALISIS KESESUAIAN LOKASI MINIMARKET WARALABA TER...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,524 - INFO - Row 40: Added publication 'PEMBUATAN STORY MAP PASTI UNTUK VISUALISASI POTENS...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,525 - INFO - Row 41: Added publication 'PEMANFAATAN GAME ENGINE DALAM PEMBUATAN TABLETOP-A...' (Year: 2020, Citations: )
+2025-07-16 23:17:36,525 - INFO - Row 42: Added publication 'PEMETAAN PERUBAHAN DELTA DI MUARA KALI PORONG DENG...' (Year: 2019, Citations: )
+2025-07-16 23:17:36,525 - INFO - Row 43: Added publication 'Analisis Dan Evaluasi Perubahan Penggunaan Lahan R...' (Year: 2019, Citations: )
+2025-07-16 23:17:36,525 - INFO - Row 44: Added publication 'PEMBUATAN WEBGIS SITUS BUDAYA DI KECAMATAN KOTAGED...' (Year: 2019, Citations: )
+2025-07-16 23:17:36,525 - INFO - Row 45: Added publication 'Ride-Hailing Origin-Destination Geovisual Analytic...' (Year: 2019, Citations: )
+2025-07-16 23:17:36,525 - INFO - Row 46: Added publication 'IDENTIFIKASI PENGARUH AKTIVITAS TAMBANG INKONVENSI...' (Year: 2018, Citations: )
+2025-07-16 23:17:36,526 - INFO - Row 47: Added publication 'Exploring the Evolution of Decarbonisation Scenari...' (Year: , Citations: )
+2025-07-16 23:17:36,526 - INFO - Row 48: Added publication 'Geodesi Fisis...' (Year: , Citations: )
+2025-07-16 23:17:36,526 - INFO - Row 49: Added publication 'ANALITIS VISUAL GASETIR GEONAMES INDONESIA MENGGUN...' (Year: , Citations: )
+2025-07-16 23:17:36,526 - INFO - Successfully parsed 49 publications from the main page
+2025-07-16 23:17:36,526 - INFO - Starting to fetch detailed information for each publication...
+2025-07-16 23:17:36,526 - INFO - Processing publication 1/49: Utilizing a game engine for interactive 3D topogra...
+2025-07-16 23:17:36,526 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:4JMBOYKVnBMC
+2025-07-16 23:17:43,242 - INFO - Parsing publication details...
+2025-07-16 23:17:43,242 - INFO - Found title: Utilizing a game engine for interactive 3D topographic data visualization
+2025-07-16 23:17:43,242 - INFO - Found 10 field sections to parse
+2025-07-16 23:17:43,242 - INFO - Found authors: Dany Laksono, Trias Aditya
+2025-07-16 23:17:43,243 - INFO - Found publication date: 2019/8/15
+2025-07-16 23:17:43,243 - INFO - Found abstract (length: 1649 chars)
+2025-07-16 23:17:43,243 - INFO - Found total citations: Cited by 75
+2025-07-16 23:17:43,243 - INFO - PDF link: https://www.mdpi.com/2220-9964/8/8/361
+2025-07-16 23:17:43,243 - INFO - Publication details extraction completed
+2025-07-16 23:17:43,243 - INFO - ✓ Successfully updated details for publication 1
+2025-07-16 23:17:48,801 - INFO - Processing publication 2/49: Testing spatial data deliverance in SQL and NoSQL ...
+2025-07-16 23:17:48,801 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TQgYirikUcIC
+2025-07-16 23:17:58,719 - INFO - Parsing publication details...
+2025-07-16 23:17:58,719 - INFO - Found title: Testing spatial data deliverance in SQL and NoSQL database using NodeJS fullstack web app
+2025-07-16 23:17:58,720 - INFO - Found 8 field sections to parse
+2025-07-16 23:17:58,720 - INFO - Found authors: Dany Laksono
+2025-07-16 23:17:58,720 - INFO - Found publication date: 2018/8/7
+2025-07-16 23:17:58,720 - INFO - Found abstract (length: 889 chars)
+2025-07-16 23:17:58,720 - INFO - Found total citations: Cited by 35
+2025-07-16 23:17:58,721 - INFO - PDF link: https://danylaksono.com/files/pdf/research/(2018)%20Testing%20Spatial%20Data%20Deliverance%20in%20SQL%20and%20NoSQL%20Database%20Using%20NodeJS%20Fullstack%20Web%20App.pdf
+2025-07-16 23:17:58,721 - INFO - Publication details extraction completed
+2025-07-16 23:17:58,721 - INFO - ✓ Successfully updated details for publication 2
+2025-07-16 23:18:05,567 - INFO - Processing publication 3/49: 3D cadastre web map: Prospects and developments...
+2025-07-16 23:18:05,567 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:7PzlFSSx8tAC
+2025-07-16 23:18:11,802 - INFO - Parsing publication details...
+2025-07-16 23:18:11,802 - INFO - Found title: 3D cadastre web map: Prospects and developments
+2025-07-16 23:18:11,803 - INFO - Found 7 field sections to parse
+2025-07-16 23:18:11,803 - INFO - Found authors: Trias Aditya, Febri Iswanto, A Wirawan, DP Laksono
+2025-07-16 23:18:11,803 - INFO - Found publication date: 2011/11/16
+2025-07-16 23:18:11,803 - INFO - Found abstract (length: 292 chars)
+2025-07-16 23:18:11,803 - INFO - Found total citations: Cited by 23
+2025-07-16 23:18:11,804 - INFO - No PDF link found
+2025-07-16 23:18:11,804 - INFO - Publication details extraction completed
+2025-07-16 23:18:11,804 - INFO - ✓ Successfully updated details for publication 3
+2025-07-16 23:18:19,573 - INFO - Processing publication 4/49: Visualization of 3D survey data for strata titles...
+2025-07-16 23:18:19,573 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TFP_iSt0sucC
+2025-07-16 23:18:26,051 - INFO - Parsing publication details...
+2025-07-16 23:18:26,051 - INFO - Found title: Visualization of 3D survey data for strata titles
+2025-07-16 23:18:26,052 - INFO - Found 10 field sections to parse
+2025-07-16 23:18:26,052 - INFO - Found authors: Trias Aditya, Dany Laksono, Febrian F Susanta, I Istarno, D Diyono, Didik Ariyanto
+2025-07-16 23:18:26,052 - INFO - Found publication date: 2020/5/7
+2025-07-16 23:18:26,053 - INFO - Found abstract (length: 1677 chars)
+2025-07-16 23:18:26,053 - INFO - Found total citations: Cited by 16
+2025-07-16 23:18:26,053 - INFO - PDF link: https://www.mdpi.com/2220-9964/9/5/310
+2025-07-16 23:18:26,053 - INFO - Publication details extraction completed
+2025-07-16 23:18:26,053 - INFO - ✓ Successfully updated details for publication 4
+2025-07-16 23:18:30,319 - INFO - Processing publication 5/49: Comprehensive integration system of saltwater envi...
+2025-07-16 23:18:30,319 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:mB3voiENLucC
+2025-07-16 23:18:33,710 - INFO - Parsing publication details...
+2025-07-16 23:18:33,711 - INFO - Found title: Comprehensive integration system of saltwater environment on Rote Island using a multidisciplinary approach
+2025-07-16 23:18:33,711 - INFO - Found 10 field sections to parse
+2025-07-16 23:18:33,711 - INFO - Found authors: Atriyon Julzarika, Dany Puguh Laksono, Luki Subehi, Esthi Kurniai Dewi, Kayat Kayat, Hanhan A Sofiyuddin
+2025-07-16 23:18:33,712 - INFO - Found publication date: 2018
+2025-07-16 23:18:33,712 - INFO - Found abstract (length: 1527 chars)
+2025-07-16 23:18:33,712 - INFO - Found total citations: Cited by 16
+2025-07-16 23:18:33,713 - INFO - PDF link: http://download.garuda.kemdikbud.go.id/article.php?article=802429&val=7328&title=Comprehensive%20integration%20system%20of%20saltwater%20environment%20on%20Rote%20Island%20using%20a%20multidisciplinary%20approach
+2025-07-16 23:18:33,713 - INFO - Publication details extraction completed
+2025-07-16 23:18:33,713 - INFO - ✓ Successfully updated details for publication 5
+2025-07-16 23:18:37,436 - INFO - Processing publication 6/49: Hasil Studi Pola Kebakaran Lahan Gambut melalui Ci...
+2025-07-16 23:18:37,436 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:JV2RwH3_ST0C
+2025-07-16 23:18:41,862 - INFO - Parsing publication details...
+2025-07-16 23:18:41,863 - INFO - Found title: Hasil Studi Pola Kebakaran Lahan Gambut melalui Citra Satelit Sentinel-2 dengan Pengimplementasian Machine Learning Metode Random Forest: Kajian Literatur
+2025-07-16 23:18:41,863 - INFO - Found 10 field sections to parse
+2025-07-16 23:18:41,863 - INFO - Found authors: Annisa Rizky Kusuma, Fauzan Maulana Shodiq, Muhammad Faris Hazim, Dany Puguh Laksono
+2025-07-16 23:18:41,863 - INFO - Found publication date: 2021
+2025-07-16 23:18:41,863 - INFO - Found abstract (length: 1006 chars)
+2025-07-16 23:18:41,864 - INFO - Found total citations: Cited by 9
+2025-07-16 23:18:41,864 - INFO - PDF link: https://www.academia.edu/download/91863873/32916.pdf
+2025-07-16 23:18:41,864 - INFO - Publication details extraction completed
+2025-07-16 23:18:41,864 - INFO - ✓ Successfully updated details for publication 6
+2025-07-16 23:18:47,268 - INFO - Processing publication 7/49: Crowdsourced hotspot validation and data visualisa...
+2025-07-16 23:18:47,268 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:RHpTSmoSYBkC
+2025-07-16 23:18:53,988 - INFO - Parsing publication details...
+2025-07-16 23:18:53,989 - INFO - Found title: Crowdsourced hotspot validation and data visualisation for location-based haze mitigation
+2025-07-16 23:18:53,990 - INFO - Found 10 field sections to parse
+2025-07-16 23:18:53,991 - INFO - Found authors: Trias Aditya, Dany Laksono, Nur Izzahuddin
+2025-07-16 23:18:53,991 - INFO - Found publication date: 2019/10/2
+2025-07-16 23:18:53,992 - INFO - Found abstract (length: 920 chars)
+2025-07-16 23:18:53,992 - INFO - Found total citations: Cited by 9
+2025-07-16 23:18:53,992 - INFO - No PDF link found
+2025-07-16 23:18:53,992 - INFO - Publication details extraction completed
+2025-07-16 23:18:53,992 - INFO - ✓ Successfully updated details for publication 7
+2025-07-16 23:18:59,166 - INFO - Processing publication 8/49: Open source stack for Structure from Motion 3D rec...
+2025-07-16 23:18:59,167 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:ZeXyd9-uunAC
+2025-07-16 23:19:03,480 - INFO - Parsing publication details...
+2025-07-16 23:19:03,480 - INFO - Found title: Open source stack for Structure from Motion 3D reconstruction: A geometric overview
+2025-07-16 23:19:03,480 - INFO - Found 8 field sections to parse
+2025-07-16 23:19:03,480 - INFO - Found authors: Dany Laksono
+2025-07-16 23:19:03,481 - INFO - Found publication date: 2016/8/1
+2025-07-16 23:19:03,481 - INFO - Found abstract (length: 904 chars)
+2025-07-16 23:19:03,481 - INFO - Found total citations: Cited by 9
+2025-07-16 23:19:03,481 - INFO - PDF link: https://www.researchgate.net/profile/Dany-Laksono/publication/312561280_Open_source_stack_for_Structure_from_Motion_3D_reconstruction_A_geometric_overview/links/5c91d02e45851506d71d5338/Open-source-stack-for-Structure-from-Motion-3D-reconstruction-A-geometric-overview.pdf
+2025-07-16 23:19:03,481 - INFO - Publication details extraction completed
+2025-07-16 23:19:03,481 - INFO - ✓ Successfully updated details for publication 8
+2025-07-16 23:19:09,960 - INFO - Processing publication 9/49: A usability evaluation of a 3D map display for ped...
+2025-07-16 23:19:09,961 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:-f6ydRqryjwC
+2025-07-16 23:19:16,907 - INFO - Parsing publication details...
+2025-07-16 23:19:16,908 - INFO - Found title: A usability evaluation of a 3D map display for pedestrian navigation
+2025-07-16 23:19:16,909 - INFO - Found 9 field sections to parse
+2025-07-16 23:19:16,909 - INFO - Found authors: Trias Aditya, Dany Laksono, Heri Sutanta, Nur Izzahudin, Febrian Susanta
+2025-07-16 23:19:16,909 - INFO - Found publication date: 2018/9/12
+2025-07-16 23:19:16,909 - INFO - Found abstract (length: 1572 chars)
+2025-07-16 23:19:16,909 - INFO - Found total citations: Cited by 8
+2025-07-16 23:19:16,910 - INFO - PDF link: https://isprs-archives.copernicus.org/articles/XLII-4-W10/3/2018/isprs-archives-XLII-4-W10-3-2018.pdf
+2025-07-16 23:19:16,910 - INFO - Publication details extraction completed
+2025-07-16 23:19:16,910 - INFO - ✓ Successfully updated details for publication 9
+2025-07-16 23:19:19,941 - INFO - Processing publication 10/49: LOD 1: 3D CityModel for Implementing SmartCity Con...
+2025-07-16 23:19:19,941 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:L8Ckcad2t8MC
+2025-07-16 23:19:26,131 - INFO - Parsing publication details...
+2025-07-16 23:19:26,131 - INFO - Found title: LOD 1: 3D CityModel for Implementing SmartCity Concept
+2025-07-16 23:19:26,132 - INFO - Found 8 field sections to parse
+2025-07-16 23:19:26,132 - INFO - Found authors: Trias Aditya, Dany Laksono
+2025-07-16 23:19:26,132 - INFO - Found publication date: 2017/12/27
+2025-07-16 23:19:26,132 - INFO - Found abstract (length: 923 chars)
+2025-07-16 23:19:26,133 - INFO - Found total citations: Cited by 8
+2025-07-16 23:19:26,133 - INFO - PDF link: https://www.danylaksono.com/files/pdf/research/(2017)%20LOD1%203D%20City%20Model%20%20for%20Implementing%20SmartCity%20Concept.pdf
+2025-07-16 23:19:26,133 - INFO - Publication details extraction completed
+2025-07-16 23:19:26,133 - INFO - ✓ Successfully updated details for publication 10
+2025-07-16 23:19:32,207 - INFO - Processing publication 11/49: Interactive 3D city visualization from structure m...
+2025-07-16 23:19:32,207 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:j3f4tGmQtD8C
+2025-07-16 23:19:38,932 - INFO - Parsing publication details...
+2025-07-16 23:19:38,932 - INFO - Found title: Interactive 3D city visualization from structure motion data using game engine
+2025-07-16 23:19:38,933 - INFO - Found 9 field sections to parse
+2025-07-16 23:19:38,933 - INFO - Found authors: Dany Laksono, Trias Aditya, Gondang Riyadi
+2025-07-16 23:19:38,933 - INFO - Found publication date: 2019/10/14
+2025-07-16 23:19:38,933 - INFO - Found abstract (length: 1463 chars)
+2025-07-16 23:19:38,933 - INFO - Found total citations: Cited by 6
+2025-07-16 23:19:38,934 - INFO - PDF link: https://isprs-archives.copernicus.org/articles/XLII-4-W16/737/2019/isprs-archives-XLII-4-W16-737-2019.pdf
+2025-07-16 23:19:38,934 - INFO - Publication details extraction completed
+2025-07-16 23:19:38,934 - INFO - ✓ Successfully updated details for publication 11
+2025-07-16 23:19:47,300 - INFO - Processing publication 12/49: Expedition Oe: A visual-storytelling map on Rote I...
+2025-07-16 23:19:47,301 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:e5wmG9Sq2KIC
+2025-07-16 23:19:58,758 - INFO - Parsing publication details...
+2025-07-16 23:19:58,758 - INFO - Found title: Expedition Oe: A visual-storytelling map on Rote Island’s Lakes
+2025-07-16 23:19:58,759 - INFO - Found 8 field sections to parse
+2025-07-16 23:19:58,759 - INFO - Found authors: Dany Laksono
+2025-07-16 23:19:58,759 - INFO - Found publication date: 2018
+2025-07-16 23:19:58,759 - INFO - Found abstract (length: 1667 chars)
+2025-07-16 23:19:58,759 - INFO - Found total citations: Cited by 6
+2025-07-16 23:19:58,760 - INFO - PDF link: https://www.academia.edu/download/92859016/23684.pdf
+2025-07-16 23:19:58,760 - INFO - Publication details extraction completed
+2025-07-16 23:19:58,760 - INFO - ✓ Successfully updated details for publication 12
+2025-07-16 23:20:02,799 - INFO - Processing publication 13/49: I-SRI, an SDI Readiness Index for Local Government...
+2025-07-16 23:20:02,799 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:HDshCWvjkbEC
+2025-07-16 23:20:07,954 - INFO - Parsing publication details...
+2025-07-16 23:20:07,954 - INFO - Found title: I-SRI, an SDI Readiness Index for Local Government in Indonesia
+2025-07-16 23:20:07,954 - INFO - Found 7 field sections to parse
+2025-07-16 23:20:07,955 - INFO - Found authors: Heri Sutanta, Trias Aditya, Purnama B. Santosa, Diyono, Dany Laksono, Annisa Farida
+2025-07-16 23:20:07,955 - INFO - Found publication date: 2014
+2025-07-16 23:20:07,955 - INFO - Found abstract (length: 899 chars)
+2025-07-16 23:20:07,955 - INFO - Found total citations: Cited by 4
+2025-07-16 23:20:07,955 - INFO - PDF link: http://w.fig.net/resources/proceedings/fig_proceedings/fig2014/ppt/ts04h/TS04H_sutanta_aditya_et_al_7298_ppt.pdf
+2025-07-16 23:20:07,955 - INFO - Publication details extraction completed
+2025-07-16 23:20:07,955 - INFO - ✓ Successfully updated details for publication 13
+2025-07-16 23:20:12,224 - INFO - Processing publication 14/49: 3D modelling, validation and visualization of 3D p...
+2025-07-16 23:20:12,224 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:M3NEmzRMIkIC
+2025-07-16 23:20:20,938 - INFO - Parsing publication details...
+2025-07-16 23:20:20,939 - INFO - Found title: 3D modelling, validation and visualization of 3D parcels in first registration for 3D cadastre-Indonesia case
+2025-07-16 23:20:20,939 - INFO - Found 6 field sections to parse
+2025-07-16 23:20:20,939 - INFO - Found authors: Trias Aditya, Dany P Laksono, Dedi Atunggal, Febrian F Susanta, Nurrohmat Widjajanti, Mohammad B Setiawan, Nurhidayat AGAM
+2025-07-16 23:20:20,939 - INFO - Found publication date: 2021/10/11
+2025-07-16 23:20:20,940 - INFO - Found abstract (length: 1668 chars)
+2025-07-16 23:20:20,940 - INFO - Found total citations: Cited by 3
+2025-07-16 23:20:20,940 - INFO - PDF link: https://gdmc.nl/3Dcadastres/literature/3Dcad_2021_14.pdf
+2025-07-16 23:20:20,940 - INFO - Publication details extraction completed
+2025-07-16 23:20:20,940 - INFO - ✓ Successfully updated details for publication 14
+2025-07-16 23:20:27,466 - INFO - Processing publication 15/49: The development of WebGIS for the cultural sites i...
+2025-07-16 23:20:27,466 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:isC4tDSrTZIC
+2025-07-16 23:20:39,068 - INFO - Parsing publication details...
+2025-07-16 23:20:39,069 - INFO - Found title: The development of WebGIS for the cultural sites in Kotagede Sub-District combined with 360 photosphere visualization
+2025-07-16 23:20:39,069 - INFO - Found 10 field sections to parse
+2025-07-16 23:20:39,070 - INFO - Found authors: S Ni Luh Kompyang, Bambang Kun Cahyono, Dany Puguh Laksono, Gondang Riyadi
+2025-07-16 23:20:39,070 - INFO - Found publication date: 2020/6/1
+2025-07-16 23:20:39,070 - INFO - Found abstract (length: 924 chars)
+2025-07-16 23:20:39,070 - INFO - Found total citations: Cited by 3
+2025-07-16 23:20:39,071 - INFO - PDF link: https://iopscience.iop.org/article/10.1088/1755-1315/500/1/012071/pdf
+2025-07-16 23:20:39,071 - INFO - Publication details extraction completed
+2025-07-16 23:20:39,071 - INFO - ✓ Successfully updated details for publication 15
+2025-07-16 23:20:45,014 - INFO - Processing publication 16/49: Geogame on the peat: Designing effective gameplay ...
+2025-07-16 23:20:45,015 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:hFOr9nPyWt4C
+2025-07-16 23:20:51,908 - INFO - Parsing publication details...
+2025-07-16 23:20:51,909 - INFO - Found title: Geogame on the peat: Designing effective gameplay in geogames app for haze mitigation
+2025-07-16 23:20:51,909 - INFO - Found 9 field sections to parse
+2025-07-16 23:20:51,909 - INFO - Found authors: Trias Aditya, Dany Laksono
+2025-07-16 23:20:51,909 - INFO - Found publication date: 2018/9/19
+2025-07-16 23:20:51,910 - INFO - Found abstract (length: 1622 chars)
+2025-07-16 23:20:51,910 - INFO - Found total citations: Cited by 3
+2025-07-16 23:20:51,910 - INFO - PDF link: https://isprs-archives.copernicus.org/articles/XLII-4/5/2018/isprs-archives-XLII-4-5-2018.pdf
+2025-07-16 23:20:51,910 - INFO - Publication details extraction completed
+2025-07-16 23:20:51,910 - INFO - ✓ Successfully updated details for publication 16
+2025-07-16 23:20:58,214 - INFO - Processing publication 17/49: CloudSfM: 3D Reconstruction using structure from m...
+2025-07-16 23:20:58,214 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:IWHjjKOFINEC
+2025-07-16 23:21:02,941 - INFO - Parsing publication details...
+2025-07-16 23:21:02,941 - INFO - Found title: CloudSfM: 3D Reconstruction using structure from motion web service
+2025-07-16 23:21:02,941 - INFO - Found 6 field sections to parse
+2025-07-16 23:21:02,941 - INFO - Found authors: Dany Laksono
+2025-07-16 23:21:02,942 - INFO - Found publication date: 2016
+2025-07-16 23:21:02,942 - INFO - Found abstract (length: 1555 chars)
+2025-07-16 23:21:02,942 - INFO - Found total citations: Cited by 3
+2025-07-16 23:21:02,942 - INFO - PDF link: https://www.researchgate.net/profile/Dany-Laksono/publication/324151353_CloudSfM_3D_Reconstruction_using_Structure_from_Motion_Web_Service/links/5ac1b65545851584fa75a9ea/CloudSfM-3D-Reconstruction-using-Structure-from-Motion-Web-Service.pdf
+2025-07-16 23:21:02,942 - INFO - Publication details extraction completed
+2025-07-16 23:21:02,942 - INFO - ✓ Successfully updated details for publication 17
+2025-07-16 23:21:12,271 - INFO - Processing publication 18/49: Sistem Penentuan Posisi dan Navigasi...
+2025-07-16 23:21:12,271 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:O3NaXMp0MMsC
+2025-07-16 23:21:16,070 - INFO - Parsing publication details...
+2025-07-16 23:21:16,071 - INFO - Found title: Sistem Penentuan Posisi dan Navigasi
+2025-07-16 23:21:16,071 - INFO - Found 6 field sections to parse
+2025-07-16 23:21:16,071 - INFO - Found authors: Anindya Sricandra Prasidya, Dany Puguh Laksono
+2025-07-16 23:21:16,071 - INFO - Found publication date: 2014
+2025-07-16 23:21:16,072 - INFO - Found abstract (length: 1474 chars)
+2025-07-16 23:21:16,072 - INFO - Found total citations: Cited by 3
+2025-07-16 23:21:16,072 - INFO - PDF link: https://www.academia.edu/download/35314077/Tugas_Diskusi_Kelompok_Sistem_NavigasiAnindya_Dany.pdf
+2025-07-16 23:21:16,072 - INFO - Publication details extraction completed
+2025-07-16 23:21:16,072 - INFO - ✓ Successfully updated details for publication 18
+2025-07-16 23:21:21,469 - INFO - Processing publication 19/49: The Misclassification Likelihood Matrix: Some Clas...
+2025-07-16 23:21:21,470 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:zA6iFVUQeVQC
+2025-07-16 23:21:25,737 - INFO - Parsing publication details...
+2025-07-16 23:21:25,738 - INFO - Found title: The Misclassification Likelihood Matrix: Some Classes Are More Likely To Be Misclassified Than Others
+2025-07-16 23:21:25,738 - INFO - Found 6 field sections to parse
+2025-07-16 23:21:25,738 - INFO - Found authors: Daniel Sikar, Artur Garcez, Robin Bloomfield, Tillman Weyde, Kaleem Peeroo, Naman Singh, Maeve Hutchinson, Dany Laksono, Mirela Reljan-Delaney
+2025-07-16 23:21:25,738 - INFO - Found publication date: 2024/7/10
+2025-07-16 23:21:25,739 - INFO - Found abstract (length: 1292 chars)
+2025-07-16 23:21:25,739 - INFO - Found total citations: Cited by 2
+2025-07-16 23:21:25,739 - INFO - PDF link: https://arxiv.org/pdf/2407.07818
+2025-07-16 23:21:25,739 - INFO - Publication details extraction completed
+2025-07-16 23:21:25,739 - INFO - ✓ Successfully updated details for publication 19
+2025-07-16 23:21:29,180 - INFO - Processing publication 20/49: Konsep AUPB untuk Keamanan Data dalam Standardisas...
+2025-07-16 23:21:29,180 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:SeFeTyx0c_EC
+2025-07-16 23:21:32,949 - INFO - Parsing publication details...
+2025-07-16 23:21:32,950 - INFO - Found title: Konsep AUPB untuk Keamanan Data dalam Standardisasi dan Sistem Geocoding Alamat Perkotaan dan Perdesaan Indonesia
+2025-07-16 23:21:32,951 - INFO - Found 9 field sections to parse
+2025-07-16 23:21:32,951 - INFO - Found authors: Dyah Ayu Widowati, Heri Sutanta, Diyono Diyono, Dedi Atunggal, Dany Laksono, Sumaryono Sumaryono, Fakhruddin Mustofa
+2025-07-16 23:21:32,951 - INFO - Found publication date: 2023/9/25
+2025-07-16 23:21:32,951 - INFO - Found abstract (length: 1149 chars)
+2025-07-16 23:21:32,951 - INFO - Found total citations: Cited by 2
+2025-07-16 23:21:32,952 - INFO - PDF link: https://ejournal.uksw.edu/refleksihukum/article/download/8154/2535
+2025-07-16 23:21:32,952 - INFO - Publication details extraction completed
+2025-07-16 23:21:32,952 - INFO - ✓ Successfully updated details for publication 20
+2025-07-16 23:21:39,935 - INFO - Processing publication 21/49: THE LATEST BATHYMETRY AND TOPOGRAPHY EXTRACTION OF...
+2025-07-16 23:21:39,935 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:ZHo1McVdvXMC
+2025-07-16 23:21:49,228 - INFO - Parsing publication details...
+2025-07-16 23:21:49,228 - INFO - Found title: THE LATEST BATHYMETRY AND TOPOGRAPHY EXTRACTION OF LAKE LEDULU FROM MULTI-SOURCE GEOSPATIAL DATA
+2025-07-16 23:21:49,229 - INFO - Found 10 field sections to parse
+2025-07-16 23:21:49,229 - INFO - Found authors: Atriyon Julzarika, Dany Laksono, Luki Subehi, Elisa Iswandono, Alfred Onisimus Maximus Dima, Media Fitri Isma Nugraha, Kayat Kayat
+2025-07-16 23:21:49,229 - INFO - Found publication date: 2023/9
+2025-07-16 23:21:49,229 - INFO - Found abstract (length: 1637 chars)
+2025-07-16 23:21:49,229 - INFO - Found total citations: Cited by 2
+2025-07-16 23:21:49,230 - INFO - PDF link: https://www.researchgate.net/profile/Atriyon-Julzarika/publication/373971134_THE_LATEST_BATHYMETRY_AND_TOPOGRAPHY_EXTRACTION_OF_LAKE_LEDULU_FROM_MULTI-SOURCE_GEOSPATIAL_DATA/links/651cd69cb0df2f20a20e83ef/THE-LATEST-BATHYMETRY-AND-TOPOGRAPHY-EXTRACTION-OF-LAKE-LEDULU-FROM-MULTI-SOURCE-GEOSPATIAL-DATA.pdf
+2025-07-16 23:21:49,230 - INFO - Publication details extraction completed
+2025-07-16 23:21:49,230 - INFO - ✓ Successfully updated details for publication 21
+2025-07-16 23:21:54,319 - INFO - Processing publication 22/49: Pemanfaatan Citra Sentinel-5P untuk Pembuatan Peta...
+2025-07-16 23:21:54,319 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:BqipwSGYUEgC
+2025-07-16 23:22:00,195 - INFO - Parsing publication details...
+2025-07-16 23:22:00,195 - INFO - Found title: Pemanfaatan Citra Sentinel-5P untuk Pembuatan Peta Perbandingan Konsentrasi NO2 Selama Pandemi COVID-19 di DKI Jakarta Menggunakan Google Earth Engine
+2025-07-16 23:22:00,196 - INFO - Found 5 field sections to parse
+2025-07-16 23:22:00,196 - INFO - Found authors: J Ahnaf
+2025-07-16 23:22:00,196 - INFO - Found publication date: 2020
+2025-07-16 23:22:00,196 - INFO - Found total citations: Cited by 2
+2025-07-16 23:22:00,197 - INFO - No PDF link found
+2025-07-16 23:22:00,197 - INFO - Publication details extraction completed
+2025-07-16 23:22:00,197 - INFO - ✓ Successfully updated details for publication 22
+2025-07-16 23:22:05,856 - INFO - Processing publication 23/49: Survey Pemetaan Batas Bidang Tanah Kolaboratif Lin...
+2025-07-16 23:22:05,856 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:maZDTaKrznsC
+2025-07-16 23:22:09,108 - INFO - Parsing publication details...
+2025-07-16 23:22:09,109 - INFO - Found title: Survey Pemetaan Batas Bidang Tanah Kolaboratif Lintas Ruang dan Lintas Waktu dengan Piranti AR/VR
+2025-07-16 23:22:09,109 - INFO - Found 5 field sections to parse
+2025-07-16 23:22:09,109 - INFO - Found authors: Trias Aditya, Fajar Nugroho Adib, Dany Puguh Laksono
+2025-07-16 23:22:09,110 - INFO - Found publication date: 2019
+2025-07-16 23:22:09,110 - INFO - Found abstract (length: 1232 chars)
+2025-07-16 23:22:09,110 - INFO - Found total citations: Cited by 2
+2025-07-16 23:22:09,110 - INFO - PDF link: https://www.researchgate.net/profile/Trias-Aditya-2/publication/343054222_Survey_Pemetaan_Batas_Bidang_Tanah_Kolaboratif_Lintas_Ruang_dan_Lintas_Waktu_dengan_Piranti_ARVR/links/5f13d8d7299bf1e548c35cec/Survey-Pemetaan-Batas-Bidang-Tanah-Kolaboratif-Lintas-Ruang-dan-Lintas-Waktu-dengan-Piranti-AR-VR.pdf
+2025-07-16 23:22:09,110 - INFO - Publication details extraction completed
+2025-07-16 23:22:09,110 - INFO - ✓ Successfully updated details for publication 23
+2025-07-16 23:22:14,928 - INFO - Processing publication 24/49: NATURAL COMPOUNDS AQUATIC PLANT BIODIVERSITY OF LA...
+2025-07-16 23:22:14,928 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:YFjsv_pBGBYC
+2025-07-16 23:22:25,041 - INFO - Parsing publication details...
+2025-07-16 23:22:25,041 - INFO - Found title: NATURAL COMPOUNDS AQUATIC PLANT BIODIVERSITY OF LAKE LEDULU, ROTE DEAD SEA AREA-INDONESIA FOR RECOMMENDATIONS OF CONSERVATION.
+2025-07-16 23:22:25,042 - INFO - Found 8 field sections to parse
+2025-07-16 23:22:25,042 - INFO - Found authors: Luki Subehi, Atriyon Julzarika, Aan Dianto, Dany Puguh Laksono, Hanhan Ahmad Sofiyuddin
+2025-07-16 23:22:25,042 - INFO - Found publication date: 2022/10/1
+2025-07-16 23:22:25,042 - INFO - Found abstract (length: 889 chars)
+2025-07-16 23:22:25,043 - INFO - Found total citations: Cited by 1
+2025-07-16 23:22:25,043 - INFO - No PDF link found
+2025-07-16 23:22:25,043 - INFO - Publication details extraction completed
+2025-07-16 23:22:25,043 - INFO - ✓ Successfully updated details for publication 24
+2025-07-16 23:22:28,595 - INFO - Processing publication 25/49: Evaluasi Daerah Layanan Rumah Sakit di Yogyakarta ...
+2025-07-16 23:22:28,595 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:hMod-77fHWUC
+2025-07-16 23:22:36,172 - INFO - Parsing publication details...
+2025-07-16 23:22:36,173 - INFO - Found title: Evaluasi Daerah Layanan Rumah Sakit di Yogyakarta dengan Perangkat Lunak Open Source
+2025-07-16 23:22:36,173 - INFO - Found 7 field sections to parse
+2025-07-16 23:22:36,173 - INFO - Found authors: Rochmad Muryamto, Dany Laksono
+2025-07-16 23:22:36,174 - INFO - Found publication date: 2015
+2025-07-16 23:22:36,174 - INFO - Found abstract (length: 1103 chars)
+2025-07-16 23:22:36,174 - INFO - Found total citations: Cited by 1
+2025-07-16 23:22:36,174 - INFO - PDF link: https://www.danylaksono.com/files/pdf/research/(2015)%20Evaluasi%20Daerah%20Layanan%20Rumah%20Sakit%20di%20Yogyakarta%20dengan%20Perangkat%20Lunak%20Open%20Source.pdf
+2025-07-16 23:22:36,174 - INFO - Publication details extraction completed
+2025-07-16 23:22:36,175 - INFO - ✓ Successfully updated details for publication 25
+2025-07-16 23:22:41,029 - INFO - Processing publication 26/49: VisUnit: Literate Visualisation Studies Assembled ...
+2025-07-16 23:22:41,029 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:dfsIfKJdRG4C
+2025-07-16 23:22:48,120 - INFO - Parsing publication details...
+2025-07-16 23:22:48,121 - INFO - Found title: VisUnit: Literate Visualisation Studies Assembled from Reusable Test-Suites
+2025-07-16 23:22:48,121 - INFO - Found 6 field sections to parse
+2025-07-16 23:22:48,121 - INFO - Found authors: Radu Jianu, Aidan Slingsby, Dany Laksono, Mershack Okoe
+2025-07-16 23:22:48,122 - INFO - Found publication date: 2025/4/26
+2025-07-16 23:22:48,122 - INFO - Found abstract (length: 932 chars)
+2025-07-16 23:22:48,122 - INFO - PDF link: https://dl.acm.org/doi/pdf/10.1145/3706598.3713104
+2025-07-16 23:22:48,123 - INFO - Publication details extraction completed
+2025-07-16 23:22:48,123 - INFO - ✓ Successfully updated details for publication 26
+2025-07-16 23:22:52,383 - INFO - Processing publication 27/49: Exploring the Evolution of Decarbonisation Scenari...
+2025-07-16 23:22:52,384 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:u_35RYKgDlwC
+2025-07-16 23:23:02,274 - INFO - Parsing publication details...
+2025-07-16 23:23:02,274 - INFO - Found title: Exploring the Evolution of Decarbonisation Scenarios with Gridded-glyphmaps Visualisations
+2025-07-16 23:23:02,275 - INFO - Found 4 field sections to parse
+2025-07-16 23:23:02,275 - INFO - Found authors: Dany Laksono, Radu Jianu, Aidan Slingsby
+2025-07-16 23:23:02,275 - INFO - Found publication date: 2024/10
+2025-07-16 23:23:02,275 - INFO - No PDF link found
+2025-07-16 23:23:02,275 - INFO - Publication details extraction completed
+2025-07-16 23:23:02,275 - INFO - ✓ Successfully updated details for publication 27
+2025-07-16 23:23:06,208 - INFO - Processing publication 28/49: One Stop Investment and Services...
+2025-07-16 23:23:06,208 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:fPk4N6BV_jEC
+2025-07-16 23:23:10,813 - INFO - Parsing publication details...
+2025-07-16 23:23:10,813 - INFO - Found title: One Stop Investment and Services
+2025-07-16 23:23:10,814 - INFO - Found 6 field sections to parse
+2025-07-16 23:23:10,814 - INFO - Found authors: Dany Laksono, Poppy Wulandari, Reza Aulia, Anita Zulman
+2025-07-16 23:23:10,814 - INFO - Found publication date: 2024/8
+2025-07-16 23:23:10,815 - INFO - No PDF link found
+2025-07-16 23:23:10,815 - INFO - Publication details extraction completed
+2025-07-16 23:23:10,815 - INFO - ✓ Successfully updated details for publication 28
+2025-07-16 23:23:16,622 - INFO - Processing publication 29/49: Gridded-glyphmaps for supporting Geographic Multic...
+2025-07-16 23:23:16,622 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:rO6llkc54NcC
+2025-07-16 23:23:20,120 - INFO - Parsing publication details...
+2025-07-16 23:23:20,120 - INFO - Found title: Gridded-glyphmaps for supporting Geographic Multicriteria Decision Analysis
+2025-07-16 23:23:20,120 - INFO - Found 5 field sections to parse
+2025-07-16 23:23:20,121 - INFO - Found authors: Dany Laksono, Aidan Slingsby, Radu Jianu
+2025-07-16 23:23:20,121 - INFO - Found publication date: 2024/5/31
+2025-07-16 23:23:20,121 - INFO - Found abstract (length: 1196 chars)
+2025-07-16 23:23:20,121 - INFO - PDF link: https://openaccess.city.ac.uk/id/eprint/33111/1/06_evs20241062.pdf
+2025-07-16 23:23:20,121 - INFO - Publication details extraction completed
+2025-07-16 23:23:20,121 - INFO - ✓ Successfully updated details for publication 29
+2025-07-16 23:23:24,233 - INFO - Processing publication 30/49: The 15-minute city of mass public transportation i...
+2025-07-16 23:23:24,234 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:3s1wT3WcHBgC
+2025-07-16 23:23:33,105 - INFO - Parsing publication details...
+2025-07-16 23:23:33,105 - INFO - Found title: The 15-minute city of mass public transportation in Yogyakarta: case of Trans Jogja bus
+2025-07-16 23:23:33,106 - INFO - Found 8 field sections to parse
+2025-07-16 23:23:33,106 - INFO - Found authors: Febrian Fitryanik Susanta, Rochmad Muryamto, Dany Puguh Laksono
+2025-07-16 23:23:33,106 - INFO - Found publication date: 2024/1/29
+2025-07-16 23:23:33,107 - INFO - Found abstract (length: 919 chars)
+2025-07-16 23:23:33,107 - INFO - No PDF link found
+2025-07-16 23:23:33,107 - INFO - Publication details extraction completed
+2025-07-16 23:23:33,107 - INFO - ✓ Successfully updated details for publication 30
+2025-07-16 23:23:39,252 - INFO - Processing publication 31/49: Developing Address Model and Geocoding Framework f...
+2025-07-16 23:23:39,252 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:HoB7MX3m0LUC
+2025-07-16 23:23:46,465 - INFO - Parsing publication details...
+2025-07-16 23:23:46,465 - INFO - Found title: Developing Address Model and Geocoding Framework for Urban Area in Indonesia
+2025-07-16 23:23:46,466 - INFO - Found 4 field sections to parse
+2025-07-16 23:23:46,466 - INFO - Found authors: Heri Sutanta, Ni Putu Praja Chintya, Dany Laksono, Dedi Atunggal, D Diyono
+2025-07-16 23:23:46,466 - INFO - Found publication date: 2023/9/2
+2025-07-16 23:23:46,466 - INFO - No PDF link found
+2025-07-16 23:23:46,466 - INFO - Publication details extraction completed
+2025-07-16 23:23:46,466 - INFO - ✓ Successfully updated details for publication 31
+2025-07-16 23:23:52,835 - INFO - Processing publication 32/49: Sharpening of Sentinel-2 imagery for updating them...
+2025-07-16 23:23:52,835 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:NMxIlDl6LWMC
+2025-07-16 23:23:58,076 - INFO - Parsing publication details...
+2025-07-16 23:23:58,077 - INFO - Found title: Sharpening of Sentinel-2 imagery for updating thematic layer of base maps
+2025-07-16 23:23:58,077 - INFO - Found 8 field sections to parse
+2025-07-16 23:23:58,077 - INFO - Found authors: Catur Aries Rokhmana, Dani Puguh Laksono
+2025-07-16 23:23:58,078 - INFO - Found publication date: 2021/12/22
+2025-07-16 23:23:58,078 - INFO - Found abstract (length: 914 chars)
+2025-07-16 23:23:58,078 - INFO - No PDF link found
+2025-07-16 23:23:58,078 - INFO - Publication details extraction completed
+2025-07-16 23:23:58,078 - INFO - ✓ Successfully updated details for publication 32
+2025-07-16 23:24:03,185 - INFO - Processing publication 33/49: Realizing the Dead Sea Lakes Region in Rote Island...
+2025-07-16 23:24:03,186 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:k_IJM867U9cC
+2025-07-16 23:24:13,296 - INFO - Parsing publication details...
+2025-07-16 23:24:13,297 - INFO - Found title: Realizing the Dead Sea Lakes Region in Rote Islands to be a geopark using multidisciplinary spatial information approach
+2025-07-16 23:24:13,297 - INFO - Found 9 field sections to parse
+2025-07-16 23:24:13,298 - INFO - Found authors: A Julzarika, DP Laksono, L Subehi, EK Dewi, HA Sofiyuddin, MFI Nugraha, N Anggraini, A Setianto, D Yudhatama
+2025-07-16 23:24:13,298 - INFO - Found publication date: 2020/7/1
+2025-07-16 23:24:13,298 - INFO - Found abstract (length: 918 chars)
+2025-07-16 23:24:13,298 - INFO - PDF link: https://iopscience.iop.org/article/10.1088/1755-1315/535/1/012033/pdf
+2025-07-16 23:24:13,298 - INFO - Publication details extraction completed
+2025-07-16 23:24:13,299 - INFO - ✓ Successfully updated details for publication 33
+2025-07-16 23:24:17,847 - INFO - Processing publication 34/49: Estimasi Potensi Energi Photovoltaic di Wilayah Un...
+2025-07-16 23:24:17,847 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:pqnbT2bcN3wC
+2025-07-16 23:24:22,193 - INFO - Parsing publication details...
+2025-07-16 23:24:22,193 - INFO - Found title: Estimasi Potensi Energi Photovoltaic di Wilayah Universitas Gadjah Mada
+2025-07-16 23:24:22,193 - INFO - Found 3 field sections to parse
+2025-07-16 23:24:22,194 - INFO - Found authors: LANTIP SUPRATIKO
+2025-07-16 23:24:22,194 - INFO - Found publication date: 2020
+2025-07-16 23:24:22,194 - INFO - No PDF link found
+2025-07-16 23:24:22,194 - INFO - Publication details extraction completed
+2025-07-16 23:24:22,194 - INFO - ✓ Successfully updated details for publication 34
+2025-07-16 23:24:28,914 - INFO - Processing publication 35/49: Pemanfaatan Citra Landsat 8 untuk Estimasi Tingkat...
+2025-07-16 23:24:28,915 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:ldfaerwXgEUC
+2025-07-16 23:24:35,723 - INFO - Parsing publication details...
+2025-07-16 23:24:35,724 - INFO - Found title: Pemanfaatan Citra Landsat 8 untuk Estimasi Tingkat Keparahan Kebakaran Hutan dan Lahan di Kabupaten Pulang Pisau Provinsi Kalimantan Tengah
+2025-07-16 23:24:35,724 - INFO - Found 3 field sections to parse
+2025-07-16 23:24:35,724 - INFO - Found authors: SUZI TESSA DEYOSKY
+2025-07-16 23:24:35,724 - INFO - Found publication date: 2020
+2025-07-16 23:24:35,725 - INFO - No PDF link found
+2025-07-16 23:24:35,725 - INFO - Publication details extraction completed
+2025-07-16 23:24:35,725 - INFO - ✓ Successfully updated details for publication 35
+2025-07-16 23:24:42,779 - INFO - Processing publication 36/49: PEMANTAUAN PERGESERAN PERMUKAAN LERENG AREA TAMBAN...
+2025-07-16 23:24:42,779 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:2P1L_qKh6hAC
+2025-07-16 23:24:49,322 - INFO - Parsing publication details...
+2025-07-16 23:24:49,322 - INFO - Found title: PEMANTAUAN PERGESERAN PERMUKAAN LERENG AREA TAMBANG TERBUKA BERDASARKAN DATA PENGUKURAN MENGGUNAKAN TERRESTRIAL LASER SCANNER
+2025-07-16 23:24:49,323 - INFO - Found 5 field sections to parse
+2025-07-16 23:24:49,323 - INFO - Found authors: YUDHA NOOR RACHMAT
+2025-07-16 23:24:49,323 - INFO - Found publication date: 2020
+2025-07-16 23:24:49,323 - INFO - Found abstract (length: 1601 chars)
+2025-07-16 23:24:49,324 - INFO - No PDF link found
+2025-07-16 23:24:49,324 - INFO - Publication details extraction completed
+2025-07-16 23:24:49,324 - INFO - ✓ Successfully updated details for publication 36
+2025-07-16 23:24:53,890 - INFO - Processing publication 37/49: PEMBUATAN SISTEM INFORMASI GEOSPASIAL BERBASIS WEB...
+2025-07-16 23:24:53,890 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:70eg2SAEIzsC
+2025-07-16 23:24:59,596 - INFO - Parsing publication details...
+2025-07-16 23:24:59,597 - INFO - Found title: PEMBUATAN SISTEM INFORMASI GEOSPASIAL BERBASIS WEB RISIKO SEBARAN COVID-19 DI KABUPATEN KUDUS
+2025-07-16 23:24:59,597 - INFO - Found 3 field sections to parse
+2025-07-16 23:24:59,597 - INFO - Found authors: DYTA CAROLINE
+2025-07-16 23:24:59,597 - INFO - Found publication date: 2020
+2025-07-16 23:24:59,598 - INFO - No PDF link found
+2025-07-16 23:24:59,598 - INFO - Publication details extraction completed
+2025-07-16 23:24:59,598 - INFO - ✓ Successfully updated details for publication 37
+2025-07-16 23:25:06,424 - INFO - Processing publication 38/49: VISUALISASI PERJALANAN KERETA API BERDASARKAN GRAF...
+2025-07-16 23:25:06,425 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:35N4QoGY0k4C
+2025-07-16 23:25:10,989 - INFO - Parsing publication details...
+2025-07-16 23:25:10,989 - INFO - Found title: VISUALISASI PERJALANAN KERETA API BERDASARKAN GRAFIK PERJALANAN KERETA API (GAPEKA) DAN DATA TWITTER DENGAN PETA ONLINE
+2025-07-16 23:25:10,989 - INFO - Found 3 field sections to parse
+2025-07-16 23:25:10,990 - INFO - Found authors: M WAHYU DWIMULYO
+2025-07-16 23:25:10,990 - INFO - Found publication date: 2020
+2025-07-16 23:25:10,990 - INFO - No PDF link found
+2025-07-16 23:25:10,990 - INFO - Publication details extraction completed
+2025-07-16 23:25:10,990 - INFO - ✓ Successfully updated details for publication 38
+2025-07-16 23:25:17,900 - INFO - Processing publication 39/49: ANALISIS KESESUAIAN LOKASI MINIMARKET WARALABA TER...
+2025-07-16 23:25:17,900 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:vV6vV6tmYwMC
+2025-07-16 23:25:28,238 - INFO - Parsing publication details...
+2025-07-16 23:25:28,238 - INFO - Found title: ANALISIS KESESUAIAN LOKASI MINIMARKET WARALABA TERHADAP PERDA KABUPATEN SLEMAN NOMOR 14 TAHUN 2019
+2025-07-16 23:25:28,238 - INFO - Found 3 field sections to parse
+2025-07-16 23:25:28,239 - INFO - Found authors: GILANG AKHYUTA
+2025-07-16 23:25:28,239 - INFO - Found publication date: 2020
+2025-07-16 23:25:28,239 - INFO - No PDF link found
+2025-07-16 23:25:28,239 - INFO - Publication details extraction completed
+2025-07-16 23:25:28,239 - INFO - ✓ Successfully updated details for publication 39
+2025-07-16 23:25:34,845 - INFO - Processing publication 40/49: PEMBUATAN STORY MAP PASTI UNTUK VISUALISASI POTENS...
+2025-07-16 23:25:34,846 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:J_g5lzvAfSwC
+2025-07-16 23:25:38,271 - INFO - Parsing publication details...
+2025-07-16 23:25:38,272 - INFO - Found title: PEMBUATAN STORY MAP PASTI UNTUK VISUALISASI POTENSI KECAMATAN SAWIT
+2025-07-16 23:25:38,272 - INFO - Found 3 field sections to parse
+2025-07-16 23:25:38,272 - INFO - Found authors: NUR ISNAINI FU
+2025-07-16 23:25:38,273 - INFO - Found publication date: 2020
+2025-07-16 23:25:38,273 - INFO - No PDF link found
+2025-07-16 23:25:38,273 - INFO - Publication details extraction completed
+2025-07-16 23:25:38,273 - INFO - ✓ Successfully updated details for publication 40
+2025-07-16 23:25:41,605 - INFO - Processing publication 41/49: PEMANFAATAN GAME ENGINE DALAM PEMBUATAN TABLETOP-A...
+2025-07-16 23:25:41,605 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:NaGl4SEjCO4C
+2025-07-16 23:25:48,781 - INFO - Parsing publication details...
+2025-07-16 23:25:48,782 - INFO - Found title: PEMANFAATAN GAME ENGINE DALAM PEMBUATAN TABLETOP-AUGMENTED REALITY FAKULTAS TEKNIK UNIVERSITAS GADJAH MADA
+2025-07-16 23:25:48,783 - INFO - Found 3 field sections to parse
+2025-07-16 23:25:48,783 - INFO - Found authors: NOVITA NUGRAHENI
+2025-07-16 23:25:48,783 - INFO - Found publication date: 2020
+2025-07-16 23:25:48,783 - INFO - No PDF link found
+2025-07-16 23:25:48,784 - INFO - Publication details extraction completed
+2025-07-16 23:25:48,784 - INFO - ✓ Successfully updated details for publication 41
+2025-07-16 23:25:56,487 - INFO - Processing publication 42/49: PEMETAAN PERUBAHAN DELTA DI MUARA KALI PORONG DENG...
+2025-07-16 23:25:56,487 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:g5m5HwL7SMYC
+2025-07-16 23:26:00,315 - INFO - Parsing publication details...
+2025-07-16 23:26:00,315 - INFO - Found title: PEMETAAN PERUBAHAN DELTA DI MUARA KALI PORONG DENGAN CITRA LANDSAT MULTITEMPORAL
+2025-07-16 23:26:00,316 - INFO - Found 3 field sections to parse
+2025-07-16 23:26:00,316 - INFO - Found authors: NAUFAL SANDRO
+2025-07-16 23:26:00,316 - INFO - Found publication date: 2019
+2025-07-16 23:26:00,316 - INFO - No PDF link found
+2025-07-16 23:26:00,316 - INFO - Publication details extraction completed
+2025-07-16 23:26:00,316 - INFO - ✓ Successfully updated details for publication 42
+2025-07-16 23:26:06,927 - INFO - Processing publication 43/49: Analisis Dan Evaluasi Perubahan Penggunaan Lahan R...
+2025-07-16 23:26:06,928 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:M05iB0D1s5AC
+2025-07-16 23:26:11,540 - INFO - Parsing publication details...
+2025-07-16 23:26:11,560 - INFO - Found title: Analisis Dan Evaluasi Perubahan Penggunaan Lahan Ruang Terbuka Di Kota Denpasar Tahun 2013-2014
+2025-07-16 23:26:11,589 - INFO - Found 3 field sections to parse
+2025-07-16 23:26:11,603 - INFO - Found authors: PUTU ADIPRATAMA BARATHA WANGSA
+2025-07-16 23:26:11,618 - INFO - Found publication date: 2019
+2025-07-16 23:26:11,649 - INFO - No PDF link found
+2025-07-16 23:26:11,652 - INFO - Publication details extraction completed
+2025-07-16 23:26:11,663 - INFO - ✓ Successfully updated details for publication 43
+2025-07-16 23:26:18,264 - INFO - Processing publication 44/49: PEMBUATAN WEBGIS SITUS BUDAYA DI KECAMATAN KOTAGED...
+2025-07-16 23:26:18,265 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:RYcK_YlVTxYC
+2025-07-16 23:26:27,071 - INFO - Parsing publication details...
+2025-07-16 23:26:27,072 - INFO - Found title: PEMBUATAN WEBGIS SITUS BUDAYA DI KECAMATAN KOTAGEDE DENGAN VISUALISASI FOTO SFERIS 360 DERAJAT
+2025-07-16 23:26:27,072 - INFO - Found 3 field sections to parse
+2025-07-16 23:26:27,072 - INFO - Found authors: NI LUH KOMPYANG SARIANI
+2025-07-16 23:26:27,072 - INFO - Found publication date: 2019
+2025-07-16 23:26:27,073 - INFO - No PDF link found
+2025-07-16 23:26:27,073 - INFO - Publication details extraction completed
+2025-07-16 23:26:27,073 - INFO - ✓ Successfully updated details for publication 44
+2025-07-16 23:26:33,565 - INFO - Processing publication 45/49: Ride-Hailing Origin-Destination Geovisual Analytic...
+2025-07-16 23:26:33,565 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:ns9cj8rnVeAC
+2025-07-16 23:26:38,723 - INFO - Parsing publication details...
+2025-07-16 23:26:38,724 - INFO - Found title: Ride-Hailing Origin-Destination Geovisual Analytics for Exploring Urban Mobility in Yogyakarta Municipality
+2025-07-16 23:26:38,724 - INFO - Found 3 field sections to parse
+2025-07-16 23:26:38,724 - INFO - Found authors: BRIGITTA MARIA IEDHA
+2025-07-16 23:26:38,724 - INFO - Found publication date: 2019
+2025-07-16 23:26:38,725 - INFO - No PDF link found
+2025-07-16 23:26:38,725 - INFO - Publication details extraction completed
+2025-07-16 23:26:38,725 - INFO - ✓ Successfully updated details for publication 45
+2025-07-16 23:26:45,063 - INFO - Processing publication 46/49: IDENTIFIKASI PENGARUH AKTIVITAS TAMBANG INKONVENSI...
+2025-07-16 23:26:45,064 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:RGFaLdJalmkC
+2025-07-16 23:26:51,797 - INFO - Parsing publication details...
+2025-07-16 23:26:51,797 - INFO - Found title: IDENTIFIKASI PENGARUH AKTIVITAS TAMBANG INKONVENSIONAL TERHADAP RENCANA TATA RUANG WILAYAH KABUPATEN BANGKA TENGAH MENGGUNAKAN GOOGLE EARTH ENGINE
+2025-07-16 23:26:51,798 - INFO - Found 3 field sections to parse
+2025-07-16 23:26:51,798 - INFO - Found authors: NOVIA ARDELIA
+2025-07-16 23:26:51,798 - INFO - Found publication date: 2018
+2025-07-16 23:26:51,799 - INFO - No PDF link found
+2025-07-16 23:26:51,799 - INFO - Publication details extraction completed
+2025-07-16 23:26:51,799 - INFO - ✓ Successfully updated details for publication 46
+2025-07-16 23:26:57,206 - INFO - Processing publication 47/49: Exploring the Evolution of Decarbonisation Scenari...
+2025-07-16 23:26:57,206 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:4OULZ7Gr8RgC
+2025-07-16 23:27:03,583 - INFO - Parsing publication details...
+2025-07-16 23:27:03,583 - INFO - Found title: Exploring the Evolution of Decarbonisation Scenarios with Gridded-glyphmaps Visualisations
+2025-07-16 23:27:03,584 - INFO - Found 3 field sections to parse
+2025-07-16 23:27:03,586 - INFO - Found authors: D Laksono1 R Jianu, A Slingsby
+2025-07-16 23:27:03,593 - INFO - Found abstract (length: 1138 chars)
+2025-07-16 23:27:03,594 - INFO - PDF link: https://gicentre.org/cgvc24/paper1045_CRC.pdf
+2025-07-16 23:27:03,594 - INFO - Publication details extraction completed
+2025-07-16 23:27:03,594 - INFO - ✓ Successfully updated details for publication 47
+2025-07-16 23:27:07,454 - INFO - Processing publication 48/49: Geodesi Fisis...
+2025-07-16 23:27:07,455 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:GnPB-g6toBAC
+2025-07-16 23:27:12,236 - INFO - Parsing publication details...
+2025-07-16 23:27:12,237 - INFO - Found title: Geodesi Fisis
+2025-07-16 23:27:12,237 - INFO - Found 3 field sections to parse
+2025-07-16 23:27:12,237 - INFO - Found authors: Anindya Sricandra Prasidya, Dany Puguh Laksono
+2025-07-16 23:27:12,237 - INFO - Found abstract (length: 410 chars)
+2025-07-16 23:27:12,238 - INFO - PDF link: https://www.academia.edu/download/35453314/Tugas-GFL-Diskusi_3-Airborne_Gravity_Survey.pdf
+2025-07-16 23:27:12,238 - INFO - Publication details extraction completed
+2025-07-16 23:27:12,238 - INFO - ✓ Successfully updated details for publication 48
+2025-07-16 23:27:17,967 - INFO - Processing publication 49/49: ANALITIS VISUAL GASETIR GEONAMES INDONESIA MENGGUN...
+2025-07-16 23:27:17,967 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:blknAaTinKkC
+2025-07-16 23:27:24,235 - INFO - Parsing publication details...
+2025-07-16 23:27:24,235 - INFO - Found title: ANALITIS VISUAL GASETIR GEONAMES INDONESIA MENGGUNAKAN CARTO JS
+2025-07-16 23:27:24,236 - INFO - Found 3 field sections to parse
+2025-07-16 23:27:24,236 - INFO - Found authors: Wahyu Marta Mutiarasari, Dany Puguh Laksono
+2025-07-16 23:27:24,236 - INFO - Found abstract (length: 1565 chars)
+2025-07-16 23:27:24,236 - INFO - PDF link: https://www.danylaksono.com/files/pdf/research/(2017)%20Analitis%20Visual%20Gasetir%20Geonames%20Indonesia%20menggunakan%20CartoJS.pdf
+2025-07-16 23:27:24,236 - INFO - Publication details extraction completed
+2025-07-16 23:27:24,236 - INFO - ✓ Successfully updated details for publication 49
+2025-07-16 23:27:24,236 - INFO - Detail scraping completed: 49 successful, 0 failed
+2025-07-16 23:27:24,236 - INFO - Total publications processed: 49
+2025-07-16 23:27:24,237 - INFO - Closing browser...
+2025-07-16 23:27:39,699 - INFO - Saving 49 publications to LsZIhbcAAAAJ_scholar_data.json...
+2025-07-16 23:27:39,704 - INFO - ✓ Successfully saved data to LsZIhbcAAAAJ_scholar_data.json
+2025-07-16 23:27:39,705 - INFO - Total publications scraped: 49
+2025-07-16 23:27:39,705 - INFO - ============================================================
+2025-07-16 23:27:39,705 - INFO - GOOGLE SCHOLAR SCRAPER FINISHED
+2025-07-16 23:27:39,705 - INFO - ============================================================
+2025-07-16 23:49:44,919 - INFO - Found venue from 'journal': Nature
