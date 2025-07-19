@@ -1,10 +1,12 @@
 
 import argparse
+import csv
 import json
+import os
 import random
 import time
 import logging
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -311,9 +313,12 @@ class GoogleScholarScraper:
                 self.logger.info("Closing browser...")
                 self.browser.quit()
     
-    def save_to_json(self, data: List[Dict], user_id: str) -> str:
+    def save_to_json(self, data: List[Dict], user_id: str, output_dir: str = ".") -> str:
         """Save scraped data to a JSON file."""
-        output_file = f'{user_id}_scholar_data.json'
+        # Create output directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+        
+        output_file = os.path.join(output_dir, f'{user_id}_scholar_data.json')
         self.logger.info(f"Saving {len(data)} publications to {output_file}...")
         
         try:
@@ -325,6 +330,114 @@ class GoogleScholarScraper:
             self.logger.error(f"Error saving data to {output_file}: {e}")
             raise
 
+    def load_authors_from_csv(self, csv_file: str) -> List[Tuple[str, str]]:
+        """
+        Load authors and their Google Scholar IDs from a CSV file.
+        
+        Expected CSV format:
+        name,user_id
+        "John Doe","abc123"
+        "Jane Smith","def456"
+        
+        Args:
+            csv_file: Path to the CSV file
+            
+        Returns:
+            List of tuples containing (name, user_id)
+        """
+        authors = []
+        try:
+            with open(csv_file, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                
+                # Check if required columns exist
+                if not reader.fieldnames or 'name' not in reader.fieldnames or 'user_id' not in reader.fieldnames:
+                    raise ValueError("CSV must contain 'name' and 'user_id' columns")
+                
+                for row in reader:
+                    name = row['name'].strip()
+                    user_id = row['user_id'].strip()
+                    
+                    if name and user_id:  # Skip empty rows
+                        authors.append((name, user_id))
+                        self.logger.info(f"Loaded author: {name} (ID: {user_id})")
+                    else:
+                        self.logger.warning(f"Skipping row with empty name or user_id: {row}")
+                        
+            self.logger.info(f"Successfully loaded {len(authors)} authors from {csv_file}")
+            return authors
+            
+        except FileNotFoundError:
+            self.logger.error(f"CSV file not found: {csv_file}")
+            raise
+        except Exception as e:
+            self.logger.error(f"Error reading CSV file {csv_file}: {e}")
+            raise
+
+    def process_authors_batch(self, csv_file: str, output_dir: str = ".") -> Dict[str, bool]:
+        """
+        Process multiple authors from a CSV file.
+        
+        Args:
+            csv_file: Path to the CSV file containing author information
+            output_dir: Directory to save output files
+            
+        Returns:
+            Dictionary mapping user_id to success status (True/False)
+        """
+        self.logger.info(f"Starting batch processing from CSV: {csv_file}")
+        
+        try:
+            authors = self.load_authors_from_csv(csv_file)
+        except Exception as e:
+            self.logger.error(f"Failed to load authors from CSV: {e}")
+            return {}
+        
+        if not authors:
+            self.logger.warning("No authors found in CSV file")
+            return {}
+        
+        results = {}
+        total_authors = len(authors)
+        
+        for i, (name, user_id) in enumerate(authors, 1):
+            self.logger.info(f"Processing author {i}/{total_authors}: {name} (ID: {user_id})")
+            
+            try:
+                # Scrape the profile
+                scholar_data = self.scrape_profile(user_id)
+                
+                if scholar_data:
+                    # Save to JSON
+                    output_file = self.save_to_json(scholar_data, user_id, output_dir)
+                    results[user_id] = True
+                    self.logger.info(f"✓ Successfully processed {name}: {len(scholar_data)} publications saved to {output_file}")
+                else:
+                    results[user_id] = False
+                    self.logger.error(f"✗ Failed to scrape data for {name} (ID: {user_id})")
+                    
+            except Exception as e:
+                results[user_id] = False
+                self.logger.error(f"✗ Error processing {name} (ID: {user_id}): {e}")
+            
+            # Add delay between authors to avoid rate limiting
+            if i < total_authors:
+                self.logger.info("Waiting between authors...")
+                self._random_delay()
+        
+        # Print summary
+        successful = sum(1 for success in results.values() if success)
+        failed = len(results) - successful
+        
+        self.logger.info("=" * 60)
+        self.logger.info(f"BATCH PROCESSING SUMMARY:")
+        self.logger.info(f"Total authors: {total_authors}")
+        self.logger.info(f"Successful: {successful}")
+        self.logger.info(f"Failed: {failed}")
+        self.logger.info("=" * 60)
+        
+        return results
+    
     def _extract_publication_venue(self, soup: BeautifulSoup) -> str:
         """Extract and standardize publication venue/source from the publication page."""
         try:
@@ -417,13 +530,21 @@ class GoogleScholarScraper:
 
 def main():
     """Main function to run the scraper."""
-    parser = argparse.ArgumentParser(description="Scrape a Google Scholar profile.")
-    parser.add_argument("user_id", help="The Google Scholar user ID to scrape.")
+    parser = argparse.ArgumentParser(description="Scrape Google Scholar profiles.")
+    parser.add_argument("--user-id", help="The Google Scholar user ID to scrape (single author mode)")
+    parser.add_argument("--csv-file", help="Path to CSV file containing multiple authors (batch mode)")
+    parser.add_argument("--output-dir", default=".", help="Output directory for JSON files (default: current directory)")
     parser.add_argument("--no-headless", action="store_true", help="Run browser in non-headless mode")
     parser.add_argument("--delay-min", type=float, default=3.0, help="Minimum delay between requests (seconds)")
     parser.add_argument("--delay-max", type=float, default=7.0, help="Maximum delay between requests (seconds)")
     
     args = parser.parse_args()
+
+    # Validate arguments
+    if not args.user_id and not args.csv_file:
+        parser.error("Either --user-id or --csv-file must be specified")
+    if args.user_id and args.csv_file:
+        parser.error("Cannot specify both --user-id and --csv-file")
 
     logger = logging.getLogger(__name__)
     logger.info("=" * 60)
@@ -436,17 +557,34 @@ def main():
         delay_range=(args.delay_min, args.delay_max)
     )
 
-    # Scrape the profile
-    scholar_data = scraper.scrape_profile(args.user_id)
+    try:
+        if args.csv_file:
+            # Batch processing mode
+            logger.info(f"Starting batch processing from CSV: {args.csv_file}")
+            results = scraper.process_authors_batch(args.csv_file, args.output_dir)
+            
+            if results:
+                successful = sum(1 for success in results.values() if success)
+                logger.info(f"Batch processing completed: {successful}/{len(results)} authors successful")
+            else:
+                logger.error("No authors were processed")
+        else:
+            # Single author mode
+            logger.info(f"Starting single author scraping for user ID: {args.user_id}")
+            scholar_data = scraper.scrape_profile(args.user_id)
 
-    if scholar_data:
-        try:
-            output_file = scraper.save_to_json(scholar_data, args.user_id)
-            logger.info(f"Total publications scraped: {len(scholar_data)}")
-        except Exception as e:
-            logger.error(f"Failed to save data: {e}")
-    else:
-        logger.error("✗ Failed to scrape any data")
+            if scholar_data:
+                try:
+                    output_file = scraper.save_to_json(scholar_data, args.user_id, args.output_dir)
+                    logger.info(f"Total publications scraped: {len(scholar_data)}")
+                    logger.info(f"Data saved to: {output_file}")
+                except Exception as e:
+                    logger.error(f"Failed to save data: {e}")
+            else:
+                logger.error("✗ Failed to scrape any data")
+
+    except Exception as e:
+        logger.error(f"Unexpected error: {e}")
 
     logger.info("=" * 60)
     logger.info("GOOGLE SCHOLAR SCRAPER FINISHED")
