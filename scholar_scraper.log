@@ -2390,3 +2390,1440 @@ Stacktrace:
 2026-02-19 05:48:22,331 - INFO - ============================================================
 2026-02-19 05:48:22,331 - INFO - GOOGLE SCHOLAR SCRAPER FINISHED
 2026-02-19 05:48:22,331 - INFO - ============================================================
+2026-02-19 06:33:22,495 - ERROR - Failed to load proxy file: [Errno 2] No such file or directory: 'proxies.txt'
+2026-02-19 06:33:33,292 - INFO - Starting batch processing from CSV: author_database.csv
+2026-02-19 06:33:33,292 - INFO - Starting batch processing from CSV: author_database.csv
+2026-02-19 06:33:33,293 - INFO - Skipping row without a Google Scholar ID: {'ID': '1', 'Nama': 'Sumaryo Joyosumarto', 'GoogleScholarID': '', 'Status': 'Purnakarya'}
+2026-02-19 06:33:33,293 - INFO - Loaded author: Subaryono (ID: XcyOfG8AAAAJ)
+2026-02-19 06:33:33,293 - INFO - Skipping row without a Google Scholar ID: {'ID': '3', 'Nama': 'Istarno', 'GoogleScholarID': '', 'Status': 'Purnakarya'}
+2026-02-19 06:33:33,293 - INFO - Skipping row without a Google Scholar ID: {'ID': '4', 'Nama': 'Tarsisius Aris Sunantyo', 'GoogleScholarID': '', 'Status': 'Purnakarya'}
+2026-02-19 06:33:33,293 - INFO - Loaded author: Waljiyanto (ID: bf6K4O0AAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Harintaka (ID: XliPgAcAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Prijono Nugroho Djodjomartono (ID: 5xOGpFkAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Djurdjani Wardaya (ID: -0SOAIQAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Nurrohmat Widjajanti (ID: U-w8I4UAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Catur Aries Rokhmana (ID: Z5OOseEAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Yulaikhah (ID: 2vN-lF4AAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Leni Sophia Heliani (ID: 0JvcXp4AAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Bilal Ma’ruf (ID: slbE0KsAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Trias Aditya Kurniawan M (ID: _-B2zEYAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Rochmad Muryamto (ID: oShZECIAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Diyono (ID: cm7zI5cAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Abdul Basith (ID: weadN_wAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Heri Sutanta (ID: _D477zkAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: Purnama Budi Santosa (ID: 7IR6W1IAAAAJ)
+2026-02-19 06:33:33,293 - INFO - Loaded author: I Made Andi Arsana (ID: x2N_jBcAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Ruli Andaru (ID: gOVDxGYAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Dwi Lestari (ID: _zEKbnoAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Dedi Atunggal S.P. (ID: jlJ_M_MAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Bambang Kun Cahyono (ID: g3m5JIYAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Dany Puguh Laksono (ID: LsZIhbcAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Maritsa Faridatunnisa (ID: vWyXz6UAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Hilmiyati Ulinnuha (ID: PAAVcXcAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Febrian Fitryanik Susanta (ID: DWIm4joAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Cecep Pratama (ID: 5YFJgTQAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Mohamad Bagas Setiawan (ID: D85HnqsAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Ressy Fitria (ID: DzYo93AAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Loaded author: Calvin Wijaya (ID: xFUhWQkAAAAJ)
+2026-02-19 06:33:33,294 - INFO - Successfully loaded 29 authors from author_database.csv
+2026-02-19 06:33:33,294 - INFO - Processing author 1/29: Subaryono (ID: XcyOfG8AAAAJ)
+2026-02-19 06:33:33,294 - INFO - Starting to scrape Google Scholar profile for user: XcyOfG8AAAAJ
+2026-02-19 06:33:33,296 - INFO - Setting up Playwright browser...
+2026-02-19 06:33:33,296 - ERROR - Error during profile scraping: Playwright is not installed. Install with: pip install playwright
+2026-02-19 06:33:33,296 - INFO - Closing Playwright browser...
+2026-02-19 06:33:33,296 - ERROR - ✗ Failed to scrape data for Subaryono (ID: XcyOfG8AAAAJ)
+2026-02-19 06:33:33,296 - INFO - Waiting between authors...
+2026-02-19 06:33:36,466 - INFO - Processing author 2/29: Waljiyanto (ID: bf6K4O0AAAAJ)
+2026-02-19 06:33:36,467 - INFO - Starting to scrape Google Scholar profile for user: bf6K4O0AAAAJ
+2026-02-19 06:33:36,467 - INFO - Setting up Playwright browser...
+2026-02-19 06:33:36,467 - ERROR - Error during profile scraping: Playwright is not installed. Install with: pip install playwright
+2026-02-19 06:33:36,467 - INFO - Closing Playwright browser...
+2026-02-19 06:33:36,467 - ERROR - ✗ Failed to scrape data for Waljiyanto (ID: bf6K4O0AAAAJ)
+2026-02-19 06:33:36,467 - INFO - Waiting between authors...
+2026-02-19 06:33:42,924 - INFO - Processing author 3/29: Harintaka (ID: XliPgAcAAAAJ)
+2026-02-19 06:33:42,924 - INFO - Starting to scrape Google Scholar profile for user: XliPgAcAAAAJ
+2026-02-19 06:33:42,925 - INFO - Setting up Playwright browser...
+2026-02-19 06:33:42,925 - ERROR - Error during profile scraping: Playwright is not installed. Install with: pip install playwright
+2026-02-19 06:33:42,925 - INFO - Closing Playwright browser...
+2026-02-19 06:33:42,925 - ERROR - ✗ Failed to scrape data for Harintaka (ID: XliPgAcAAAAJ)
+2026-02-19 06:33:42,925 - INFO - Waiting between authors...
+2026-02-19 06:33:49,997 - INFO - Processing author 4/29: Prijono Nugroho Djodjomartono (ID: 5xOGpFkAAAAJ)
+2026-02-19 06:33:49,998 - INFO - Starting to scrape Google Scholar profile for user: 5xOGpFkAAAAJ
+2026-02-19 06:33:49,998 - INFO - Setting up Playwright browser...
+2026-02-19 06:33:49,998 - ERROR - Error during profile scraping: Playwright is not installed. Install with: pip install playwright
+2026-02-19 06:33:49,998 - INFO - Closing Playwright browser...
+2026-02-19 06:33:49,998 - ERROR - ✗ Failed to scrape data for Prijono Nugroho Djodjomartono (ID: 5xOGpFkAAAAJ)
+2026-02-19 06:33:49,998 - INFO - Waiting between authors...
+2026-02-19 06:33:53,276 - INFO - Processing author 5/29: Djurdjani Wardaya (ID: -0SOAIQAAAAJ)
+2026-02-19 06:33:53,276 - INFO - Starting to scrape Google Scholar profile for user: -0SOAIQAAAAJ
+2026-02-19 06:33:53,276 - INFO - Setting up Playwright browser...
+2026-02-19 06:33:53,276 - ERROR - Error during profile scraping: Playwright is not installed. Install with: pip install playwright
+2026-02-19 06:33:53,276 - INFO - Closing Playwright browser...
+2026-02-19 06:33:53,276 - ERROR - ✗ Failed to scrape data for Djurdjani Wardaya (ID: -0SOAIQAAAAJ)
+2026-02-19 06:33:53,276 - INFO - Waiting between authors...
+2026-02-19 06:34:16,152 - INFO - Starting batch processing from CSV: author_database.csv
+2026-02-19 06:34:16,152 - INFO - Starting batch processing from CSV: author_database.csv
+2026-02-19 06:34:16,152 - INFO - Skipping row without a Google Scholar ID: {'ID': '1', 'Nama': 'Sumaryo Joyosumarto', 'GoogleScholarID': '', 'Status': 'Purnakarya'}
+2026-02-19 06:34:16,152 - INFO - Loaded author: Subaryono (ID: XcyOfG8AAAAJ)
+2026-02-19 06:34:16,152 - INFO - Skipping row without a Google Scholar ID: {'ID': '3', 'Nama': 'Istarno', 'GoogleScholarID': '', 'Status': 'Purnakarya'}
+2026-02-19 06:34:16,152 - INFO - Skipping row without a Google Scholar ID: {'ID': '4', 'Nama': 'Tarsisius Aris Sunantyo', 'GoogleScholarID': '', 'Status': 'Purnakarya'}
+2026-02-19 06:34:16,152 - INFO - Loaded author: Waljiyanto (ID: bf6K4O0AAAAJ)
+2026-02-19 06:34:16,152 - INFO - Loaded author: Harintaka (ID: XliPgAcAAAAJ)
+2026-02-19 06:34:16,152 - INFO - Loaded author: Prijono Nugroho Djodjomartono (ID: 5xOGpFkAAAAJ)
+2026-02-19 06:34:16,152 - INFO - Loaded author: Djurdjani Wardaya (ID: -0SOAIQAAAAJ)
+2026-02-19 06:34:16,152 - INFO - Loaded author: Nurrohmat Widjajanti (ID: U-w8I4UAAAAJ)
+2026-02-19 06:34:16,152 - INFO - Loaded author: Catur Aries Rokhmana (ID: Z5OOseEAAAAJ)
+2026-02-19 06:34:16,152 - INFO - Loaded author: Yulaikhah (ID: 2vN-lF4AAAAJ)
+2026-02-19 06:34:16,152 - INFO - Loaded author: Leni Sophia Heliani (ID: 0JvcXp4AAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Bilal Ma’ruf (ID: slbE0KsAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Trias Aditya Kurniawan M (ID: _-B2zEYAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Rochmad Muryamto (ID: oShZECIAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Diyono (ID: cm7zI5cAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Abdul Basith (ID: weadN_wAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Heri Sutanta (ID: _D477zkAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Purnama Budi Santosa (ID: 7IR6W1IAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: I Made Andi Arsana (ID: x2N_jBcAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Ruli Andaru (ID: gOVDxGYAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Dwi Lestari (ID: _zEKbnoAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Dedi Atunggal S.P. (ID: jlJ_M_MAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Bambang Kun Cahyono (ID: g3m5JIYAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Dany Puguh Laksono (ID: LsZIhbcAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Maritsa Faridatunnisa (ID: vWyXz6UAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Hilmiyati Ulinnuha (ID: PAAVcXcAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Febrian Fitryanik Susanta (ID: DWIm4joAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Cecep Pratama (ID: 5YFJgTQAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Mohamad Bagas Setiawan (ID: D85HnqsAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Ressy Fitria (ID: DzYo93AAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Loaded author: Calvin Wijaya (ID: xFUhWQkAAAAJ)
+2026-02-19 06:34:16,153 - INFO - Successfully loaded 29 authors from author_database.csv
+2026-02-19 06:34:16,153 - INFO - Processing author 1/29: Subaryono (ID: XcyOfG8AAAAJ)
+2026-02-19 06:34:16,153 - INFO - Starting to scrape Google Scholar profile for user: XcyOfG8AAAAJ
+2026-02-19 06:34:16,169 - INFO - Setting up Playwright browser...
+2026-02-19 06:34:16,808 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:34:16,809 - INFO - Navigating to: https://scholar.google.com/citations?user=XcyOfG8AAAAJ&hl=en
+2026-02-19 06:34:20,949 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:34:21,009 - INFO - Parsing publication list from page...
+2026-02-19 06:34:21,047 - INFO - Found 8 publication rows to process
+2026-02-19 06:34:21,047 - INFO - Row 1: Added publication 'Fuzzy information representation and processing in...' (Year: 1990, Citations: 262, Authors: 2)
+2026-02-19 06:34:21,047 - INFO - Row 2: Added publication 'Comparison of Boolean and fuzzy classification met...' (Year: 1992, Citations: 169, Authors: 2)
+2026-02-19 06:34:21,048 - INFO - Row 3: Added publication 'Evaluasi Pembuatan Mosaik Foto Udara Format Kecil ...' (Year: 2008, Citations: 4, Authors: 2)
+2026-02-19 06:34:21,048 - INFO - Row 4: Added publication 'Pemanfaatan Citra Satelit Resolusi Tinggi, DGPS, d...' (Year: 2003, Citations: 1, Authors: 2)
+2026-02-19 06:34:21,048 - INFO - Row 5: Added publication 'PENYEDIAAN DATA DAN INFORMASI DARI CITRA SATELIT Q...' (Year: 2004, Citations: , Authors: 2)
+2026-02-19 06:34:21,049 - INFO - Row 6: Added publication 'Penerapan Konsep Data Warehouse Untuk Pemantauan P...' (Year: 2003, Citations: , Authors: 2)
+2026-02-19 06:34:21,049 - INFO - Row 7: Added publication 'Preliminary assessment of the geometric performanc...' (Year: 1998, Citations: , Authors: 2)
+2026-02-19 06:34:21,049 - INFO - Row 8: Added publication 'PEMANFAATAN CITRA LANDSAT 7 ETM+ UNTUK EVALUASI PE...' (Year: , Citations: , Authors: 2)
+2026-02-19 06:34:21,049 - INFO - Successfully parsed 8 publications from the main page
+2026-02-19 06:34:21,049 - INFO - Starting to fetch detailed information for each publication (concurrent)...
+2026-02-19 06:34:21,049 - WARNING - Async httpx fetch failed, falling back to sequential driver: asyncio.run() cannot be called from a running event loop
+2026-02-19 06:34:21,056 - INFO - Falling back to driver for 8 publications
+2026-02-19 06:34:21,056 - WARNING - Playwright async fallback failed: asyncio.run() cannot be called from a running event loop; falling back to sequential driver.
+2026-02-19 06:34:21,056 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:_xSYboBqXhAC
+2026-02-19 06:34:27,438 - INFO - Parsing publication details...
+2026-02-19 06:34:27,438 - INFO - Found title: Fuzzy information representation and processing in conventional GIS software: database design and application
+2026-02-19 06:34:27,439 - INFO - Found 10 field sections to parse
+2026-02-19 06:34:27,439 - INFO - Found 2 authors: ['Fangju Wang', 'G Brent Hall, SUBARYONO']
+2026-02-19 06:34:27,439 - INFO - Found publication date: 1990/7/1
+2026-02-19 06:34:27,439 - INFO - Found abstract (length: 916 chars)
+2026-02-19 06:34:27,439 - INFO - Found total citations: Cited by 262
+2026-02-19 06:34:27,439 - INFO - Found venue from 'journal': International Journal of Geographical Information System
+2026-02-19 06:34:27,440 - INFO - No PDF link found
+2026-02-19 06:34:27,440 - INFO - Publication details extraction completed
+2026-02-19 06:34:33,070 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:IjCSPb-OGe4C
+2026-02-19 06:34:39,097 - INFO - Parsing publication details...
+2026-02-19 06:34:39,098 - INFO - Found title: Comparison of Boolean and fuzzy classification methods in land suitability analysis by using geographical information systems
+2026-02-19 06:34:39,098 - INFO - Found 10 field sections to parse
+2026-02-19 06:34:39,098 - INFO - Found 2 authors: ['GB Hall', 'F Wang, Subaryono']
+2026-02-19 06:34:39,098 - INFO - Found publication date: 1992/4
+2026-02-19 06:34:39,100 - INFO - Found abstract (length: 806 chars)
+2026-02-19 06:34:39,101 - INFO - Found total citations: Cited by 169
+2026-02-19 06:34:39,102 - INFO - Found venue from 'journal': Environment and Planning A
+2026-02-19 06:34:39,103 - INFO - PDF link: https://www.academia.edu/download/40822882/SID02.pdf
+2026-02-19 06:34:39,103 - INFO - Publication details extraction completed
+2026-02-19 06:34:45,194 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:HE397vMXCloC
+2026-02-19 06:34:52,230 - INFO - Parsing publication details...
+2026-02-19 06:34:52,230 - INFO - Found title: Evaluasi Pembuatan Mosaik Foto Udara Format Kecil Tidak Terkontrol menggunakan Perangkat Lunak Desain Grafis Komersial
+2026-02-19 06:34:52,231 - INFO - Found 9 field sections to parse
+2026-02-19 06:34:52,231 - INFO - Found 2 authors: ['Harintaka Subaryono', 'Endras Kurniawan']
+2026-02-19 06:34:52,231 - INFO - Found publication date: 2008
+2026-02-19 06:34:52,231 - INFO - Found abstract (length: 922 chars)
+2026-02-19 06:34:52,231 - INFO - Found total citations: Cited by 4
+2026-02-19 06:34:52,232 - INFO - Found venue from 'journal': Media Teknik
+2026-02-19 06:34:52,232 - INFO - No PDF link found
+2026-02-19 06:34:52,232 - INFO - Publication details extraction completed
+2026-02-19 06:35:00,498 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:AXPGKjj_ei8C
+2026-02-19 06:35:06,641 - INFO - Parsing publication details...
+2026-02-19 06:35:06,642 - INFO - Found title: Pemanfaatan Citra Satelit Resolusi Tinggi, DGPS, dan Sig Untuk mendeteksi Kondisi Penggunaan Lahan Di Kota Yogyakarta
+2026-02-19 06:35:06,642 - INFO - Found 7 field sections to parse
+2026-02-19 06:35:06,642 - INFO - Found 2 authors: ['Harintaka Subaryono', "Bilal Ma'ruf"]
+2026-02-19 06:35:06,642 - INFO - Found publication date: 2003
+2026-02-19 06:35:06,642 - INFO - Found abstract (length: 909 chars)
+2026-02-19 06:35:06,642 - INFO - Found total citations: Cited by 1
+2026-02-19 06:35:06,643 - INFO - Found venue from 'journal': text
+2026-02-19 06:35:06,643 - INFO - No PDF link found
+2026-02-19 06:35:06,643 - INFO - Publication details extraction completed
+2026-02-19 06:35:12,698 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:t6usbXjVLHcC
+2026-02-19 06:35:16,096 - INFO - Parsing publication details...
+2026-02-19 06:35:16,096 - INFO - Found title: PENYEDIAAN DATA DAN INFORMASI DARI CITRA SATELIT QUICKBIRD UNTUK PENGELOLAAN PAJAK BUMI DAN BANGUNAN PERKOTAAN= Utilizing Data and Information from QuickBird Satellite Imaging …
+2026-02-19 06:35:16,096 - INFO - Found 7 field sections to parse
+2026-02-19 06:35:16,096 - INFO - Found 2 authors: ['Hendro Kusumo Bagaskorol', 'Harintaka Subaryono']
+2026-02-19 06:35:16,096 - INFO - Found publication date: 2004
+2026-02-19 06:35:16,096 - INFO - Found abstract (length: 909 chars)
+2026-02-19 06:35:16,097 - INFO - Found venue from 'journal': Teknosains
+2026-02-19 06:35:16,097 - INFO - No PDF link found
+2026-02-19 06:35:16,097 - INFO - Publication details extraction completed
+2026-02-19 06:35:19,884 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:olpn-zPbct0C
+2026-02-19 06:35:25,699 - INFO - Parsing publication details...
+2026-02-19 06:35:25,699 - INFO - Found title: Penerapan Konsep Data Warehouse Untuk Pemantauan PeneiImaan PBB
+2026-02-19 06:35:25,699 - INFO - Found 7 field sections to parse
+2026-02-19 06:35:25,699 - INFO - Found 2 authors: ['Indra Hadi Widiyanto', 'Harintaka Subaryono']
+2026-02-19 06:35:25,699 - INFO - Found publication date: 2003
+2026-02-19 06:35:25,700 - INFO - Found abstract (length: 895 chars)
+2026-02-19 06:35:25,700 - INFO - Found venue from 'journal': Teknosains
+2026-02-19 06:35:25,700 - INFO - No PDF link found
+2026-02-19 06:35:25,700 - INFO - Publication details extraction completed
+2026-02-19 06:35:30,972 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:XiVPGOgt02cC
+2026-02-19 06:35:39,421 - INFO - Parsing publication details...
+2026-02-19 06:35:39,421 - INFO - Found title: Preliminary assessment of the geometric performance of satellite data imaged by avnir-adeos
+2026-02-19 06:35:39,421 - INFO - Found 7 field sections to parse
+2026-02-19 06:35:39,421 - INFO - Found 2 authors: ["Suta'at Subaryono", 'Priyono Nugroho Djurdjani']
+2026-02-19 06:35:39,421 - INFO - Found publication date: 1998
+2026-02-19 06:35:39,422 - INFO - Found abstract (length: 759 chars)
+2026-02-19 06:35:39,422 - INFO - Found venue from 'journal': Forum Teknik
+2026-02-19 06:35:39,422 - INFO - No PDF link found
+2026-02-19 06:35:39,422 - INFO - Publication details extraction completed
+2026-02-19 06:35:45,420 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XcyOfG8AAAAJ&citation_for_view=XcyOfG8AAAAJ:WA5NYHcadZ8C
+2026-02-19 06:35:52,304 - INFO - Parsing publication details...
+2026-02-19 06:35:52,305 - INFO - Found title: PEMANFAATAN CITRA LANDSAT 7 ETM+ UNTUK EVALUASI PENGGUNAAN LAHAN DALAM RENCANA UMUM TATA RUANG WILAYAH KABUPATEN TIMOR TENGAH SELATAN
+2026-02-19 06:35:52,305 - INFO - Found 3 field sections to parse
+2026-02-19 06:35:52,305 - INFO - Found 2 authors: ['Octas B Tallo', 'Harintaka Subaryono']
+2026-02-19 06:35:52,305 - INFO - Found abstract (length: 861 chars)
+2026-02-19 06:35:52,306 - INFO - No venue information found
+2026-02-19 06:35:52,306 - INFO - No PDF link found
+2026-02-19 06:35:52,306 - INFO - Publication details extraction completed
+2026-02-19 06:35:55,396 - INFO - Detail scraping completed: 8 successful, 0 failed
+2026-02-19 06:35:55,396 - INFO - Total publications processed: 8
+2026-02-19 06:35:55,396 - INFO - Closing Playwright browser...
+2026-02-19 06:35:55,445 - INFO - Saving 8 publications to output/XcyOfG8AAAAJ_scholar_data.json...
+2026-02-19 06:35:55,446 - INFO - ✓ Successfully saved data to output/XcyOfG8AAAAJ_scholar_data.json
+2026-02-19 06:35:55,446 - INFO - ✓ Successfully processed Subaryono: 8 publications saved to output/XcyOfG8AAAAJ_scholar_data.json
+2026-02-19 06:35:55,446 - INFO - Waiting between authors...
+2026-02-19 06:36:01,840 - INFO - Processing author 2/29: Waljiyanto (ID: bf6K4O0AAAAJ)
+2026-02-19 06:36:01,840 - INFO - Starting to scrape Google Scholar profile for user: bf6K4O0AAAAJ
+2026-02-19 06:36:01,840 - INFO - Setting up Playwright browser...
+2026-02-19 06:36:02,216 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:36:02,216 - INFO - Navigating to: https://scholar.google.com/citations?user=bf6K4O0AAAAJ&hl=en
+2026-02-19 06:36:07,641 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:36:07,689 - INFO - Parsing publication list from page...
+2026-02-19 06:36:07,706 - INFO - Found 8 publication rows to process
+2026-02-19 06:36:07,707 - INFO - Row 1: Added publication 'Pembuatan Peta dan Sistem Informasi Geospasial Lah...' (Year: , Citations: 11, Authors: 6)
+2026-02-19 06:36:07,707 - INFO - Row 2: Added publication 'Perhitungan Kecepatan Sedimentasi Melalui Pendekat...' (Year: 2017, Citations: 9, Authors: 4)
+2026-02-19 06:36:07,707 - INFO - Row 3: Added publication 'Penyusunan Model Konsepsual Basisdata untuk Sistem...' (Year: 2003, Citations: 9, Authors: 1)
+2026-02-19 06:36:07,707 - INFO - Row 4: Added publication 'Understanding the Urgency for 3D Cadastre in Indon...' (Year: 2009, Citations: 4, Authors: 6)
+2026-02-19 06:36:07,707 - INFO - Row 5: Added publication 'Perhitungan Volume dan Sebaran Sedimentasi Waduk S...' (Year: 2017, Citations: 1, Authors: 4)
+2026-02-19 06:36:07,707 - INFO - Row 6: Added publication 'The analysis of monitoring control point displacem...' (Year: 2017, Citations: 1, Authors: 5)
+2026-02-19 06:36:07,707 - INFO - Row 7: Added publication 'Pengukuran Laju Sedimentasi Waduk Sermo Berdasarka...' (Year: 2016, Citations: , Authors: 5)
+2026-02-19 06:36:07,707 - INFO - Row 8: Added publication 'Uji Kualitas Data Pengukuran Titik Kontrol Pemanta...' (Year: 2016, Citations: , Authors: 5)
+2026-02-19 06:36:07,707 - INFO - Successfully parsed 8 publications from the main page
+2026-02-19 06:36:07,707 - INFO - Starting to fetch detailed information for each publication (concurrent)...
+2026-02-19 06:36:07,707 - WARNING - Async httpx fetch failed, falling back to sequential driver: asyncio.run() cannot be called from a running event loop
+2026-02-19 06:36:07,707 - INFO - Falling back to driver for 8 publications
+2026-02-19 06:36:07,708 - WARNING - Playwright async fallback failed: asyncio.run() cannot be called from a running event loop; falling back to sequential driver.
+2026-02-19 06:36:07,708 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:u5HHmVD_uO8C
+2026-02-19 06:36:16,734 - INFO - Parsing publication details...
+2026-02-19 06:36:16,734 - INFO - Found title: Pembuatan Peta dan Sistem Informasi Geospasial Lahan Pertanian di Kecamatan Sentolo, Kabupaten Kulonprogo, Yogyakarta
+2026-02-19 06:36:16,734 - INFO - Found 8 field sections to parse
+2026-02-19 06:36:16,735 - INFO - Found 8 authors: ['Rochmad Muryamto', 'Waljiyanto Waljiyanto', 'Untung Rahardjo', 'Gondang Riyadi', 'Ruli Andaru', 'Iqbal Taftazani', 'Wahyu Marta', 'Annisa Farida']
+2026-02-19 06:36:16,735 - INFO - Found abstract (length: 1485 chars)
+2026-02-19 06:36:16,735 - INFO - Found total citations: Cited by 11
+2026-02-19 06:36:16,735 - INFO - Found venue from 'journal': Jurnal Pengabdian Kepada Masyarakat (Indonesian Journal of Community Engagement)
+2026-02-19 06:36:16,735 - INFO - PDF link: https://www.academia.edu/download/79455677/7997.pdf
+2026-02-19 06:36:16,735 - INFO - Publication details extraction completed
+2026-02-19 06:36:20,304 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:Tyk-4Ss8FVUC
+2026-02-19 06:36:26,754 - INFO - Parsing publication details...
+2026-02-19 06:36:26,754 - INFO - Found title: Perhitungan Kecepatan Sedimentasi Melalui Pendekatan Usle dan Pengukuran Kandungan Tanah dalam Air Sungai yang Masuk ke dalam Waduk Sermo
+2026-02-19 06:36:26,755 - INFO - Found 9 field sections to parse
+2026-02-19 06:36:26,755 - INFO - Found 4 authors: ['Bambang Kun Cahyono', 'Lukman Hakim', 'Waljiyanto Waljiyanto', 'Agus Darmawan Adhi']
+2026-02-19 06:36:26,755 - INFO - Found publication date: 2017/11
+2026-02-19 06:36:26,755 - INFO - Found abstract (length: 1630 chars)
+2026-02-19 06:36:26,755 - INFO - Found total citations: Cited by 9
+2026-02-19 06:36:26,755 - INFO - Found venue from 'journal': Jurnal Nasional Teknologi Terapan (JNTT)
+2026-02-19 06:36:26,756 - INFO - PDF link: https://www.academia.edu/download/113049382/20349.pdf
+2026-02-19 06:36:26,756 - INFO - Publication details extraction completed
+2026-02-19 06:36:31,531 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:2osOgNQ5qMEC
+2026-02-19 06:36:38,582 - INFO - Parsing publication details...
+2026-02-19 06:36:38,583 - INFO - Found title: Penyusunan Model Konsepsual Basisdata untuk Sistem Informasi Kadaster Multiguna.
+2026-02-19 06:36:38,583 - INFO - Found 8 field sections to parse
+2026-02-19 06:36:38,583 - INFO - Found 1 authors: ['Rochmad Muryamto']
+2026-02-19 06:36:38,583 - INFO - Found publication date: 2003
+2026-02-19 06:36:38,583 - INFO - Found abstract (length: 843 chars)
+2026-02-19 06:36:38,584 - INFO - Found total citations: Cited by 9
+2026-02-19 06:36:38,584 - INFO - Found venue from 'journal': Forum Teknik
+2026-02-19 06:36:38,584 - INFO - No PDF link found
+2026-02-19 06:36:38,584 - INFO - Publication details extraction completed
+2026-02-19 06:36:46,582 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:d1gkVwhDpl0C
+2026-02-19 06:36:50,943 - INFO - Parsing publication details...
+2026-02-19 06:36:50,943 - INFO - Found title: Understanding the Urgency for 3D Cadastre in Indonesia: Development & Visualization of a Hybrid 3D Cadastre Model
+2026-02-19 06:36:50,943 - INFO - Found 5 field sections to parse
+2026-02-19 06:36:50,943 - INFO - Found 6 authors: ['T Aditya', 'Waljiyanto Subaryono', 'Diyono Istarno', 'R Untung', 'M ROCHMAD', 'I FEBRI']
+2026-02-19 06:36:50,943 - INFO - Found publication date: 2009
+2026-02-19 06:36:50,944 - INFO - Found total citations: Cited by 4
+2026-02-19 06:36:50,944 - INFO - Found venue from 'journal': 10th South East Asian Survey Congress
+2026-02-19 06:36:50,944 - INFO - No PDF link found
+2026-02-19 06:36:50,944 - INFO - Publication details extraction completed
+2026-02-19 06:36:55,852 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:zYLM7Y9cAGgC
+2026-02-19 06:37:02,277 - INFO - Parsing publication details...
+2026-02-19 06:37:02,278 - INFO - Found title: Perhitungan Volume dan Sebaran Sedimentasi Waduk Sermo Berdasarkan Kondisi Awal Pembangunan dan Keadaan Terkini di Tahun 2016
+2026-02-19 06:37:02,278 - INFO - Found 5 field sections to parse
+2026-02-19 06:37:02,278 - INFO - Found 4 authors: ['Bambang Kun Cahyono', 'Oktavinno Permadi', 'Waljiyanto Waljiyanto', 'Rofika Dyah Maharani']
+2026-02-19 06:37:02,278 - INFO - Found publication date: 2017/11/11
+2026-02-19 06:37:02,278 - INFO - Found abstract (length: 1567 chars)
+2026-02-19 06:37:02,278 - INFO - Found total citations: Cited by 1
+2026-02-19 06:37:02,280 - INFO - No venue information found
+2026-02-19 06:37:02,281 - INFO - PDF link: https://www.academia.edu/download/113049397/FullPaper_PerhitunganVolumeDanSebaranSedimentasiWadukSermoBerdasarkanKondisiAwalPembangunanDanKeadaanTerkiniDiTahun2016_BambangKun-Walji.pdf
+2026-02-19 06:37:02,281 - INFO - Publication details extraction completed
+2026-02-19 06:37:08,389 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:u-x6o8ySG0sC
+2026-02-19 06:37:13,369 - INFO - Parsing publication details...
+2026-02-19 06:37:13,370 - INFO - Found title: The analysis of monitoring control point displacement of Sermo Dam based on the 2015-2016 GNSS data
+2026-02-19 06:37:13,370 - INFO - Found 10 field sections to parse
+2026-02-19 06:37:13,370 - INFO - Found 6 authors: ['Yulaikhah', 'W Nurrohmat', 'N Prijono', 'KC Bambang, Waljiyanto', 'DA Agus', 'MI Taftazani']
+2026-02-19 06:37:13,370 - INFO - Found publication date: 2017/7/25
+2026-02-19 06:37:13,370 - INFO - Found abstract (length: 904 chars)
+2026-02-19 06:37:13,371 - INFO - Found total citations: Cited by 1
+2026-02-19 06:37:13,371 - INFO - Found venue from 'journal': AIP Conference Proceedings
+2026-02-19 06:37:13,371 - INFO - PDF link: https://pubs.aip.org/aip/acp/article-pdf/doi/10.1063/1.4987078/13746827/040014_1_online.pdf
+2026-02-19 06:37:13,371 - INFO - Publication details extraction completed
+2026-02-19 06:37:22,394 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:IjCSPb-OGe4C
+2026-02-19 06:37:28,606 - INFO - Parsing publication details...
+2026-02-19 06:37:28,606 - INFO - Found title: Pengukuran Laju Sedimentasi Waduk Sermo Berdasarkan Analisa Data Pengukuran Batimetri, Kandungan Tanah dalam Air Sungai, serta Analisa Sedimentasi Dasar Waduk
+2026-02-19 06:37:28,607 - INFO - Found 2 field sections to parse
+2026-02-19 06:37:28,607 - INFO - Found 7 authors: ['Bambang Kun Cahyono', 'Agus Darmawan Adi', 'Sumarno Sumarno', 'Yulaikhah Yulaikhah', 'Nurrohmat Widjajanti', 'Waljiyanto Waljiyanto', 'Muhammad Iqbal Taftazani']
+2026-02-19 06:37:28,607 - INFO - Found publication date: 2016
+2026-02-19 06:37:28,607 - INFO - No venue information found
+2026-02-19 06:37:28,608 - INFO - No PDF link found
+2026-02-19 06:37:28,608 - INFO - Publication details extraction completed
+2026-02-19 06:37:35,281 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=bf6K4O0AAAAJ&citation_for_view=bf6K4O0AAAAJ:UeHWp8X0CEIC
+2026-02-19 06:37:39,763 - INFO - Parsing publication details...
+2026-02-19 06:37:39,763 - INFO - Found title: Uji Kualitas Data Pengukuran Titik Kontrol Pemantauan Waduk Sermo Tahun 2016
+2026-02-19 06:37:39,764 - INFO - Found 2 field sections to parse
+2026-02-19 06:37:39,764 - INFO - Found 7 authors: ['Muhammad Iqbal Taftazani', 'Bambang Kun Cahyono', 'Waljiyanto Waljiyanto', 'Prijono Nugroho', 'Yulaikhah Yulaikhah', 'Nurrohmat Widjajanti', 'Agus Darmawan Adi']
+2026-02-19 06:37:39,764 - INFO - Found publication date: 2016
+2026-02-19 06:37:39,764 - INFO - No venue information found
+2026-02-19 06:37:39,765 - INFO - No PDF link found
+2026-02-19 06:37:39,765 - INFO - Publication details extraction completed
+2026-02-19 06:37:43,362 - INFO - Detail scraping completed: 8 successful, 0 failed
+2026-02-19 06:37:43,362 - INFO - Total publications processed: 8
+2026-02-19 06:37:43,362 - INFO - Closing Playwright browser...
+2026-02-19 06:37:43,414 - INFO - Saving 8 publications to output/bf6K4O0AAAAJ_scholar_data.json...
+2026-02-19 06:37:43,415 - INFO - ✓ Successfully saved data to output/bf6K4O0AAAAJ_scholar_data.json
+2026-02-19 06:37:43,415 - INFO - ✓ Successfully processed Waljiyanto: 8 publications saved to output/bf6K4O0AAAAJ_scholar_data.json
+2026-02-19 06:37:43,415 - INFO - Waiting between authors...
+2026-02-19 06:37:47,136 - INFO - Processing author 3/29: Harintaka (ID: XliPgAcAAAAJ)
+2026-02-19 06:37:47,136 - INFO - Starting to scrape Google Scholar profile for user: XliPgAcAAAAJ
+2026-02-19 06:37:47,136 - INFO - Setting up Playwright browser...
+2026-02-19 06:37:47,646 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:37:47,646 - INFO - Navigating to: https://scholar.google.com/citations?user=XliPgAcAAAAJ&hl=en
+2026-02-19 06:37:52,520 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:37:52,647 - INFO - Clicked 'Load More' button (attempt 1)
+2026-02-19 06:37:56,259 - INFO - Parsing publication list from page...
+2026-02-19 06:37:56,292 - INFO - Found 75 publication rows to process
+2026-02-19 06:37:56,293 - INFO - Row 1: Added publication 'Implementasi Metode Convolutional Neural Network U...' (Year: 2018, Citations: 178, Authors: 2)
+2026-02-19 06:37:56,293 - INFO - Row 2: Added publication 'Indonesian DEMNAS: DSM or DTM?...' (Year: 2019, Citations: 39, Authors: 1)
+2026-02-19 06:37:56,293 - INFO - Row 3: Added publication 'Identifikasi Genangan Banjir di Wilayah DKI Jakart...' (Year: 2021, Citations: 24, Authors: 2)
+2026-02-19 06:37:56,294 - INFO - Row 4: Added publication 'Current land subsidence in Jakarta: a multi-track ...' (Year: 2024, Citations: 20, Authors: 5)
+2026-02-19 06:37:56,294 - INFO - Row 5: Added publication 'Integration of the latest digital terrain model (D...' (Year: 2021, Citations: 18, Authors: 6)
+2026-02-19 06:37:56,294 - INFO - Row 6: Added publication 'Multidimensional displacement analysis of Semeru V...' (Year: 2024, Citations: 13, Authors: 2)
+2026-02-19 06:37:56,295 - INFO - Row 7: Added publication 'Analisis Kehandalan Ekstraksi Garis Tepi Bangunan ...' (Year: 2022, Citations: 10, Authors: 2)
+2026-02-19 06:37:56,295 - INFO - Row 8: Added publication 'Dynamics topography monitoring in peatland using t...' (Year: 2022, Citations: 9, Authors: 4)
+2026-02-19 06:37:56,295 - INFO - Row 9: Added publication 'PEMANFAATAN TEKNOLOGI UAV (UNMANNED AERIAL VEHICLE...' (Year: 2020, Citations: 9, Authors: 1)
+2026-02-19 06:37:56,295 - INFO - Row 10: Added publication 'FREE GLOBAL DEM: CONVERTING DSM TO DTM AND ITS APP...' (Year: 2019, Citations: 9, Authors: 1)
+2026-02-19 06:37:56,296 - INFO - Row 11: Added publication 'Implementation of convolutional neural network met...' (Year: 2018, Citations: 9, Authors: 1)
+2026-02-19 06:37:56,296 - INFO - Row 12: Added publication 'Pembuatan Model 3D Bangunan LoD3 Dengan Pemanfaata...' (Year: 2023, Citations: 8, Authors: 2)
+2026-02-19 06:37:56,296 - INFO - Row 13: Added publication 'The latest DTM using InSAR for dynamics detection ...' (Year: 2021, Citations: 8, Authors: 4)
+2026-02-19 06:37:56,296 - INFO - Row 14: Added publication 'Improved deep learning segmentation of outdoor poi...' (Year: 2024, Citations: 7, Authors: 2)
+2026-02-19 06:37:56,297 - INFO - Row 15: Added publication 'Automatic point cloud segmentation using RANSAC an...' (Year: 2023, Citations: 7, Authors: 2)
+2026-02-19 06:37:56,297 - INFO - Row 16: Added publication 'Pemodelan Bangunan 3D Menggunakan Footprint Bangun...' (Year: 2021, Citations: 7, Authors: 2)
+2026-02-19 06:37:56,297 - INFO - Row 17: Added publication 'Analisis konversi ruang terbuka hijau menjadi peng...' (Year: 2008, Citations: 7, Authors: 2)
+2026-02-19 06:37:56,297 - INFO - Row 18: Added publication 'Integration PS-InSAR and MODIS PWV Data to Monitor...' (Year: 2019, Citations: 6, Authors: 1)
+2026-02-19 06:37:56,298 - INFO - Row 19: Added publication 'Ekstraksi Fitur Bangunan Secara Cepat pada Foto UA...' (Year: 2019, Citations: 6, Authors: 2)
+2026-02-19 06:37:56,298 - INFO - Row 20: Added publication 'Assessment of low cost small format aerial photogr...' (Year: 2009, Citations: 6, Authors: 2)
+2026-02-19 06:37:56,298 - INFO - Row 21: Added publication 'Integration of Cloud Score+ with Sentinel-2 Harmon...' (Year: 2024, Citations: 5, Authors: 1)
+2026-02-19 06:37:56,298 - INFO - Row 22: Added publication 'Precise coseismic displacement related to the 2022...' (Year: 2023, Citations: 5, Authors: 2)
+2026-02-19 06:37:56,299 - INFO - Row 23: Added publication 'Vertical accuracy evaluation of digital terrain mo...' (Year: 2021, Citations: 5, Authors: 4)
+2026-02-19 06:37:56,299 - INFO - Row 24: Added publication 'Analysis and Evaluation of PointNet for Indoor Off...' (Year: 2023, Citations: 4, Authors: 1)
+2026-02-19 06:37:56,299 - INFO - Row 25: Added publication 'Pembuatan Model Prediksi Lahan Terbangun di Kabupa...' (Year: 2023, Citations: 4, Authors: 2)
+2026-02-19 06:37:56,299 - INFO - Row 26: Added publication 'Utilization of sentinel satellite for vertical def...' (Year: 2019, Citations: 4, Authors: 1)
+2026-02-19 06:37:56,299 - INFO - Row 27: Added publication 'EVALUASI HASIL INTEGRASI BERBAGAI KETELITIAN DATA ...' (Year: 2018, Citations: 4, Authors: 2)
+2026-02-19 06:37:56,299 - INFO - Row 28: Added publication 'PEMBUATAN MODEL ELEVASI DIGITAL DARI STEREOPLOTTIN...' (Year: 2013, Citations: 4, Authors: 2)
+2026-02-19 06:37:56,299 - INFO - Row 29: Added publication 'Klasifikasi berorientasi obyek pada citra satelit ...' (Year: 2009, Citations: 4, Authors: 2)
+2026-02-19 06:37:56,300 - INFO - Row 30: Added publication 'Evaluasi Penerapan Mini Bundle Block Adjustment pa...' (Year: 2008, Citations: 4, Authors: 2)
+2026-02-19 06:37:56,300 - INFO - Row 31: Added publication 'EVALUASI PEMBUATAN MOSAIK FOTO UDARA FORMAT KECIL ...' (Year: 2008, Citations: 4, Authors: 2)
+2026-02-19 06:37:56,300 - INFO - Row 32: Added publication 'The application of mask R-CNN for building extract...' (Year: 2023, Citations: 3, Authors: 2)
+2026-02-19 06:37:56,300 - INFO - Row 33: Added publication 'Kajian keandalan true orthophoto untuk pemetaan sk...' (Year: 2021, Citations: 3, Authors: 2)
+2026-02-19 06:37:56,300 - INFO - Row 34: Added publication 'Utilization of DSM and DTM for Spatial Information...' (Year: 2020, Citations: 3, Authors: 1)
+2026-02-19 06:37:56,300 - INFO - Row 35: Added publication 'Indonesian DEMNAS: DSM or DTM? AGERS 2019–2nd IEEE...' (Year: 2019, Citations: 3, Authors: 2)
+2026-02-19 06:37:56,300 - INFO - Row 36: Added publication 'Perbandingan ragam input model ketinggian untuk pe...' (Year: 2018, Citations: 3, Authors: 2)
+2026-02-19 06:37:56,300 - INFO - Row 37: Added publication 'Evaluasi Ketelitian Penentuan Kedalaman Perairan D...' (Year: 2017, Citations: 3, Authors: 2)
+2026-02-19 06:37:56,301 - INFO - Row 38: Added publication 'Uneven Land Subsidence Patterns Along Java's North...' (Year: 2025, Citations: 2, Authors: 2)
+2026-02-19 06:37:56,301 - INFO - Row 39: Added publication 'Analysis of Water Quality Dynamics of Sentarum Lak...' (Year: 2025, Citations: 2, Authors: 1)
+2026-02-19 06:37:56,301 - INFO - Row 40: Added publication 'Comparative Analysis of the Semantic Conditions of...' (Year: 2023, Citations: 2, Authors: 2)
+2026-02-19 06:37:56,301 - INFO - Row 41: Added publication 'Vegetation Height Estimation using Satellite Remot...' (Year: 2021, Citations: 2, Authors: 3)
+2026-02-19 06:37:56,301 - INFO - Row 42: Added publication 'Deteksi Area Bekas Kebakaran Hutan dan Lahan Mengg...' (Year: 2020, Citations: 2, Authors: 2)
+2026-02-19 06:37:56,301 - INFO - Row 43: Added publication 'Comparison of the Latest DTM with DEM Pleiades in ...' (Year: 2020, Citations: 2, Authors: 2)
+2026-02-19 06:37:56,301 - INFO - Row 44: Added publication 'KAJIAN TEKNIK STEREO PLOTTING PADA FOTO UDARA FORM...' (Year: 2020, Citations: 2, Authors: 1)
+2026-02-19 06:37:56,301 - INFO - Row 45: Added publication 'Kajian Kehandalan Hasil Ekstraksi Bangunan Secara ...' (Year: 2019, Citations: 2, Authors: 1)
+2026-02-19 06:37:56,302 - INFO - Row 46: Added publication 'Integration PS-InSAR and MODIS PWV data to monitor...' (Year: 2019, Citations: 2, Authors: 2)
+2026-02-19 06:37:56,302 - INFO - Row 47: Added publication 'Pemodelan Virtual Bangunan Arkeologi Candi Kelir d...' (Year: 2008, Citations: 2, Authors: 2)
+2026-02-19 06:37:56,302 - INFO - Row 48: Added publication 'Penyatuan Bidang-Bidang Tanah Melayang Menggunakan...' (Year: 2008, Citations: 2, Authors: 2)
+2026-02-19 06:37:56,302 - INFO - Row 49: Added publication 'Ekstraksi otomatis tapak bangunan (building footpr...' (Year: 2025, Citations: 1, Authors: 2)
+2026-02-19 06:37:56,302 - INFO - Row 50: Added publication 'Investigating the Impact of Enhanced Images on 3D ...' (Year: 2025, Citations: 1, Authors: 2)
+2026-02-19 06:37:56,302 - INFO - Row 51: Added publication 'Penggunaan Generic Atmospheric Correction Online S...' (Year: 2019, Citations: 1, Authors: 2)
+2026-02-19 06:37:56,302 - INFO - Row 52: Added publication 'Pengaruh sistem referensi tinggi Digital Elevation...' (Year: 2019, Citations: 1, Authors: 1)
+2026-02-19 06:37:56,302 - INFO - Row 53: Added publication 'Pemanfaatan Citra Satelit Resolusi Tinggi, DGPS, d...' (Year: 2006, Citations: 1, Authors: 2)
+2026-02-19 06:37:56,302 - INFO - Row 54: Added publication 'Kajian Pemanfaatan Jaringan Saraf Tiruan Untuk Kla...' (Year: 2006, Citations: 1, Authors: 2)
+2026-02-19 06:37:56,303 - INFO - Row 55: Added publication 'Unveiling Climate-Driven Water Surface Dynamics in...' (Year: 2025, Citations: , Authors: 1)
+2026-02-19 06:37:56,303 - INFO - Row 56: Added publication 'Change Detection of Topographic Features using Ite...' (Year: 2025, Citations: , Authors: 1)
+2026-02-19 06:37:56,303 - INFO - Row 57: Added publication 'Development of Three JS-based 3D Scene with Seamle...' (Year: 2025, Citations: , Authors: 2)
+2026-02-19 06:37:56,303 - INFO - Row 58: Added publication 'Analisis ketelitian horizontal dan vertikal data L...' (Year: 2024, Citations: , Authors: 2)
+2026-02-19 06:37:56,303 - INFO - Row 59: Added publication 'Assessing Three-Dimensional Displacement in the Lo...' (Year: 2023, Citations: , Authors: 1)
+2026-02-19 06:37:56,303 - INFO - Row 60: Added publication 'Improving UAV Image Acquisition Efficiency and Ort...' (Year: 2023, Citations: , Authors: 3)
+2026-02-19 06:37:56,304 - INFO - Row 61: Added publication 'ANALISIS PENURUNAN MUKA TANAH MENGGUNAKAN CITRA SE...' (Year: 2022, Citations: , Authors: 3)
+2026-02-19 06:37:56,304 - INFO - Row 62: Added publication 'Procjena visinske točnosti digitalnog modela teren...' (Year: 2021, Citations: , Authors: 4)
+2026-02-19 06:37:56,304 - INFO - Row 63: Added publication 'Vertical Accuracy Evaluation of Digital Terrain Mo...' (Year: 2021, Citations: , Authors: 4)
+2026-02-19 06:37:56,304 - INFO - Row 64: Added publication 'Utilization of UAV (Unmanned Aerial Vehicle) Techn...' (Year: 2020, Citations: , Authors: 2)
+2026-02-19 06:37:56,304 - INFO - Row 65: Added publication 'Harintaka. Indonesian DEMNAS: DSM or DTM...' (Year: 2019, Citations: , Authors: 1)
+2026-02-19 06:37:56,304 - INFO - Row 66: Added publication 'Pemetaan Tingkat Bahaya Erosi Menggunakan Metode R...' (Year: 2018, Citations: , Authors: 2)
+2026-02-19 06:37:56,304 - INFO - Row 67: Added publication 'Analysis of object oriented classification on high...' (Year: 2016, Citations: , Authors: 2)
+2026-02-19 06:37:56,304 - INFO - Row 68: Added publication 'Identifikasi Permasalahan Batas Daerah di Lapangan...' (Year: 2011, Citations: , Authors: 1)
+2026-02-19 06:37:56,305 - INFO - Row 69: Added publication 'Kajian Fotogrametri Jarak Dekat Menggunakan Kamera...' (Year: 2011, Citations: , Authors: 2)
+2026-02-19 06:37:56,305 - INFO - Row 70: Added publication 'Pemanfaatan Citra Satelit ALOS AVNIR-2 Untuk Ident...' (Year: 2011, Citations: , Authors: 2)
+2026-02-19 06:37:56,305 - INFO - Row 71: Added publication 'Pemodelan 3D Bangunan Arkeologi Besar Menggunakan ...' (Year: 2011, Citations: , Authors: 1)
+2026-02-19 06:37:56,305 - INFO - Row 72: Added publication 'Kajian Pemanfaatan Citra Satelit Resolusi Tinggi U...' (Year: 2010, Citations: , Authors: 2)
+2026-02-19 06:37:56,305 - INFO - Row 73: Added publication 'Permasalahan Ekstraksi Ketinggian Secara Otomatis ...' (Year: 2010, Citations: , Authors: 1)
+2026-02-19 06:37:56,305 - INFO - Row 74: Added publication 'Kajian Penggunaan Citra Satelit Quickbird untuk Pe...' (Year: 2010, Citations: , Authors: 2)
+2026-02-19 06:37:56,305 - INFO - Row 75: Added publication 'Pemodelan Ketidakstabilan Kamera Dan Gerakan Pesaw...' (Year: 2009, Citations: , Authors: 2)
+2026-02-19 06:37:56,305 - INFO - Successfully parsed 75 publications from the main page
+2026-02-19 06:37:56,305 - INFO - Starting to fetch detailed information for each publication (concurrent)...
+2026-02-19 06:37:56,306 - WARNING - Async httpx fetch failed, falling back to sequential driver: asyncio.run() cannot be called from a running event loop
+2026-02-19 06:37:56,306 - INFO - Falling back to driver for 75 publications
+2026-02-19 06:37:56,306 - WARNING - Playwright async fallback failed: asyncio.run() cannot be called from a running event loop; falling back to sequential driver.
+2026-02-19 06:37:56,306 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:aDl3D7KC1E4C
+2026-02-19 06:38:00,851 - INFO - Parsing publication details...
+2026-02-19 06:38:00,851 - INFO - Found title: Implementasi Metode Convolutional Neural Network Untuk Klasifikasi Tanaman Pada Citra Resolusi Tinggi
+2026-02-19 06:38:00,851 - INFO - Found 6 field sections to parse
+2026-02-19 06:38:00,851 - INFO - Found 2 authors: ['EN Arrofiqoh', 'H Harintaka']
+2026-02-19 06:38:00,851 - INFO - Found publication date: 2018
+2026-02-19 06:38:00,851 - INFO - Found abstract (length: 1593 chars)
+2026-02-19 06:38:00,852 - INFO - Found total citations: Cited by 178
+2026-02-19 06:38:00,852 - INFO - Found venue from 'journal': Jurnal Ilmiah Geomatika
+2026-02-19 06:38:00,852 - INFO - PDF link: https://scholar.archive.org/work/wjhpagxekfhgvihyldtsifu7ei/access/wayback/http://jurnal.big.go.id/index.php/GM/article/download/810/810
+2026-02-19 06:38:00,852 - INFO - Publication details extraction completed
+2026-02-19 06:38:06,528 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:ifOnle78iJkC
+2026-02-19 06:38:15,621 - INFO - Parsing publication details...
+2026-02-19 06:38:15,622 - INFO - Found title: Indonesian DEMNAS: DSM or DTM?
+2026-02-19 06:38:15,622 - INFO - Found 8 field sections to parse
+2026-02-19 06:38:15,622 - INFO - Found 1 authors: ['Atriyon Julzarika, Harintaka']
+2026-02-19 06:38:15,622 - INFO - Found publication date: 2019/8/26
+2026-02-19 06:38:15,622 - INFO - Found abstract (length: 895 chars)
+2026-02-19 06:38:15,622 - INFO - Found total citations: Cited by 39
+2026-02-19 06:38:15,623 - INFO - Found venue from 'conference': 2019 IEEE Asia-Pacific Conference on Geoscience, Electronics and Remote Sensing Technology (AGERS)
+2026-02-19 06:38:15,623 - INFO - No PDF link found
+2026-02-19 06:38:15,623 - INFO - Publication details extraction completed
+2026-02-19 06:38:18,934 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:PuOEWVtPfzwC
+2026-02-19 06:38:23,273 - INFO - Parsing publication details...
+2026-02-19 06:38:23,273 - INFO - Found title: Identifikasi Genangan Banjir di Wilayah DKI Jakarta Menggunakan Citra Satelit Sentinel-1
+2026-02-19 06:38:23,273 - INFO - Found 9 field sections to parse
+2026-02-19 06:38:23,273 - INFO - Found 2 authors: ['Ana Mardhiyana Alawiyah', 'Harintaka Harintaka']
+2026-02-19 06:38:23,273 - INFO - Found publication date: 2021/12
+2026-02-19 06:38:23,274 - INFO - Found abstract (length: 894 chars)
+2026-02-19 06:38:23,274 - INFO - Found total citations: Cited by 24
+2026-02-19 06:38:23,274 - INFO - Found venue from 'journal': JGISE: Journal of Geospatial Information Science and Engineering
+2026-02-19 06:38:23,274 - INFO - No PDF link found
+2026-02-19 06:38:23,274 - INFO - Publication details extraction completed
+2026-02-19 06:38:28,955 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:hefNtdE4IMkC
+2026-02-19 06:38:35,109 - INFO - Parsing publication details...
+2026-02-19 06:38:35,110 - INFO - Found title: Current land subsidence in Jakarta: a multi-track SBAS InSAR analysis during 2017–2022 using C-band SAR data
+2026-02-19 06:38:35,110 - INFO - Found 10 field sections to parse
+2026-02-19 06:38:35,110 - INFO - Found 5 authors: ['Harintaka Harintaka', 'Argo Galih Suhadha', 'Agung Syetiawan', 'Mohammad Ardha', 'Anisa Rarasati']
+2026-02-19 06:38:35,110 - INFO - Found publication date: 2024/1/1
+2026-02-19 06:38:35,111 - INFO - Found abstract (length: 922 chars)
+2026-02-19 06:38:35,111 - INFO - Found total citations: Cited by 20
+2026-02-19 06:38:35,111 - INFO - Found venue from 'journal': Geocarto International
+2026-02-19 06:38:35,112 - INFO - PDF link: https://www.tandfonline.com/doi/pdf/10.1080/10106049.2024.2364726
+2026-02-19 06:38:35,112 - INFO - Publication details extraction completed
+2026-02-19 06:38:38,941 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:3lUAU8Oskd0C
+2026-02-19 06:38:43,649 - INFO - Parsing publication details...
+2026-02-19 06:38:43,649 - INFO - Found title: Integration of the latest digital terrain model (DTM) with Synthetic aperture radar (SAR) bathymetry
+2026-02-19 06:38:43,649 - INFO - Found 10 field sections to parse
+2026-02-19 06:38:43,649 - INFO - Found 6 authors: ['Atriyon Julzarika', 'Trias Aditya', 'S Subaryono', 'H Harintaka', 'Ratna Sari Dewi', 'Luki Subehi']
+2026-02-19 06:38:43,649 - INFO - Found publication date: 2021
+2026-02-19 06:38:43,650 - INFO - Found abstract (length: 1418 chars)
+2026-02-19 06:38:43,650 - INFO - Found total citations: Cited by 18
+2026-02-19 06:38:43,650 - INFO - Found venue from 'journal': Journal of Degraded and Mining Lands Management
+2026-02-19 06:38:43,650 - INFO - PDF link: https://www.researchgate.net/profile/Atriyon-Julzarika/publication/350562676_Integration_of_the_latest_Digital_Terrain_Model_DTM_with_Synthetic_Aperture_Radar_SAR_Bathymetry/links/606da576299bf13f5d600b6f/Integration-of-the-latest-Digital-Terrain-Model-DTM-with-Synthetic-Aperture-Radar-SAR-Bathymetry.pdf
+2026-02-19 06:38:43,650 - INFO - Publication details extraction completed
+2026-02-19 06:38:49,280 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:w2UhwfzvF0QC
+2026-02-19 06:38:53,199 - INFO - Parsing publication details...
+2026-02-19 06:38:53,199 - INFO - Found title: Multidimensional displacement analysis of Semeru Volcano, Indonesia following December 2021 eruption from multitrack InSAR observation
+2026-02-19 06:38:53,199 - INFO - Found 10 field sections to parse
+2026-02-19 06:38:53,199 - INFO - Found 2 authors: ['Argo Galih Suhadha', 'Harintaka Harintaka']
+2026-02-19 06:38:53,199 - INFO - Found publication date: 2024/4
+2026-02-19 06:38:53,200 - INFO - Found abstract (length: 903 chars)
+2026-02-19 06:38:53,200 - INFO - Found total citations: Cited by 13
+2026-02-19 06:38:53,200 - INFO - Found venue from 'journal': Earth Science Informatics
+2026-02-19 06:38:53,200 - INFO - No PDF link found
+2026-02-19 06:38:53,200 - INFO - Publication details extraction completed
+2026-02-19 06:38:56,254 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:TGkaJS32XoUC
+2026-02-19 06:39:02,500 - INFO - Parsing publication details...
+2026-02-19 06:39:02,500 - INFO - Found title: Analisis Kehandalan Ekstraksi Garis Tepi Bangunan dari Data Foto Udara Menggunakan Pendekatan Deep Learning Berbasis Mask R-CNN
+2026-02-19 06:39:02,500 - INFO - Found 9 field sections to parse
+2026-02-19 06:39:02,500 - INFO - Found 2 authors: ['Agri Kristal', 'Harintaka Harintaka']
+2026-02-19 06:39:02,500 - INFO - Found publication date: 2022/4/10
+2026-02-19 06:39:02,501 - INFO - Found abstract (length: 878 chars)
+2026-02-19 06:39:02,501 - INFO - Found total citations: Cited by 10
+2026-02-19 06:39:02,501 - INFO - Found venue from 'journal': Geoid
+2026-02-19 06:39:02,501 - INFO - No PDF link found
+2026-02-19 06:39:02,501 - INFO - Publication details extraction completed
+2026-02-19 06:39:06,829 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:J3LtWjKFLicC
+2026-02-19 06:39:11,383 - INFO - Parsing publication details...
+2026-02-19 06:39:11,383 - INFO - Found title: Dynamics topography monitoring in peatland using the latest digital terrain model
+2026-02-19 06:39:11,383 - INFO - Found 9 field sections to parse
+2026-02-19 06:39:11,383 - INFO - Found 4 authors: ['Atriyon Julzarika', 'Trias Aditya', 'Subaryono Subaryono', 'Harintaka Harintaka']
+2026-02-19 06:39:11,383 - INFO - Found publication date: 2022/2/16
+2026-02-19 06:39:11,384 - INFO - Found abstract (length: 1577 chars)
+2026-02-19 06:39:11,384 - INFO - Found total citations: Cited by 9
+2026-02-19 06:39:11,384 - INFO - Found venue from 'journal': Journal of Applied Engineering Science
+2026-02-19 06:39:11,384 - INFO - PDF link: https://aseestant.ceon.rs/index.php/jaes/article/download/31522/19617/
+2026-02-19 06:39:11,384 - INFO - Publication details extraction completed
+2026-02-19 06:39:15,322 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:WWeOtg8bX_EC
+2026-02-19 06:39:23,383 - INFO - Parsing publication details...
+2026-02-19 06:39:23,383 - INFO - Found title: PEMANFAATAN TEKNOLOGI UAV (UNMANNED AERIAL VEHICLE) UNTUK IDENTIFIKASI DAN KLASIFIKASI JENIS-JENIS KERUSAKAN JALAN
+2026-02-19 06:39:23,383 - INFO - Found 9 field sections to parse
+2026-02-19 06:39:23,384 - INFO - Found 1 authors: ['Iradaf Mandaya, Harintaka']
+2026-02-19 06:39:23,384 - INFO - Found publication date: 2020/11/4
+2026-02-19 06:39:23,384 - INFO - Found abstract (length: 1620 chars)
+2026-02-19 06:39:23,384 - INFO - Found total citations: Cited by 9
+2026-02-19 06:39:23,384 - INFO - Found venue from 'journal': Rekayasa Sipil
+2026-02-19 06:39:23,384 - INFO - PDF link: https://rekayasasipil.ub.ac.id/index.php/rs/article/view/698/477
+2026-02-19 06:39:23,384 - INFO - Publication details extraction completed
+2026-02-19 06:39:26,907 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:W2uZP3ddy8sC
+2026-02-19 06:39:30,245 - INFO - Parsing publication details...
+2026-02-19 06:39:30,245 - INFO - Found title: FREE GLOBAL DEM: CONVERTING DSM TO DTM AND ITS APPLICATIONS.
+2026-02-19 06:39:30,245 - INFO - Found 6 field sections to parse
+2026-02-19 06:39:30,245 - INFO - Found 1 authors: ['Atriyon Julzarika, Harintaka']
+2026-02-19 06:39:30,245 - INFO - Found publication date: 2019/10/1
+2026-02-19 06:39:30,245 - INFO - Found abstract (length: 1512 chars)
+2026-02-19 06:39:30,245 - INFO - Found total citations: Cited by 9
+2026-02-19 06:39:30,246 - INFO - Found venue from 'journal': International Archives of the Photogrammetry, Remote Sensing & Spatial Information Sciences
+2026-02-19 06:39:30,246 - INFO - PDF link: https://isprs-archives.copernicus.org/articles/XLII-4-W16/319/2019/isprs-archives-XLII-4-W16-319-2019.pdf
+2026-02-19 06:39:30,246 - INFO - Publication details extraction completed
+2026-02-19 06:39:34,485 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:0sTkTiv_uMkC
+2026-02-19 06:39:40,184 - INFO - Parsing publication details...
+2026-02-19 06:39:40,184 - INFO - Found title: Implementation of convolutional neural network methods for plant classification in high-resolution imagery
+2026-02-19 06:39:40,184 - INFO - Found 8 field sections to parse
+2026-02-19 06:39:40,184 - INFO - Found 1 authors: ['Erlyna Nour Arrofiqoh, Harintaka']
+2026-02-19 06:39:40,185 - INFO - Found publication date: 2018
+2026-02-19 06:39:40,185 - INFO - Found total citations: Cited by 9
+2026-02-19 06:39:40,185 - INFO - Found venue from 'journal': Geomatika
+2026-02-19 06:39:40,185 - INFO - No PDF link found
+2026-02-19 06:39:40,185 - INFO - Publication details extraction completed
+2026-02-19 06:39:45,506 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:RXiHnyRawswC
+2026-02-19 06:39:51,162 - INFO - Parsing publication details...
+2026-02-19 06:39:51,162 - INFO - Found title: Pembuatan Model 3D Bangunan LoD3 Dengan Pemanfaatan Foto Udara dan Fotogrametri Terrestris
+2026-02-19 06:39:51,162 - INFO - Found 9 field sections to parse
+2026-02-19 06:39:51,162 - INFO - Found 2 authors: ['Muh Apriansyah', 'Harintaka Harintaka']
+2026-02-19 06:39:51,163 - INFO - Found publication date: 2023/2/28
+2026-02-19 06:39:51,163 - INFO - Found abstract (length: 871 chars)
+2026-02-19 06:39:51,163 - INFO - Found total citations: Cited by 8
+2026-02-19 06:39:51,163 - INFO - Found venue from 'journal': Geoid
+2026-02-19 06:39:51,163 - INFO - No PDF link found
+2026-02-19 06:39:51,163 - INFO - Publication details extraction completed
+2026-02-19 06:40:00,516 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:eH23hyXCXa4C
+2026-02-19 06:40:05,320 - INFO - Parsing publication details...
+2026-02-19 06:40:05,321 - INFO - Found title: The latest DTM using InSAR for dynamics detection of Semangko fault-Indonesia
+2026-02-19 06:40:05,321 - INFO - Found 9 field sections to parse
+2026-02-19 06:40:05,321 - INFO - Found 4 authors: ['Atriyon Julzarika', 'Trias Aditya', 'Subaryono Subaryono', 'Harintaka Harintaka']
+2026-02-19 06:40:05,321 - INFO - Found publication date: 2021/11/9
+2026-02-19 06:40:05,321 - INFO - Found abstract (length: 1568 chars)
+2026-02-19 06:40:05,321 - INFO - Found total citations: Cited by 8
+2026-02-19 06:40:05,321 - INFO - Found venue from 'journal': Geodesy and Cartography
+2026-02-19 06:40:05,321 - INFO - PDF link: https://journals.vilniustech.lt/index.php/GAC/article/download/12621/10725/
+2026-02-19 06:40:05,322 - INFO - Publication details extraction completed
+2026-02-19 06:40:10,499 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:yJjnfzR0HrkC
+2026-02-19 06:40:16,536 - INFO - Parsing publication details...
+2026-02-19 06:40:16,537 - INFO - Found title: Improved deep learning segmentation of outdoor point clouds with different sampling strategies and using intensities
+2026-02-19 06:40:16,537 - INFO - Found 10 field sections to parse
+2026-02-19 06:40:16,537 - INFO - Found 2 authors: ['Harintaka Harintaka', 'Calvin Wijaya']
+2026-02-19 06:40:16,537 - INFO - Found publication date: 2024/3/13
+2026-02-19 06:40:16,537 - INFO - Found abstract (length: 912 chars)
+2026-02-19 06:40:16,537 - INFO - Found total citations: Cited by 7
+2026-02-19 06:40:16,538 - INFO - Found venue from 'journal': Open Geosciences
+2026-02-19 06:40:16,538 - INFO - PDF link: https://www.degruyterbrill.com/document/doi/10.1515/geo-2022-0611/html
+2026-02-19 06:40:16,538 - INFO - Publication details extraction completed
+2026-02-19 06:40:23,046 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:M_lZXyI38BkC
+2026-02-19 06:40:33,383 - INFO - Parsing publication details...
+2026-02-19 06:40:33,383 - INFO - Found title: Automatic point cloud segmentation using RANSAC and DBSCAN algorithm for indoor model
+2026-02-19 06:40:33,384 - INFO - Found 9 field sections to parse
+2026-02-19 06:40:33,384 - INFO - Found 2 authors: ['Harintaka Harintaka', 'Calvin Wijaya']
+2026-02-19 06:40:33,384 - INFO - Found publication date: 2023/12/1
+2026-02-19 06:40:33,384 - INFO - Found abstract (length: 1316 chars)
+2026-02-19 06:40:33,384 - INFO - Found total citations: Cited by 7
+2026-02-19 06:40:33,385 - INFO - Found venue from 'journal': TELKOMNIKA (Telecommunication Computing Electronics and Control)
+2026-02-19 06:40:33,385 - INFO - PDF link: https://telkomnika.uad.ac.id/index.php/TELKOMNIKA/article/download/25299/11777
+2026-02-19 06:40:33,385 - INFO - Publication details extraction completed
+2026-02-19 06:40:38,959 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:BAanoTsO0WEC
+2026-02-19 06:40:45,481 - INFO - Parsing publication details...
+2026-02-19 06:40:45,481 - INFO - Found title: Pemodelan Bangunan 3D Menggunakan Footprint Bangunan Hasil Ekstraksi Mask R-CNN Dan Dense Point Cloud Dari Foto Udara UAV
+2026-02-19 06:40:45,481 - INFO - Found 9 field sections to parse
+2026-02-19 06:40:45,481 - INFO - Found 2 authors: ['Tata Bahtera Negara', 'Harintaka Harintaka']
+2026-02-19 06:40:45,481 - INFO - Found publication date: 2021
+2026-02-19 06:40:45,481 - INFO - Found abstract (length: 1558 chars)
+2026-02-19 06:40:45,482 - INFO - Found total citations: Cited by 7
+2026-02-19 06:40:45,482 - INFO - Found venue from 'journal': Prosiding Forum Ilmiah Tahunan (FIT)-Ikatan Surveyor Indonesia (ISI)
+2026-02-19 06:40:45,482 - INFO - PDF link: http://proceedings.undip.ac.id/index.php/isiundip2021/article/viewFile/621/360
+2026-02-19 06:40:45,482 - INFO - Publication details extraction completed
+2026-02-19 06:40:51,811 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:Ej9njvOgR2oC
+2026-02-19 06:40:57,544 - INFO - Parsing publication details...
+2026-02-19 06:40:57,544 - INFO - Found title: Analisis konversi ruang terbuka hijau menjadi penggunaan perumahan di Kecamatan Tembalang Kota Semarang
+2026-02-19 06:40:57,545 - INFO - Found 9 field sections to parse
+2026-02-19 06:40:57,545 - INFO - Found 2 authors: ['S Hartini, Harintaka', 'Istarno']
+2026-02-19 06:40:57,545 - INFO - Found publication date: 2008
+2026-02-19 06:40:57,545 - INFO - Found abstract (length: 529 chars)
+2026-02-19 06:40:57,545 - INFO - Found total citations: Cited by 7
+2026-02-19 06:40:57,545 - INFO - Found venue from 'journal': Media Teknik
+2026-02-19 06:40:57,546 - INFO - No PDF link found
+2026-02-19 06:40:57,546 - INFO - Publication details extraction completed
+2026-02-19 06:41:02,326 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:TesyEGJKHF4C
+2026-02-19 06:41:09,611 - INFO - Parsing publication details...
+2026-02-19 06:41:09,611 - INFO - Found title: Integration PS-InSAR and MODIS PWV Data to Monitor Land Subsidence in Semarang City 2015–2018
+2026-02-19 06:41:09,612 - INFO - Found 7 field sections to parse
+2026-02-19 06:41:09,612 - INFO - Found 1 authors: ['Reyhan Azeriansyah, Harintaka']
+2026-02-19 06:41:09,612 - INFO - Found publication date: 2019/12/26
+2026-02-19 06:41:09,613 - INFO - Found abstract (length: 1549 chars)
+2026-02-19 06:41:09,613 - INFO - Found total citations: Cited by 6
+2026-02-19 06:41:09,613 - INFO - Found venue from 'journal': KnE Engineering
+2026-02-19 06:41:09,614 - INFO - PDF link: https://knepublishing.com/index.php/KnE-Engineering/article/download/5826/11217
+2026-02-19 06:41:09,614 - INFO - Publication details extraction completed
+2026-02-19 06:41:13,523 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:YPNY0knpFBYC
+2026-02-19 06:41:19,618 - INFO - Parsing publication details...
+2026-02-19 06:41:19,619 - INFO - Found title: Ekstraksi Fitur Bangunan Secara Cepat pada Foto UAV Menggunakan Metode Deep Residual Neural Network Berbasis FCN
+2026-02-19 06:41:19,619 - INFO - Found 10 field sections to parse
+2026-02-19 06:41:19,619 - INFO - Found 2 authors: ['Danang Setiaji', 'Harintaka Harintaka']
+2026-02-19 06:41:19,619 - INFO - Found publication date: 2019/7/7
+2026-02-19 06:41:19,619 - INFO - Found abstract (length: 1581 chars)
+2026-02-19 06:41:19,620 - INFO - Found total citations: Cited by 6
+2026-02-19 06:41:19,620 - INFO - Found venue from 'journal': Elipsoida: Jurnal Geodesi dan Geomatika
+2026-02-19 06:41:19,620 - INFO - PDF link: https://ejournal2.undip.ac.id/index.php/elipsoida/article/download/4883/2902
+2026-02-19 06:41:19,620 - INFO - Publication details extraction completed
+2026-02-19 06:41:25,439 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&citation_for_view=XliPgAcAAAAJ:JH5k92_tO-AC
+2026-02-19 06:41:29,424 - INFO - Parsing publication details...
+2026-02-19 06:41:29,424 - INFO - Found title: Assessment of low cost small format aerial photogrammetry for cadastral mapping (Case study in Klaten Regency, Central Java, Indonesia)
+2026-02-19 06:41:29,425 - INFO - Found 6 field sections to parse
+2026-02-19 06:41:29,425 - INFO - Found 2 authors: ['Harintaka, Subaryono', 'Adhi Susanto, Hartono']
+2026-02-19 06:41:29,425 - INFO - Found publication date: 2009
+2026-02-19 06:41:29,425 - INFO - Found abstract (length: 1480 chars)
+2026-02-19 06:41:29,425 - INFO - Found total citations: Cited by 6
+2026-02-19 06:41:29,425 - INFO - Found venue from 'journal': 7th FIG Regional Conference on Spatial Data Serving People: Land Governance and the Environment-Building the capacity. Hanoi, Vietnam
+2026-02-19 06:41:29,425 - INFO - PDF link: http://www.fig.net/resources/proceedings/fig_proceedings/vietnam/papers/ts07d/ts07d_harintaka_etal_3586.pdf
+2026-02-19 06:41:29,425 - INFO - Publication details extraction completed
+2026-02-19 06:41:34,859 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:j5aT6aphRxQC
+2026-02-19 06:41:42,804 - INFO - Parsing publication details...
+2026-02-19 06:41:42,805 - INFO - Found title: Integration of Cloud Score+ with Sentinel-2 Harmonized for land use and land cover classification using machine learning algorithms
+2026-02-19 06:41:42,805 - INFO - Found 9 field sections to parse
+2026-02-19 06:41:42,805 - INFO - Found 1 authors: ['Mohamad Rifai, Harintaka']
+2026-02-19 06:41:42,806 - INFO - Found publication date: 2024/12/1
+2026-02-19 06:41:42,806 - INFO - Found abstract (length: 914 chars)
+2026-02-19 06:41:42,806 - INFO - Found total citations: Cited by 5
+2026-02-19 06:41:42,807 - INFO - Found venue from 'conference': Geomatics International Conference
+2026-02-19 06:41:42,807 - INFO - PDF link: https://iopscience.iop.org/article/10.1088/1755-1315/1418/1/012039/pdf
+2026-02-19 06:41:42,807 - INFO - Publication details extraction completed
+2026-02-19 06:41:47,261 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:NtCmTCuxid4C
+2026-02-19 06:41:52,903 - INFO - Parsing publication details...
+2026-02-19 06:41:52,904 - INFO - Found title: Precise coseismic displacement related to the 2022 Pasaman earthquake using multi-geometry of Sentinel-1 InSAR
+2026-02-19 06:41:52,904 - INFO - Found 10 field sections to parse
+2026-02-19 06:41:52,904 - INFO - Found 2 authors: ['Argo Galih Suhadha', 'Oktadi Prayoga, Harintaka']
+2026-02-19 06:41:52,904 - INFO - Found publication date: 2023/12/11
+2026-02-19 06:41:52,904 - INFO - Found abstract (length: 899 chars)
+2026-02-19 06:41:52,905 - INFO - Found total citations: Cited by 5
+2026-02-19 06:41:52,905 - INFO - Found venue from 'journal': AIP Conference Proceedings
+2026-02-19 06:41:52,905 - INFO - PDF link: https://pubs.aip.org/aip/acp/article-pdf/doi/10.1063/5.0181385/18255107/030008_1_5.0181385.pdf
+2026-02-19 06:41:52,905 - INFO - Publication details extraction completed
+2026-02-19 06:41:57,112 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:Y9VhQm-5nPIC
+2026-02-19 06:42:00,868 - INFO - Parsing publication details...
+2026-02-19 06:42:00,869 - INFO - Found title: Vertical accuracy evaluation of digital terrain model (Dtm) alos palsar-2 in rote dead sea area–Indonesia
+2026-02-19 06:42:00,869 - INFO - Found 8 field sections to parse
+2026-02-19 06:42:00,869 - INFO - Found 4 authors: ['Atriyon Julzarika', 'Trias Aditya', 'Subaryono Subaryono', 'Harintaka Harintaka']
+2026-02-19 06:42:00,869 - INFO - Found publication date: 2021/3/25
+2026-02-19 06:42:00,870 - INFO - Found abstract (length: 1443 chars)
+2026-02-19 06:42:00,870 - INFO - Found total citations: Cited by 5
+2026-02-19 06:42:00,870 - INFO - Found venue from 'journal': Geodetski list
+2026-02-19 06:42:00,871 - INFO - PDF link: https://www.researchgate.net/profile/Atriyon-Julzarika/publication/374417306_Vertical_Accuracy_Evaluation_of_Digital_Terrain_Model_DTM_ALOS_PALSAR-2_in_Rote_Dead_Sea_Area_-Indonesia/links/651cd5be3ab6cb4ec6b90713/Vertical-Accuracy-Evaluation-of-Digital-Terrain-Model-DTM-ALOS-PALSAR-2-in-Rote-Dead-Sea-Area-Indonesia.pdf
+2026-02-19 06:42:00,871 - INFO - Publication details extraction completed
+2026-02-19 06:42:06,930 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:WzTVkKNmPSkC
+2026-02-19 06:42:11,503 - INFO - Parsing publication details...
+2026-02-19 06:42:11,503 - INFO - Found title: Analysis and Evaluation of PointNet for Indoor Office Point Cloud Semantic Segmentation
+2026-02-19 06:42:11,503 - INFO - Found 10 field sections to parse
+2026-02-19 06:42:11,503 - INFO - Found 1 authors: ['Calvin Wijaya, Harintaka']
+2026-02-19 06:42:11,503 - INFO - Found publication date: 2023/12/31
+2026-02-19 06:42:11,504 - INFO - Found abstract (length: 1576 chars)
+2026-02-19 06:42:11,504 - INFO - Found total citations: Cited by 4
+2026-02-19 06:42:11,504 - INFO - Found venue from 'journal': International Journal on Advanced Science, Engineering and Information Technology
+2026-02-19 06:42:11,504 - INFO - PDF link: https://www.researchgate.net/profile/Calvin_Wijaya2/publication/377222183_Analysis_and_Evaluation_of_PointNet_for_Indoor_Office_Point_Cloud_Semantic_Segmentation/links/659b7a496f6e450f19d4b5b5/Analysis-and-Evaluation-of-PointNet-for-Indoor-Office-Point-Cloud-Semantic-Segmentation.pdf
+2026-02-19 06:42:11,505 - INFO - Publication details extraction completed
+2026-02-19 06:42:20,070 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:uUvzmPk0f8oC
+2026-02-19 06:42:23,674 - INFO - Parsing publication details...
+2026-02-19 06:42:23,674 - INFO - Found title: Pembuatan Model Prediksi Lahan Terbangun di Kabupaten Kulon Progo dengan Citra Satelit Penginderaan Jauh
+2026-02-19 06:42:23,675 - INFO - Found 9 field sections to parse
+2026-02-19 06:42:23,675 - INFO - Found 2 authors: ['Rifqi Alghifari Wibowo', 'Harintaka Harintaka']
+2026-02-19 06:42:23,675 - INFO - Found publication date: 2023/9/8
+2026-02-19 06:42:23,675 - INFO - Found abstract (length: 858 chars)
+2026-02-19 06:42:23,675 - INFO - Found total citations: Cited by 4
+2026-02-19 06:42:23,675 - INFO - Found venue from 'journal': Geoid
+2026-02-19 06:42:23,675 - INFO - PDF link: https://journal.its.ac.id/index.php/geoid/article/download/1786/1462
+2026-02-19 06:42:23,675 - INFO - Publication details extraction completed
+2026-02-19 06:42:26,706 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:xyvS_IvSCKsC
+2026-02-19 06:42:32,371 - INFO - Parsing publication details...
+2026-02-19 06:42:32,371 - INFO - Found title: Utilization of sentinel satellite for vertical deformation monitoring in Semangko Fault - Indonesia
+2026-02-19 06:42:32,371 - INFO - Found 5 field sections to parse
+2026-02-19 06:42:32,371 - INFO - Found 1 authors: ['A Julzarika, Harintaka']
+2026-02-19 06:42:32,371 - INFO - Found publication date: 2019
+2026-02-19 06:42:32,371 - INFO - Found total citations: Cited by 4
+2026-02-19 06:42:32,372 - INFO - Found venue from 'journal': The 40th Asian Conference on Remote Sensing (ACRS 2019) October 14-18, 2019/Daejeon Convention Center (DCC), Daejeon
+2026-02-19 06:42:32,372 - INFO - No PDF link found
+2026-02-19 06:42:32,372 - INFO - Publication details extraction completed
+2026-02-19 06:42:36,896 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:9NZAP19TdFAC
+2026-02-19 06:42:41,662 - INFO - Parsing publication details...
+2026-02-19 06:42:41,662 - INFO - Found title: EVALUASI HASIL INTEGRASI BERBAGAI KETELITIAN DATA MODEL ELEVASI DIGITAL
+2026-02-19 06:42:41,663 - INFO - Found 10 field sections to parse
+2026-02-19 06:42:41,663 - INFO - Found 2 authors: ['Fanny Zafira Mukti, Harintaka', 'Djurdjani']
+2026-02-19 06:42:41,663 - INFO - Found publication date: 2018/7/6
+2026-02-19 06:42:41,663 - INFO - Found abstract (length: 872 chars)
+2026-02-19 06:42:41,663 - INFO - Found total citations: Cited by 4
+2026-02-19 06:42:41,663 - INFO - Found venue from 'journal': Jurnal Ilmiah Geomatika
+2026-02-19 06:42:41,663 - INFO - No PDF link found
+2026-02-19 06:42:41,663 - INFO - Publication details extraction completed
+2026-02-19 06:42:45,151 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:natZJ_-F0IUC
+2026-02-19 06:42:53,956 - INFO - Parsing publication details...
+2026-02-19 06:42:53,956 - INFO - Found title: PEMBUATAN MODEL ELEVASI DIGITAL DARI STEREOPLOTTING INTERAKTIF FOTO UDARA FORMAT SEDANG DENGAN KAMERA DIGICAM
+2026-02-19 06:42:53,956 - INFO - Found 9 field sections to parse
+2026-02-19 06:42:53,956 - INFO - Found 2 authors: ['Sekar Pranadita', 'Harintaka Harintaka']
+2026-02-19 06:42:53,956 - INFO - Found publication date: 2013
+2026-02-19 06:42:53,956 - INFO - Found total citations: Cited by 4
+2026-02-19 06:42:53,957 - INFO - Found venue from 'journal': Jurnal Ilmiah Geomatika
+2026-02-19 06:42:53,957 - INFO - No PDF link found
+2026-02-19 06:42:53,957 - INFO - Publication details extraction completed
+2026-02-19 06:43:00,854 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:RMgMIBzvq-4C
+2026-02-19 06:43:05,644 - INFO - Parsing publication details...
+2026-02-19 06:43:05,644 - INFO - Found title: Klasifikasi berorientasi obyek pada citra satelit QuickBird
+2026-02-19 06:43:05,644 - INFO - Found 6 field sections to parse
+2026-02-19 06:43:05,644 - INFO - Found 2 authors: ['Teguh Tri Erawanta', 'Aryono Prihandito, Harintaka']
+2026-02-19 06:43:05,644 - INFO - Found publication date: 2009
+2026-02-19 06:43:05,645 - INFO - Found abstract (length: 916 chars)
+2026-02-19 06:43:05,645 - INFO - Found total citations: Cited by 4
+2026-02-19 06:43:05,645 - INFO - Found venue from 'conference': Makalah Seminar Nasional
+2026-02-19 06:43:05,645 - INFO - No PDF link found
+2026-02-19 06:43:05,645 - INFO - Publication details extraction completed
+2026-02-19 06:43:11,749 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:yeL6HyUMUGUC
+2026-02-19 06:43:18,742 - INFO - Parsing publication details...
+2026-02-19 06:43:18,743 - INFO - Found title: Evaluasi Penerapan Mini Bundle Block Adjustment pada Foto Udara Format Kecil
+2026-02-19 06:43:18,743 - INFO - Found 9 field sections to parse
+2026-02-19 06:43:18,743 - INFO - Found 2 authors: ['Harintaka, Subaryono', 'Maria Tanjung']
+2026-02-19 06:43:18,743 - INFO - Found publication date: 2008
+2026-02-19 06:43:18,743 - INFO - Found abstract (length: 348 chars)
+2026-02-19 06:43:18,743 - INFO - Found total citations: Cited by 4
+2026-02-19 06:43:18,744 - INFO - Found venue from 'journal': Media Teknik
+2026-02-19 06:43:18,744 - INFO - No PDF link found
+2026-02-19 06:43:18,744 - INFO - Publication details extraction completed
+2026-02-19 06:43:26,903 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:yTLRzDEmwhEC
+2026-02-19 06:43:32,001 - INFO - Parsing publication details...
+2026-02-19 06:43:32,002 - INFO - Found title: EVALUASI PEMBUATAN MOSAIK FOTO UDARA FORMAT KECIL TIDAK TERKONTROL MENGGUNAKAN PERANGKAT LUNAK DESAIN GRAFIS KOMERSIAL
+2026-02-19 06:43:32,002 - INFO - Found 8 field sections to parse
+2026-02-19 06:43:32,002 - INFO - Found 2 authors: ['Subaryono, Harintaka', 'Endras Kurniawan']
+2026-02-19 06:43:32,002 - INFO - Found publication date: 2008
+2026-02-19 06:43:32,002 - INFO - Found abstract (length: 922 chars)
+2026-02-19 06:43:32,003 - INFO - Found total citations: Cited by 4
+2026-02-19 06:43:32,003 - INFO - Found venue from 'journal': Media Teknik
+2026-02-19 06:43:32,003 - INFO - No PDF link found
+2026-02-19 06:43:32,003 - INFO - Publication details extraction completed
+2026-02-19 06:43:35,921 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:idthP5jqfYAC
+2026-02-19 06:43:43,090 - INFO - Parsing publication details...
+2026-02-19 06:43:43,091 - INFO - Found title: The application of mask R-CNN for building extraction
+2026-02-19 06:43:43,091 - INFO - Found 10 field sections to parse
+2026-02-19 06:43:43,091 - INFO - Found 2 authors: ['Danang Budi Susetyo, Harintaka', 'Aldino Rizaldy']
+2026-02-19 06:43:43,091 - INFO - Found publication date: 2023/12/11
+2026-02-19 06:43:43,091 - INFO - Found abstract (length: 915 chars)
+2026-02-19 06:43:43,091 - INFO - Found total citations: Cited by 3
+2026-02-19 06:43:43,091 - INFO - Found venue from 'journal': AIP Conference Proceedings
+2026-02-19 06:43:43,092 - INFO - PDF link: https://pubs.aip.org/aip/acp/article-pdf/doi/10.1063/5.0182754/18255271/030001_1_5.0182754.pdf
+2026-02-19 06:43:43,092 - INFO - Publication details extraction completed
+2026-02-19 06:43:49,111 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:Y0-TYkg6YM4C
+2026-02-19 06:43:55,869 - INFO - Parsing publication details...
+2026-02-19 06:43:55,869 - INFO - Found title: Kajian keandalan true orthophoto untuk pemetaan skala besar 1: 5.000
+2026-02-19 06:43:55,870 - INFO - Found 9 field sections to parse
+2026-02-19 06:43:55,870 - INFO - Found 2 authors: ['Andita Putri Damayanti', 'Harintaka Harintaka']
+2026-02-19 06:43:55,870 - INFO - Found publication date: 2021/2/24
+2026-02-19 06:43:55,870 - INFO - Found abstract (length: 874 chars)
+2026-02-19 06:43:55,870 - INFO - Found total citations: Cited by 3
+2026-02-19 06:43:55,870 - INFO - Found venue from 'journal': Geoid
+2026-02-19 06:43:55,870 - INFO - No PDF link found
+2026-02-19 06:43:55,870 - INFO - Publication details extraction completed
+2026-02-19 06:44:03,954 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:rOcdG6UcVlcC
+2026-02-19 06:44:09,072 - INFO - Parsing publication details...
+2026-02-19 06:44:09,072 - INFO - Found title: Utilization of DSM and DTM for Spatial Information in Lake Border
+2026-02-19 06:44:09,072 - INFO - Found 10 field sections to parse
+2026-02-19 06:44:09,072 - INFO - Found 1 authors: ['Atriyon Julzarika, Harintaka']
+2026-02-19 06:44:09,072 - INFO - Found publication date: 2020/7/1
+2026-02-19 06:44:09,073 - INFO - Found abstract (length: 926 chars)
+2026-02-19 06:44:09,073 - INFO - Found total citations: Cited by 3
+2026-02-19 06:44:09,073 - INFO - Found venue from 'journal': IOP Conference Series: Earth and Environmental Science
+2026-02-19 06:44:09,073 - INFO - PDF link: https://iopscience.iop.org/article/10.1088/1755-1315/535/1/012034/pdf
+2026-02-19 06:44:09,073 - INFO - Publication details extraction completed
+2026-02-19 06:44:12,537 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:cRMvf6lLvU8C
+2026-02-19 06:44:18,016 - INFO - Parsing publication details...
+2026-02-19 06:44:18,016 - INFO - Found title: Indonesian DEMNAS: DSM or DTM? AGERS 2019–2nd IEEE Asia-Pacific Conference on Geoscience, Electronics, and Remote Sensing Technology: Understanding and Forecasting the Dynamics …
+2026-02-19 06:44:18,016 - INFO - Found 6 field sections to parse
+2026-02-19 06:44:18,016 - INFO - Found 2 authors: ['A Julzarika', 'Harintaka Harintaka']
+2026-02-19 06:44:18,017 - INFO - Found publication date: 2019
+2026-02-19 06:44:18,017 - INFO - Found total citations: Cited by 3
+2026-02-19 06:44:18,017 - INFO - Found venue from 'journal': Proceeding. doi
+2026-02-19 06:44:18,017 - INFO - No PDF link found
+2026-02-19 06:44:18,017 - INFO - Publication details extraction completed
+2026-02-19 06:44:24,817 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:KTwcwpFFj4wC
+2026-02-19 06:44:31,158 - INFO - Parsing publication details...
+2026-02-19 06:44:31,158 - INFO - Found title: Perbandingan ragam input model ketinggian untuk pembentukan true orthophoto di wilayah urban
+2026-02-19 06:44:31,158 - INFO - Found 10 field sections to parse
+2026-02-19 06:44:31,158 - INFO - Found 2 authors: ['Harintaka Harintaka', 'Eli Juniati']
+2026-02-19 06:44:31,158 - INFO - Found publication date: 2018/11/29
+2026-02-19 06:44:31,158 - INFO - Found abstract (length: 865 chars)
+2026-02-19 06:44:31,159 - INFO - Found total citations: Cited by 3
+2026-02-19 06:44:31,159 - INFO - Found venue from 'journal': Jurnal Ilmiah Geomatika
+2026-02-19 06:44:31,159 - INFO - No PDF link found
+2026-02-19 06:44:31,159 - INFO - Publication details extraction completed
+2026-02-19 06:44:39,762 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:vVJNg6_NJEsC
+2026-02-19 06:44:45,239 - INFO - Parsing publication details...
+2026-02-19 06:44:45,239 - INFO - Found title: Evaluasi Ketelitian Penentuan Kedalaman Perairan Dangkal Menggunakan Citra Satelit Pleiades
+2026-02-19 06:44:45,240 - INFO - Found 4 field sections to parse
+2026-02-19 06:44:45,240 - INFO - Found 2 authors: ['DS Hanityawan', 'A Basith, Harintaka']
+2026-02-19 06:44:45,240 - INFO - Found publication date: 2017
+2026-02-19 06:44:45,240 - INFO - Found total citations: Cited by 3
+2026-02-19 06:44:45,241 - INFO - No venue information found
+2026-02-19 06:44:45,241 - INFO - No PDF link found
+2026-02-19 06:44:45,241 - INFO - Publication details extraction completed
+2026-02-19 06:44:51,911 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:d4tt_xEv1X8C
+2026-02-19 06:44:55,446 - INFO - Parsing publication details...
+2026-02-19 06:44:55,446 - INFO - Found title: Uneven Land Subsidence Patterns Along Java's Northern Urban Corridor (Pantura Route) from 2.5 D SBAS InSAR Approach.
+2026-02-19 06:44:55,447 - INFO - Found 8 field sections to parse
+2026-02-19 06:44:55,447 - INFO - Found 2 authors: ['Afif Janur, Harintaka', 'ARGO GALIH SUHADHA']
+2026-02-19 06:44:55,447 - INFO - Found publication date: 2025/8/1
+2026-02-19 06:44:55,447 - INFO - Found abstract (length: 920 chars)
+2026-02-19 06:44:55,447 - INFO - Found total citations: Cited by 2
+2026-02-19 06:44:55,447 - INFO - Found venue from 'journal': Indonesian Journal on Geoscience
+2026-02-19 06:44:55,448 - INFO - No PDF link found
+2026-02-19 06:44:55,448 - INFO - Publication details extraction completed
+2026-02-19 06:44:59,782 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:7VEv-pLvLSsC
+2026-02-19 06:45:06,221 - INFO - Parsing publication details...
+2026-02-19 06:45:06,221 - INFO - Found title: Analysis of Water Quality Dynamics of Sentarum Lake, Indonesia, with Water Index Application and Water Parameter Algorithm Methods Using Google Earth Engine
+2026-02-19 06:45:06,221 - INFO - Found 7 field sections to parse
+2026-02-19 06:45:06,222 - INFO - Found 1 authors: ['Muhammad Rifai, Harintaka']
+2026-02-19 06:45:06,222 - INFO - Found publication date: 2025/2/20
+2026-02-19 06:45:06,222 - INFO - Found abstract (length: 906 chars)
+2026-02-19 06:45:06,222 - INFO - Found total citations: Cited by 2
+2026-02-19 06:45:06,222 - INFO - Found venue from 'conference': 6th International Conference on Environmental Resources Management in Global Region
+2026-02-19 06:45:06,223 - INFO - PDF link: https://iopscience.iop.org/article/10.1088/1755-1315/1443/1/012012/pdf
+2026-02-19 06:45:06,223 - INFO - Publication details extraction completed
+2026-02-19 06:45:14,568 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:v_tt_AnqfNMC
+2026-02-19 06:45:18,743 - INFO - Parsing publication details...
+2026-02-19 06:45:18,743 - INFO - Found title: Comparative Analysis of the Semantic Conditions of LoD3 3D Building Model Based on Aerial Photography and Terrestrial Photogrammetry
+2026-02-19 06:45:18,744 - INFO - Found 9 field sections to parse
+2026-02-19 06:45:18,744 - INFO - Found 2 authors: ['Muh Apriansyah', 'Harintaka Harintaka']
+2026-02-19 06:45:18,744 - INFO - Found publication date: 2023/10/26
+2026-02-19 06:45:18,744 - INFO - Found abstract (length: 1568 chars)
+2026-02-19 06:45:18,744 - INFO - Found total citations: Cited by 2
+2026-02-19 06:45:18,744 - INFO - Found venue from 'journal': Journal of Applied Geospatial Information
+2026-02-19 06:45:18,744 - INFO - PDF link: https://jurnal.polibatam.ac.id/index.php/JAGI/article/download/6634/2115
+2026-02-19 06:45:18,744 - INFO - Publication details extraction completed
+2026-02-19 06:45:23,304 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:xGWFX6Gbr9MC
+2026-02-19 06:45:27,872 - INFO - Parsing publication details...
+2026-02-19 06:45:27,872 - INFO - Found title: Vegetation Height Estimation using Satellite Remote Sensing in Peat Land of Central Kalimantan
+2026-02-19 06:45:27,872 - INFO - Found 9 field sections to parse
+2026-02-19 06:45:27,872 - INFO - Found 3 authors: ['Atriyon Julzarika', 'Harintaka Harintaka', 'Tatik Kartika']
+2026-02-19 06:45:27,872 - INFO - Found publication date: 2021/1/28
+2026-02-19 06:45:27,873 - INFO - Found abstract (length: 890 chars)
+2026-02-19 06:45:27,873 - INFO - Found total citations: Cited by 2
+2026-02-19 06:45:27,873 - INFO - Found venue from 'journal': Journal of Environmental Analysis and Progress
+2026-02-19 06:45:27,873 - INFO - No PDF link found
+2026-02-19 06:45:27,873 - INFO - Publication details extraction completed
+2026-02-19 06:45:33,594 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:3A3nxV7CjKIC
+2026-02-19 06:45:38,004 - INFO - Parsing publication details...
+2026-02-19 06:45:38,004 - INFO - Found title: Deteksi Area Bekas Kebakaran Hutan dan Lahan Menggunakan Citra Landsat 8 Tahun 2018–2020 (Studi Kasus: Pulau Rupat, Bengkalis)
+2026-02-19 06:45:38,005 - INFO - Found 9 field sections to parse
+2026-02-19 06:45:38,005 - INFO - Found 2 authors: ['Annisa Baroroh', 'Harintaka Harintaka']
+2026-02-19 06:45:38,005 - INFO - Found publication date: 2020/12/10
+2026-02-19 06:45:38,006 - INFO - Found abstract (length: 1516 chars)
+2026-02-19 06:45:38,006 - INFO - Found total citations: Cited by 2
+2026-02-19 06:45:38,006 - INFO - Found venue from 'journal': Prosiding Forum Ilmiah Tahunan (FIT)-Ikatan Surveyor Indonesia (ISI)
+2026-02-19 06:45:38,006 - INFO - PDF link: http://proceedings.undip.ac.id/index.php/isiundip2021/article/viewFile/609/350
+2026-02-19 06:45:38,007 - INFO - Publication details extraction completed
+2026-02-19 06:45:44,068 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:I8rxH6phXEkC
+2026-02-19 06:45:50,955 - INFO - Parsing publication details...
+2026-02-19 06:45:50,956 - INFO - Found title: Comparison of the Latest DTM with DEM Pleiades in Monitoring the Dynamic Peatland
+2026-02-19 06:45:50,956 - INFO - Found 8 field sections to parse
+2026-02-19 06:45:50,956 - INFO - Found 2 authors: ['Atriyon Julzarika', 'Trias Aditya, Harintaka']
+2026-02-19 06:45:50,956 - INFO - Found publication date: 2020/12/10
+2026-02-19 06:45:50,957 - INFO - Found abstract (length: 904 chars)
+2026-02-19 06:45:50,957 - INFO - Found total citations: Cited by 2
+2026-02-19 06:45:50,957 - INFO - Found venue from 'conference': 2020 3rd International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)
+2026-02-19 06:45:50,957 - INFO - PDF link: https://www.researchgate.net/profile/Atriyon-Julzarika/publication/349170764_Comparison_of_the_Latest_DTM_with_DEM_Pleiades_in_Monitoring_the_Dynamic_Peatland/links/611d25b90c2bfa282a53349a/Comparison-of-the-Latest-DTM-with-DEM-Pleiades-in-Monitoring-the-Dynamic-Peatland.pdf
+2026-02-19 06:45:50,957 - INFO - Publication details extraction completed
+2026-02-19 06:45:56,872 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:In6cVmBjs0IC
+2026-02-19 06:46:03,939 - INFO - Parsing publication details...
+2026-02-19 06:46:03,939 - INFO - Found title: KAJIAN TEKNIK STEREO PLOTTING PADA FOTO UDARA FORMAT KECIL UNTUK MENGHASILKAN DATA DTM
+2026-02-19 06:46:03,940 - INFO - Found 10 field sections to parse
+2026-02-19 06:46:03,940 - INFO - Found 1 authors: ['Harintaka Harintaka']
+2026-02-19 06:46:03,940 - INFO - Found publication date: 2020/11/30
+2026-02-19 06:46:03,940 - INFO - Found abstract (length: 889 chars)
+2026-02-19 06:46:03,940 - INFO - Found total citations: Cited by 2
+2026-02-19 06:46:03,940 - INFO - Found venue from 'journal': Jurnal Ilmiah Geomatika
+2026-02-19 06:46:03,941 - INFO - No PDF link found
+2026-02-19 06:46:03,941 - INFO - Publication details extraction completed
+2026-02-19 06:46:10,020 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:H7nrzBkawXsC
+2026-02-19 06:46:13,554 - INFO - Parsing publication details...
+2026-02-19 06:46:13,554 - INFO - Found title: Kajian Kehandalan Hasil Ekstraksi Bangunan Secara Otomatis Menggunakan Data Ortofoto dan LiDAR di Kota Pontianak
+2026-02-19 06:46:13,554 - INFO - Found 9 field sections to parse
+2026-02-19 06:46:13,554 - INFO - Found 1 authors: ['Handoko Dwi Julian, Harintaka']
+2026-02-19 06:46:13,554 - INFO - Found publication date: 2019/11/4
+2026-02-19 06:46:13,554 - INFO - Found abstract (length: 1592 chars)
+2026-02-19 06:46:13,555 - INFO - Found total citations: Cited by 2
+2026-02-19 06:46:13,555 - INFO - Found venue from 'journal': Elipsoida: Jurnal Geodesi dan Geomatika
+2026-02-19 06:46:13,555 - INFO - PDF link: https://ejournal2.undip.ac.id/index.php/elipsoida/article/download/5146/3616
+2026-02-19 06:46:13,555 - INFO - Publication details extraction completed
+2026-02-19 06:46:22,845 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:rqnDXT1GswoC
+2026-02-19 06:46:27,671 - INFO - Parsing publication details...
+2026-02-19 06:46:27,671 - INFO - Found title: Integration PS-InSAR and MODIS PWV data to monitor land subsidence in Semarang city 2015–2018. KnE Eng 2019: 66–76
+2026-02-19 06:46:27,671 - INFO - Found 4 field sections to parse
+2026-02-19 06:46:27,672 - INFO - Found 2 authors: ['R Azeriansyah', 'H Harintaka']
+2026-02-19 06:46:27,672 - INFO - Found publication date: 2019
+2026-02-19 06:46:27,672 - INFO - Found total citations: Cited by 2
+2026-02-19 06:46:27,673 - INFO - No venue information found
+2026-02-19 06:46:27,674 - INFO - No PDF link found
+2026-02-19 06:46:27,674 - INFO - Publication details extraction completed
+2026-02-19 06:46:33,132 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:0ngZmJvimKcC
+2026-02-19 06:46:39,486 - INFO - Parsing publication details...
+2026-02-19 06:46:39,486 - INFO - Found title: Pemodelan Virtual Bangunan Arkeologi Candi Kelir di Taman Wisata Candi Prambanan Menggunakan Kamera Amatir Digital,
+2026-02-19 06:46:39,486 - INFO - Found 7 field sections to parse
+2026-02-19 06:46:39,487 - INFO - Found 2 authors: ['Harintaka, Subaryono', 'Heri Octapianus']
+2026-02-19 06:46:39,487 - INFO - Found publication date: 2008
+2026-02-19 06:46:39,487 - INFO - Found abstract (length: 347 chars)
+2026-02-19 06:46:39,487 - INFO - Found total citations: Cited by 2
+2026-02-19 06:46:39,487 - INFO - Found venue from 'journal': Media Teknik
+2026-02-19 06:46:39,488 - INFO - No PDF link found
+2026-02-19 06:46:39,488 - INFO - Publication details extraction completed
+2026-02-19 06:46:44,528 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:R22Rs3tN8aoC
+2026-02-19 06:47:04,301 - INFO - Parsing publication details...
+2026-02-19 06:47:04,301 - INFO - Found title: N/A
+2026-02-19 06:47:04,301 - INFO - Found 0 field sections to parse
+2026-02-19 06:47:04,302 - INFO - No venue information found
+2026-02-19 06:47:04,302 - INFO - No PDF link found
+2026-02-19 06:47:04,302 - INFO - Publication details extraction completed
+2026-02-19 06:47:09,961 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:8uzoZH4hB9AC
+2026-02-19 06:47:25,302 - INFO - Parsing publication details...
+2026-02-19 06:47:25,302 - INFO - Found title: N/A
+2026-02-19 06:47:25,302 - INFO - Found 0 field sections to parse
+2026-02-19 06:47:25,303 - INFO - No venue information found
+2026-02-19 06:47:25,303 - INFO - No PDF link found
+2026-02-19 06:47:25,303 - INFO - Publication details extraction completed
+2026-02-19 06:47:29,502 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:q1zXlPLtbUIC
+2026-02-19 06:47:48,641 - INFO - Parsing publication details...
+2026-02-19 06:47:48,641 - INFO - Found title: N/A
+2026-02-19 06:47:48,641 - INFO - Found 0 field sections to parse
+2026-02-19 06:47:48,642 - INFO - No venue information found
+2026-02-19 06:47:48,642 - INFO - No PDF link found
+2026-02-19 06:47:48,642 - INFO - Publication details extraction completed
+2026-02-19 06:47:54,860 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:L24QuVWYgZ0C
+2026-02-19 06:48:15,109 - INFO - Parsing publication details...
+2026-02-19 06:48:15,109 - INFO - Found title: N/A
+2026-02-19 06:48:15,109 - INFO - Found 0 field sections to parse
+2026-02-19 06:48:15,110 - INFO - No venue information found
+2026-02-19 06:48:15,110 - INFO - No PDF link found
+2026-02-19 06:48:15,110 - INFO - Publication details extraction completed
+2026-02-19 06:48:22,053 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:cBPnxVikjH8C
+2026-02-19 06:48:36,809 - INFO - Parsing publication details...
+2026-02-19 06:48:36,809 - INFO - Found title: N/A
+2026-02-19 06:48:36,809 - INFO - Found 0 field sections to parse
+2026-02-19 06:48:36,809 - INFO - No venue information found
+2026-02-19 06:48:36,809 - INFO - No PDF link found
+2026-02-19 06:48:36,810 - INFO - Publication details extraction completed
+2026-02-19 06:48:40,330 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:Vno172sVVMwC
+2026-02-19 06:48:59,707 - INFO - Parsing publication details...
+2026-02-19 06:48:59,708 - INFO - Found title: N/A
+2026-02-19 06:48:59,708 - INFO - Found 0 field sections to parse
+2026-02-19 06:48:59,708 - INFO - No venue information found
+2026-02-19 06:48:59,709 - INFO - No PDF link found
+2026-02-19 06:48:59,709 - INFO - Publication details extraction completed
+2026-02-19 06:49:02,715 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:hCrLmN-GePgC
+2026-02-19 06:49:20,818 - INFO - Parsing publication details...
+2026-02-19 06:49:20,818 - INFO - Found title: N/A
+2026-02-19 06:49:20,818 - INFO - Found 0 field sections to parse
+2026-02-19 06:49:20,818 - INFO - No venue information found
+2026-02-19 06:49:20,818 - INFO - No PDF link found
+2026-02-19 06:49:20,818 - INFO - Publication details extraction completed
+2026-02-19 06:49:24,193 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:nWoA1JPTheMC
+2026-02-19 06:49:38,850 - INFO - Parsing publication details...
+2026-02-19 06:49:38,851 - INFO - Found title: N/A
+2026-02-19 06:49:38,851 - INFO - Found 0 field sections to parse
+2026-02-19 06:49:38,851 - INFO - No venue information found
+2026-02-19 06:49:38,852 - INFO - No PDF link found
+2026-02-19 06:49:38,852 - INFO - Publication details extraction completed
+2026-02-19 06:49:41,914 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:hfzGNhXhx5MC
+2026-02-19 06:49:59,464 - INFO - Parsing publication details...
+2026-02-19 06:49:59,464 - INFO - Found title: N/A
+2026-02-19 06:49:59,464 - INFO - Found 0 field sections to parse
+2026-02-19 06:49:59,465 - INFO - No venue information found
+2026-02-19 06:49:59,465 - INFO - No PDF link found
+2026-02-19 06:49:59,465 - INFO - Publication details extraction completed
+2026-02-19 06:50:04,043 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:Oo1CbQkBAzEC
+2026-02-19 06:50:20,704 - INFO - Parsing publication details...
+2026-02-19 06:50:20,704 - INFO - Found title: N/A
+2026-02-19 06:50:20,704 - INFO - Found 0 field sections to parse
+2026-02-19 06:50:20,705 - INFO - No venue information found
+2026-02-19 06:50:20,705 - INFO - No PDF link found
+2026-02-19 06:50:20,705 - INFO - Publication details extraction completed
+2026-02-19 06:50:25,321 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:c1AJUTjuCtUC
+2026-02-19 06:50:43,765 - INFO - Parsing publication details...
+2026-02-19 06:50:43,766 - INFO - Found title: N/A
+2026-02-19 06:50:43,766 - INFO - Found 0 field sections to parse
+2026-02-19 06:50:43,766 - INFO - No venue information found
+2026-02-19 06:50:43,766 - INFO - No PDF link found
+2026-02-19 06:50:43,766 - INFO - Publication details extraction completed
+2026-02-19 06:50:50,113 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:g_UdREhPGEoC
+2026-02-19 06:51:10,228 - INFO - Parsing publication details...
+2026-02-19 06:51:10,228 - INFO - Found title: N/A
+2026-02-19 06:51:10,228 - INFO - Found 0 field sections to parse
+2026-02-19 06:51:10,229 - INFO - No venue information found
+2026-02-19 06:51:10,229 - INFO - No PDF link found
+2026-02-19 06:51:10,229 - INFO - Publication details extraction completed
+2026-02-19 06:51:15,095 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:Kqc1aDSOPooC
+2026-02-19 06:51:32,099 - INFO - Parsing publication details...
+2026-02-19 06:51:32,099 - INFO - Found title: N/A
+2026-02-19 06:51:32,099 - INFO - Found 0 field sections to parse
+2026-02-19 06:51:32,100 - INFO - No venue information found
+2026-02-19 06:51:32,100 - INFO - No PDF link found
+2026-02-19 06:51:32,100 - INFO - Publication details extraction completed
+2026-02-19 06:51:40,745 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:E7VqQtBCVmcC
+2026-02-19 06:51:54,563 - INFO - Parsing publication details...
+2026-02-19 06:51:54,563 - INFO - Found title: N/A
+2026-02-19 06:51:54,563 - INFO - Found 0 field sections to parse
+2026-02-19 06:51:54,563 - INFO - No venue information found
+2026-02-19 06:51:54,563 - INFO - No PDF link found
+2026-02-19 06:51:54,564 - INFO - Publication details extraction completed
+2026-02-19 06:52:00,842 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:g8uWPOAv7ggC
+2026-02-19 06:52:18,665 - INFO - Parsing publication details...
+2026-02-19 06:52:18,665 - INFO - Found title: N/A
+2026-02-19 06:52:18,666 - INFO - Found 0 field sections to parse
+2026-02-19 06:52:18,666 - INFO - No venue information found
+2026-02-19 06:52:18,666 - INFO - No PDF link found
+2026-02-19 06:52:18,667 - INFO - Publication details extraction completed
+2026-02-19 06:52:22,324 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:Vztgr1qGG8IC
+2026-02-19 06:52:39,463 - INFO - Parsing publication details...
+2026-02-19 06:52:39,463 - INFO - Found title: N/A
+2026-02-19 06:52:39,463 - INFO - Found 0 field sections to parse
+2026-02-19 06:52:39,463 - INFO - No venue information found
+2026-02-19 06:52:39,463 - INFO - No PDF link found
+2026-02-19 06:52:39,463 - INFO - Publication details extraction completed
+2026-02-19 06:52:45,563 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:X5YyAB84Iw4C
+2026-02-19 06:53:04,343 - INFO - Parsing publication details...
+2026-02-19 06:53:04,343 - INFO - Found title: N/A
+2026-02-19 06:53:04,343 - INFO - Found 0 field sections to parse
+2026-02-19 06:53:04,344 - INFO - No venue information found
+2026-02-19 06:53:04,344 - INFO - No PDF link found
+2026-02-19 06:53:04,344 - INFO - Publication details extraction completed
+2026-02-19 06:53:09,723 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:CMvovTBb2okC
+2026-02-19 06:53:26,429 - INFO - Parsing publication details...
+2026-02-19 06:53:26,429 - INFO - Found title: N/A
+2026-02-19 06:53:26,429 - INFO - Found 0 field sections to parse
+2026-02-19 06:53:26,430 - INFO - No venue information found
+2026-02-19 06:53:26,431 - INFO - No PDF link found
+2026-02-19 06:53:26,431 - INFO - Publication details extraction completed
+2026-02-19 06:53:32,232 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:XAp-VaTZjjwC
+2026-02-19 06:53:46,428 - INFO - Parsing publication details...
+2026-02-19 06:53:46,428 - INFO - Found title: N/A
+2026-02-19 06:53:46,429 - INFO - Found 0 field sections to parse
+2026-02-19 06:53:46,429 - INFO - No venue information found
+2026-02-19 06:53:46,429 - INFO - No PDF link found
+2026-02-19 06:53:46,429 - INFO - Publication details extraction completed
+2026-02-19 06:53:51,631 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:7H_jS4BsgvYC
+2026-02-19 06:54:11,838 - INFO - Parsing publication details...
+2026-02-19 06:54:11,838 - INFO - Found title: N/A
+2026-02-19 06:54:11,838 - INFO - Found 0 field sections to parse
+2026-02-19 06:54:11,839 - INFO - No venue information found
+2026-02-19 06:54:11,839 - INFO - No PDF link found
+2026-02-19 06:54:11,839 - INFO - Publication details extraction completed
+2026-02-19 06:54:16,188 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:tBlTYpvFGQIC
+2026-02-19 06:54:31,284 - INFO - Parsing publication details...
+2026-02-19 06:54:31,284 - INFO - Found title: N/A
+2026-02-19 06:54:31,285 - INFO - Found 0 field sections to parse
+2026-02-19 06:54:31,285 - INFO - No venue information found
+2026-02-19 06:54:31,285 - INFO - No PDF link found
+2026-02-19 06:54:31,286 - INFO - Publication details extraction completed
+2026-02-19 06:54:38,816 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:PVqtIyvKoSUC
+2026-02-19 06:54:53,008 - INFO - Parsing publication details...
+2026-02-19 06:54:53,008 - INFO - Found title: N/A
+2026-02-19 06:54:53,008 - INFO - Found 0 field sections to parse
+2026-02-19 06:54:53,009 - INFO - No venue information found
+2026-02-19 06:54:53,009 - INFO - No PDF link found
+2026-02-19 06:54:53,009 - INFO - Publication details extraction completed
+2026-02-19 06:54:58,259 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:gV6rEsy15s0C
+2026-02-19 06:55:15,668 - INFO - Parsing publication details...
+2026-02-19 06:55:15,669 - INFO - Found title: N/A
+2026-02-19 06:55:15,669 - INFO - Found 0 field sections to parse
+2026-02-19 06:55:15,670 - INFO - No venue information found
+2026-02-19 06:55:15,670 - INFO - No PDF link found
+2026-02-19 06:55:15,670 - INFO - Publication details extraction completed
+2026-02-19 06:55:21,137 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:l6Q3WhenKVUC
+2026-02-19 06:55:35,857 - INFO - Parsing publication details...
+2026-02-19 06:55:35,857 - INFO - Found title: N/A
+2026-02-19 06:55:35,857 - INFO - Found 0 field sections to parse
+2026-02-19 06:55:35,857 - INFO - No venue information found
+2026-02-19 06:55:35,858 - INFO - No PDF link found
+2026-02-19 06:55:35,858 - INFO - Publication details extraction completed
+2026-02-19 06:55:40,214 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:DQNrXyjhriIC
+2026-02-19 06:55:58,435 - INFO - Parsing publication details...
+2026-02-19 06:55:58,435 - INFO - Found title: N/A
+2026-02-19 06:55:58,436 - INFO - Found 0 field sections to parse
+2026-02-19 06:55:58,436 - INFO - No venue information found
+2026-02-19 06:55:58,436 - INFO - No PDF link found
+2026-02-19 06:55:58,436 - INFO - Publication details extraction completed
+2026-02-19 06:56:03,243 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:EBV337fEn3EC
+2026-02-19 06:56:21,310 - INFO - Parsing publication details...
+2026-02-19 06:56:21,310 - INFO - Found title: N/A
+2026-02-19 06:56:21,310 - INFO - Found 0 field sections to parse
+2026-02-19 06:56:21,311 - INFO - No venue information found
+2026-02-19 06:56:21,311 - INFO - No PDF link found
+2026-02-19 06:56:21,311 - INFO - Publication details extraction completed
+2026-02-19 06:56:25,714 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:rLGzs9wiiwIC
+2026-02-19 06:56:43,234 - INFO - Parsing publication details...
+2026-02-19 06:56:43,235 - INFO - Found title: N/A
+2026-02-19 06:56:43,235 - INFO - Found 0 field sections to parse
+2026-02-19 06:56:43,235 - INFO - No venue information found
+2026-02-19 06:56:43,236 - INFO - No PDF link found
+2026-02-19 06:56:43,236 - INFO - Publication details extraction completed
+2026-02-19 06:56:49,909 - INFO - Fetching publication details from: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XliPgAcAAAAJ&cstart=20&pagesize=80&citation_for_view=XliPgAcAAAAJ:txeM2kYbVNMC
+2026-02-19 06:57:06,489 - INFO - Parsing publication details...
+2026-02-19 06:57:06,490 - INFO - Found title: N/A
+2026-02-19 06:57:06,490 - INFO - Found 0 field sections to parse
+2026-02-19 06:57:06,490 - INFO - No venue information found
+2026-02-19 06:57:06,491 - INFO - No PDF link found
+2026-02-19 06:57:06,491 - INFO - Publication details extraction completed
+2026-02-19 06:57:10,972 - INFO - Detail scraping completed: 75 successful, 0 failed
+2026-02-19 06:57:10,972 - INFO - Total publications processed: 75
+2026-02-19 06:57:10,972 - INFO - Closing Playwright browser...
+2026-02-19 06:57:11,048 - INFO - Saving 75 publications to output/XliPgAcAAAAJ_scholar_data.json...
+2026-02-19 06:57:11,050 - INFO - ✓ Successfully saved data to output/XliPgAcAAAAJ_scholar_data.json
+2026-02-19 06:57:11,050 - INFO - ✓ Successfully processed Harintaka: 75 publications saved to output/XliPgAcAAAAJ_scholar_data.json
+2026-02-19 06:57:11,050 - INFO - Waiting between authors...
+2026-02-19 06:57:17,588 - INFO - Processing author 4/29: Prijono Nugroho Djodjomartono (ID: 5xOGpFkAAAAJ)
+2026-02-19 06:57:17,588 - INFO - Starting to scrape Google Scholar profile for user: 5xOGpFkAAAAJ
+2026-02-19 06:57:17,591 - INFO - Setting up Playwright browser...
+2026-02-19 06:57:17,998 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:57:17,998 - INFO - Navigating to: https://scholar.google.com/citations?user=5xOGpFkAAAAJ&hl=en
+2026-02-19 06:57:23,497 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:57:23,530 - INFO - Parsing publication list from page...
+2026-02-19 06:57:23,534 - INFO - Found 0 publication rows to process
+2026-02-19 06:57:23,535 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:57:23,535 - WARNING - No publications found on the profile
+2026-02-19 06:57:23,535 - INFO - Closing Playwright browser...
+2026-02-19 06:57:23,570 - ERROR - ✗ Failed to scrape data for Prijono Nugroho Djodjomartono (ID: 5xOGpFkAAAAJ)
+2026-02-19 06:57:23,571 - INFO - Waiting between authors...
+2026-02-19 06:57:31,407 - INFO - Processing author 5/29: Djurdjani Wardaya (ID: -0SOAIQAAAAJ)
+2026-02-19 06:57:31,408 - INFO - Starting to scrape Google Scholar profile for user: -0SOAIQAAAAJ
+2026-02-19 06:57:31,408 - INFO - Setting up Playwright browser...
+2026-02-19 06:57:31,782 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:57:31,783 - INFO - Navigating to: https://scholar.google.com/citations?user=-0SOAIQAAAAJ&hl=en
+2026-02-19 06:57:37,131 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:57:37,165 - INFO - Parsing publication list from page...
+2026-02-19 06:57:37,169 - INFO - Found 0 publication rows to process
+2026-02-19 06:57:37,169 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:57:37,169 - WARNING - No publications found on the profile
+2026-02-19 06:57:37,169 - INFO - Closing Playwright browser...
+2026-02-19 06:57:37,226 - ERROR - ✗ Failed to scrape data for Djurdjani Wardaya (ID: -0SOAIQAAAAJ)
+2026-02-19 06:57:37,226 - INFO - Waiting between authors...
+2026-02-19 06:57:43,578 - INFO - Processing author 6/29: Nurrohmat Widjajanti (ID: U-w8I4UAAAAJ)
+2026-02-19 06:57:43,578 - INFO - Starting to scrape Google Scholar profile for user: U-w8I4UAAAAJ
+2026-02-19 06:57:43,579 - INFO - Setting up Playwright browser...
+2026-02-19 06:57:43,984 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:57:43,984 - INFO - Navigating to: https://scholar.google.com/citations?user=U-w8I4UAAAAJ&hl=en
+2026-02-19 06:57:48,269 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:57:48,306 - INFO - Parsing publication list from page...
+2026-02-19 06:57:48,309 - INFO - Found 0 publication rows to process
+2026-02-19 06:57:48,309 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:57:48,309 - WARNING - No publications found on the profile
+2026-02-19 06:57:48,309 - INFO - Closing Playwright browser...
+2026-02-19 06:57:48,352 - ERROR - ✗ Failed to scrape data for Nurrohmat Widjajanti (ID: U-w8I4UAAAAJ)
+2026-02-19 06:57:48,352 - INFO - Waiting between authors...
+2026-02-19 06:57:51,822 - INFO - Processing author 7/29: Catur Aries Rokhmana (ID: Z5OOseEAAAAJ)
+2026-02-19 06:57:51,822 - INFO - Starting to scrape Google Scholar profile for user: Z5OOseEAAAAJ
+2026-02-19 06:57:51,822 - INFO - Setting up Playwright browser...
+2026-02-19 06:57:52,196 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:57:52,196 - INFO - Navigating to: https://scholar.google.com/citations?user=Z5OOseEAAAAJ&hl=en
+2026-02-19 06:57:59,478 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:57:59,511 - INFO - Parsing publication list from page...
+2026-02-19 06:57:59,515 - INFO - Found 0 publication rows to process
+2026-02-19 06:57:59,515 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:57:59,515 - WARNING - No publications found on the profile
+2026-02-19 06:57:59,515 - INFO - Closing Playwright browser...
+2026-02-19 06:57:59,567 - ERROR - ✗ Failed to scrape data for Catur Aries Rokhmana (ID: Z5OOseEAAAAJ)
+2026-02-19 06:57:59,567 - INFO - Waiting between authors...
+2026-02-19 06:58:08,553 - INFO - Processing author 8/29: Yulaikhah (ID: 2vN-lF4AAAAJ)
+2026-02-19 06:58:08,553 - INFO - Starting to scrape Google Scholar profile for user: 2vN-lF4AAAAJ
+2026-02-19 06:58:08,553 - INFO - Setting up Playwright browser...
+2026-02-19 06:58:08,918 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:58:08,919 - INFO - Navigating to: https://scholar.google.com/citations?user=2vN-lF4AAAAJ&hl=en
+2026-02-19 06:58:13,351 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:58:13,388 - INFO - Parsing publication list from page...
+2026-02-19 06:58:13,393 - INFO - Found 0 publication rows to process
+2026-02-19 06:58:13,393 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:58:13,393 - WARNING - No publications found on the profile
+2026-02-19 06:58:13,393 - INFO - Closing Playwright browser...
+2026-02-19 06:58:13,458 - ERROR - ✗ Failed to scrape data for Yulaikhah (ID: 2vN-lF4AAAAJ)
+2026-02-19 06:58:13,458 - INFO - Waiting between authors...
+2026-02-19 06:58:17,450 - INFO - Processing author 9/29: Leni Sophia Heliani (ID: 0JvcXp4AAAAJ)
+2026-02-19 06:58:17,450 - INFO - Starting to scrape Google Scholar profile for user: 0JvcXp4AAAAJ
+2026-02-19 06:58:17,450 - INFO - Setting up Playwright browser...
+2026-02-19 06:58:17,829 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:58:17,829 - INFO - Navigating to: https://scholar.google.com/citations?user=0JvcXp4AAAAJ&hl=en
+2026-02-19 06:58:21,573 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:58:21,610 - INFO - Parsing publication list from page...
+2026-02-19 06:58:21,617 - INFO - Found 0 publication rows to process
+2026-02-19 06:58:21,617 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:58:21,617 - WARNING - No publications found on the profile
+2026-02-19 06:58:21,617 - INFO - Closing Playwright browser...
+2026-02-19 06:58:21,672 - ERROR - ✗ Failed to scrape data for Leni Sophia Heliani (ID: 0JvcXp4AAAAJ)
+2026-02-19 06:58:21,672 - INFO - Waiting between authors...
+2026-02-19 06:58:27,381 - INFO - Processing author 10/29: Bilal Ma’ruf (ID: slbE0KsAAAAJ)
+2026-02-19 06:58:27,382 - INFO - Starting to scrape Google Scholar profile for user: slbE0KsAAAAJ
+2026-02-19 06:58:27,382 - INFO - Setting up Playwright browser...
+2026-02-19 06:58:27,756 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:58:27,756 - INFO - Navigating to: https://scholar.google.com/citations?user=slbE0KsAAAAJ&hl=en
+2026-02-19 06:58:31,469 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:58:31,502 - INFO - Parsing publication list from page...
+2026-02-19 06:58:31,507 - INFO - Found 0 publication rows to process
+2026-02-19 06:58:31,507 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:58:31,507 - WARNING - No publications found on the profile
+2026-02-19 06:58:31,507 - INFO - Closing Playwright browser...
+2026-02-19 06:58:31,565 - ERROR - ✗ Failed to scrape data for Bilal Ma’ruf (ID: slbE0KsAAAAJ)
+2026-02-19 06:58:31,565 - INFO - Waiting between authors...
+2026-02-19 06:58:35,079 - INFO - Processing author 11/29: Trias Aditya Kurniawan M (ID: _-B2zEYAAAAJ)
+2026-02-19 06:58:35,080 - INFO - Starting to scrape Google Scholar profile for user: _-B2zEYAAAAJ
+2026-02-19 06:58:35,080 - INFO - Setting up Playwright browser...
+2026-02-19 06:58:35,458 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:58:35,458 - INFO - Navigating to: https://scholar.google.com/citations?user=_-B2zEYAAAAJ&hl=en
+2026-02-19 06:58:42,151 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:58:42,193 - INFO - Parsing publication list from page...
+2026-02-19 06:58:42,198 - INFO - Found 0 publication rows to process
+2026-02-19 06:58:42,198 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:58:42,198 - WARNING - No publications found on the profile
+2026-02-19 06:58:42,198 - INFO - Closing Playwright browser...
+2026-02-19 06:58:42,253 - ERROR - ✗ Failed to scrape data for Trias Aditya Kurniawan M (ID: _-B2zEYAAAAJ)
+2026-02-19 06:58:42,254 - INFO - Waiting between authors...
+2026-02-19 06:58:45,491 - INFO - Processing author 12/29: Rochmad Muryamto (ID: oShZECIAAAAJ)
+2026-02-19 06:58:45,491 - INFO - Starting to scrape Google Scholar profile for user: oShZECIAAAAJ
+2026-02-19 06:58:45,491 - INFO - Setting up Playwright browser...
+2026-02-19 06:58:45,887 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:58:45,887 - INFO - Navigating to: https://scholar.google.com/citations?user=oShZECIAAAAJ&hl=en
+2026-02-19 06:58:52,824 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:58:52,863 - INFO - Parsing publication list from page...
+2026-02-19 06:58:52,866 - INFO - Found 0 publication rows to process
+2026-02-19 06:58:52,866 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:58:52,866 - WARNING - No publications found on the profile
+2026-02-19 06:58:52,866 - INFO - Closing Playwright browser...
+2026-02-19 06:58:52,930 - ERROR - ✗ Failed to scrape data for Rochmad Muryamto (ID: oShZECIAAAAJ)
+2026-02-19 06:58:52,931 - INFO - Waiting between authors...
+2026-02-19 06:58:58,348 - INFO - Processing author 13/29: Diyono (ID: cm7zI5cAAAAJ)
+2026-02-19 06:58:58,349 - INFO - Starting to scrape Google Scholar profile for user: cm7zI5cAAAAJ
+2026-02-19 06:58:58,349 - INFO - Setting up Playwright browser...
+2026-02-19 06:58:58,730 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:58:58,730 - INFO - Navigating to: https://scholar.google.com/citations?user=cm7zI5cAAAAJ&hl=en
+2026-02-19 06:59:02,539 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:59:02,571 - INFO - Parsing publication list from page...
+2026-02-19 06:59:02,575 - INFO - Found 0 publication rows to process
+2026-02-19 06:59:02,575 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:59:02,575 - WARNING - No publications found on the profile
+2026-02-19 06:59:02,575 - INFO - Closing Playwright browser...
+2026-02-19 06:59:02,627 - ERROR - ✗ Failed to scrape data for Diyono (ID: cm7zI5cAAAAJ)
+2026-02-19 06:59:02,627 - INFO - Waiting between authors...
+2026-02-19 06:59:06,664 - INFO - Processing author 14/29: Abdul Basith (ID: weadN_wAAAAJ)
+2026-02-19 06:59:06,664 - INFO - Starting to scrape Google Scholar profile for user: weadN_wAAAAJ
+2026-02-19 06:59:06,664 - INFO - Setting up Playwright browser...
+2026-02-19 06:59:07,046 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:59:07,046 - INFO - Navigating to: https://scholar.google.com/citations?user=weadN_wAAAAJ&hl=en
+2026-02-19 06:59:12,334 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:59:12,371 - INFO - Parsing publication list from page...
+2026-02-19 06:59:12,376 - INFO - Found 0 publication rows to process
+2026-02-19 06:59:12,376 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:59:12,376 - WARNING - No publications found on the profile
+2026-02-19 06:59:12,376 - INFO - Closing Playwright browser...
+2026-02-19 06:59:12,410 - ERROR - ✗ Failed to scrape data for Abdul Basith (ID: weadN_wAAAAJ)
+2026-02-19 06:59:12,411 - INFO - Waiting between authors...
+2026-02-19 06:59:20,301 - INFO - Processing author 15/29: Heri Sutanta (ID: _D477zkAAAAJ)
+2026-02-19 06:59:20,302 - INFO - Starting to scrape Google Scholar profile for user: _D477zkAAAAJ
+2026-02-19 06:59:20,302 - INFO - Setting up Playwright browser...
+2026-02-19 06:59:20,696 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:59:20,696 - INFO - Navigating to: https://scholar.google.com/citations?user=_D477zkAAAAJ&hl=en
+2026-02-19 06:59:27,002 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:59:27,032 - INFO - Parsing publication list from page...
+2026-02-19 06:59:27,036 - INFO - Found 0 publication rows to process
+2026-02-19 06:59:27,036 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:59:27,036 - WARNING - No publications found on the profile
+2026-02-19 06:59:27,036 - INFO - Closing Playwright browser...
+2026-02-19 06:59:27,078 - ERROR - ✗ Failed to scrape data for Heri Sutanta (ID: _D477zkAAAAJ)
+2026-02-19 06:59:27,078 - INFO - Waiting between authors...
+2026-02-19 06:59:30,477 - INFO - Processing author 16/29: Purnama Budi Santosa (ID: 7IR6W1IAAAAJ)
+2026-02-19 06:59:30,477 - INFO - Starting to scrape Google Scholar profile for user: 7IR6W1IAAAAJ
+2026-02-19 06:59:30,477 - INFO - Setting up Playwright browser...
+2026-02-19 06:59:30,873 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:59:30,873 - INFO - Navigating to: https://scholar.google.com/citations?user=7IR6W1IAAAAJ&hl=en
+2026-02-19 06:59:37,495 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:59:37,533 - INFO - Parsing publication list from page...
+2026-02-19 06:59:37,538 - INFO - Found 0 publication rows to process
+2026-02-19 06:59:37,538 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:59:37,538 - WARNING - No publications found on the profile
+2026-02-19 06:59:37,538 - INFO - Closing Playwright browser...
+2026-02-19 06:59:37,594 - ERROR - ✗ Failed to scrape data for Purnama Budi Santosa (ID: 7IR6W1IAAAAJ)
+2026-02-19 06:59:37,594 - INFO - Waiting between authors...
+2026-02-19 06:59:43,320 - INFO - Processing author 17/29: I Made Andi Arsana (ID: x2N_jBcAAAAJ)
+2026-02-19 06:59:43,320 - INFO - Starting to scrape Google Scholar profile for user: x2N_jBcAAAAJ
+2026-02-19 06:59:43,320 - INFO - Setting up Playwright browser...
+2026-02-19 06:59:44,098 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:59:44,099 - INFO - Navigating to: https://scholar.google.com/citations?user=x2N_jBcAAAAJ&hl=en
+2026-02-19 06:59:53,158 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 06:59:53,194 - INFO - Parsing publication list from page...
+2026-02-19 06:59:53,200 - INFO - Found 0 publication rows to process
+2026-02-19 06:59:53,200 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 06:59:53,200 - WARNING - No publications found on the profile
+2026-02-19 06:59:53,200 - INFO - Closing Playwright browser...
+2026-02-19 06:59:53,263 - ERROR - ✗ Failed to scrape data for I Made Andi Arsana (ID: x2N_jBcAAAAJ)
+2026-02-19 06:59:53,264 - INFO - Waiting between authors...
+2026-02-19 06:59:58,237 - INFO - Processing author 18/29: Ruli Andaru (ID: gOVDxGYAAAAJ)
+2026-02-19 06:59:58,238 - INFO - Starting to scrape Google Scholar profile for user: gOVDxGYAAAAJ
+2026-02-19 06:59:58,238 - INFO - Setting up Playwright browser...
+2026-02-19 06:59:58,683 - INFO - Playwright browser setup completed successfully
+2026-02-19 06:59:58,684 - INFO - Navigating to: https://scholar.google.com/citations?user=gOVDxGYAAAAJ&hl=en
+2026-02-19 07:00:03,255 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 07:00:03,286 - INFO - Parsing publication list from page...
+2026-02-19 07:00:03,291 - INFO - Found 0 publication rows to process
+2026-02-19 07:00:03,291 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 07:00:03,291 - WARNING - No publications found on the profile
+2026-02-19 07:00:03,291 - INFO - Closing Playwright browser...
+2026-02-19 07:00:03,330 - ERROR - ✗ Failed to scrape data for Ruli Andaru (ID: gOVDxGYAAAAJ)
+2026-02-19 07:00:03,330 - INFO - Waiting between authors...
+2026-02-19 07:00:09,038 - INFO - Processing author 19/29: Dwi Lestari (ID: _zEKbnoAAAAJ)
+2026-02-19 07:00:09,038 - INFO - Starting to scrape Google Scholar profile for user: _zEKbnoAAAAJ
+2026-02-19 07:00:09,038 - INFO - Setting up Playwright browser...
+2026-02-19 07:00:09,422 - INFO - Playwright browser setup completed successfully
+2026-02-19 07:00:09,422 - INFO - Navigating to: https://scholar.google.com/citations?user=_zEKbnoAAAAJ&hl=en
+2026-02-19 07:00:16,058 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 07:00:16,088 - INFO - Parsing publication list from page...
+2026-02-19 07:00:16,092 - INFO - Found 0 publication rows to process
+2026-02-19 07:00:16,092 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 07:00:16,092 - WARNING - No publications found on the profile
+2026-02-19 07:00:16,092 - INFO - Closing Playwright browser...
+2026-02-19 07:00:16,130 - ERROR - ✗ Failed to scrape data for Dwi Lestari (ID: _zEKbnoAAAAJ)
+2026-02-19 07:00:16,130 - INFO - Waiting between authors...
+2026-02-19 07:00:22,625 - INFO - Processing author 20/29: Dedi Atunggal S.P. (ID: jlJ_M_MAAAAJ)
+2026-02-19 07:00:22,625 - INFO - Starting to scrape Google Scholar profile for user: jlJ_M_MAAAAJ
+2026-02-19 07:00:22,625 - INFO - Setting up Playwright browser...
+2026-02-19 07:00:23,005 - INFO - Playwright browser setup completed successfully
+2026-02-19 07:00:23,005 - INFO - Navigating to: https://scholar.google.com/citations?user=jlJ_M_MAAAAJ&hl=en
+2026-02-19 07:00:30,722 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 07:00:30,760 - INFO - Parsing publication list from page...
+2026-02-19 07:00:30,764 - INFO - Found 0 publication rows to process
+2026-02-19 07:00:30,765 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 07:00:30,765 - WARNING - No publications found on the profile
+2026-02-19 07:00:30,765 - INFO - Closing Playwright browser...
+2026-02-19 07:00:30,811 - ERROR - ✗ Failed to scrape data for Dedi Atunggal S.P. (ID: jlJ_M_MAAAAJ)
+2026-02-19 07:00:30,811 - INFO - Waiting between authors...
+2026-02-19 07:00:34,704 - INFO - Processing author 21/29: Bambang Kun Cahyono (ID: g3m5JIYAAAAJ)
+2026-02-19 07:00:34,705 - INFO - Starting to scrape Google Scholar profile for user: g3m5JIYAAAAJ
+2026-02-19 07:00:34,705 - INFO - Setting up Playwright browser...
+2026-02-19 07:00:35,112 - INFO - Playwright browser setup completed successfully
+2026-02-19 07:00:35,112 - INFO - Navigating to: https://scholar.google.com/citations?user=g3m5JIYAAAAJ&hl=en
+2026-02-19 07:00:41,018 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 07:00:41,060 - INFO - Parsing publication list from page...
+2026-02-19 07:00:41,069 - INFO - Found 0 publication rows to process
+2026-02-19 07:00:41,069 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 07:00:41,069 - WARNING - No publications found on the profile
+2026-02-19 07:00:41,069 - INFO - Closing Playwright browser...
+2026-02-19 07:00:41,125 - ERROR - ✗ Failed to scrape data for Bambang Kun Cahyono (ID: g3m5JIYAAAAJ)
+2026-02-19 07:00:41,125 - INFO - Waiting between authors...
+2026-02-19 07:00:47,025 - INFO - Processing author 22/29: Dany Puguh Laksono (ID: LsZIhbcAAAAJ)
+2026-02-19 07:00:47,025 - INFO - Starting to scrape Google Scholar profile for user: LsZIhbcAAAAJ
+2026-02-19 07:00:47,025 - INFO - Setting up Playwright browser...
+2026-02-19 07:00:47,426 - INFO - Playwright browser setup completed successfully
+2026-02-19 07:00:47,426 - INFO - Navigating to: https://scholar.google.com/citations?user=LsZIhbcAAAAJ&hl=en
+2026-02-19 07:00:52,055 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 07:00:52,091 - INFO - Parsing publication list from page...
+2026-02-19 07:00:52,096 - INFO - Found 0 publication rows to process
+2026-02-19 07:00:52,096 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 07:00:52,096 - WARNING - No publications found on the profile
+2026-02-19 07:00:52,096 - INFO - Closing Playwright browser...
+2026-02-19 07:00:52,157 - ERROR - ✗ Failed to scrape data for Dany Puguh Laksono (ID: LsZIhbcAAAAJ)
+2026-02-19 07:00:52,158 - INFO - Waiting between authors...
+2026-02-19 07:00:55,496 - INFO - Processing author 23/29: Maritsa Faridatunnisa (ID: vWyXz6UAAAAJ)
+2026-02-19 07:00:55,497 - INFO - Starting to scrape Google Scholar profile for user: vWyXz6UAAAAJ
+2026-02-19 07:00:55,497 - INFO - Setting up Playwright browser...
+2026-02-19 07:00:55,953 - INFO - Playwright browser setup completed successfully
+2026-02-19 07:00:55,953 - INFO - Navigating to: https://scholar.google.com/citations?user=vWyXz6UAAAAJ&hl=en
+2026-02-19 07:01:04,027 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 07:01:04,067 - INFO - Parsing publication list from page...
+2026-02-19 07:01:04,071 - INFO - Found 0 publication rows to process
+2026-02-19 07:01:04,072 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 07:01:04,072 - WARNING - No publications found on the profile
+2026-02-19 07:01:04,072 - INFO - Closing Playwright browser...
+2026-02-19 07:01:04,124 - ERROR - ✗ Failed to scrape data for Maritsa Faridatunnisa (ID: vWyXz6UAAAAJ)
+2026-02-19 07:01:04,124 - INFO - Waiting between authors...
+2026-02-19 07:01:08,427 - INFO - Processing author 24/29: Hilmiyati Ulinnuha (ID: PAAVcXcAAAAJ)
+2026-02-19 07:01:08,427 - INFO - Starting to scrape Google Scholar profile for user: PAAVcXcAAAAJ
+2026-02-19 07:01:08,427 - INFO - Setting up Playwright browser...
+2026-02-19 07:01:08,854 - INFO - Playwright browser setup completed successfully
+2026-02-19 07:01:08,854 - INFO - Navigating to: https://scholar.google.com/citations?user=PAAVcXcAAAAJ&hl=en
+2026-02-19 07:01:13,530 - INFO - Loading all publications by clicking 'Load More' button (playwright)...
+2026-02-19 07:01:13,567 - INFO - Parsing publication list from page...
+2026-02-19 07:01:13,572 - INFO - Found 0 publication rows to process
+2026-02-19 07:01:13,572 - INFO - Successfully parsed 0 publications from the main page
+2026-02-19 07:01:13,572 - WARNING - No publications found on the profile
+2026-02-19 07:01:13,572 - INFO - Closing Playwright browser...
+2026-02-19 07:01:13,615 - ERROR - ✗ Failed to scrape data for Hilmiyati Ulinnuha (ID: PAAVcXcAAAAJ)
+2026-02-19 07:01:13,615 - INFO - Waiting between authors...
+2026-02-19 08:43:05,848 - INFO - Starting single author scraping for user ID: _-B2zEYAAAAJ
+2026-02-19 08:43:05,849 - INFO - Starting to scrape Google Scholar profile for user: _-B2zEYAAAAJ
+2026-02-19 08:43:05,849 - INFO - Setting up Chrome browser...
+2026-02-19 08:43:05,885 - INFO - Installing ChromeDriver...
+2026-02-19 08:43:05,886 - INFO - ====== WebDriver manager ======
+2026-02-19 08:43:06,075 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-19 08:43:06,186 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-19 08:43:06,301 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-19 08:43:06,623 - INFO - WebDriver version 141.0.7390.122 selected
+2026-02-19 08:43:06,626 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2026-02-19 08:43:06,626 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/linux64/chromedriver-linux64.zip
+2026-02-19 08:43:06,744 - INFO - Driver downloading response is 200
+2026-02-19 08:43:07,343 - INFO - Get LATEST chromedriver version for google-chrome
+2026-02-19 08:43:07,616 - INFO - Driver has been saved in cache [/home/danylaksono/.wdm/drivers/chromedriver/linux64/141.0.7390.122]
+2026-02-19 08:43:08,281 - INFO - Chrome browser setup completed successfully
+2026-02-19 08:43:08,281 - INFO - Navigating to: https://scholar.google.com/citations?user=_-B2zEYAAAAJ&hl=en
+2026-02-19 08:43:14,291 - WARNING - Blocked by Google Scholar while loading profile (driver): unusual traffic detected; attempting httpx fallback...
+2026-02-19 08:43:14,977 - INFO - HTTP Request: GET https://scholar.google.com/citations?user=_-B2zEYAAAAJ&hl=en "HTTP/1.1 302 Found"
+2026-02-19 08:43:15,115 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fuser%3D_-B2zEYAAAAJ%26hl%3Den&hl=en&q=EgQtgmnfGKWa28wGIi5G3BEd3YzAQrNNR1Hq4WPIGY0x7M__lQSFO0JMNdzu4v2Qdo4bxXG5GuIE7FjFMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 08:43:19,010 - INFO - HTTP Request: GET https://scholar.google.com/citations?user=_-B2zEYAAAAJ&hl=en "HTTP/1.1 302 Found"
+2026-02-19 08:43:19,160 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fuser%3D_-B2zEYAAAAJ%26hl%3Den&hl=en&q=EgQtgmnfGKaa28wGIi60Lip2JeiCidOyJTxAeyilCRlxeRL8YNPeYfwu5HBa71aF34g7Mo5ODaZrLJbpMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 08:43:20,586 - INFO - HTTP Request: GET https://scholar.google.com/citations?user=_-B2zEYAAAAJ&hl=en "HTTP/1.1 302 Found"
+2026-02-19 08:43:20,728 - INFO - HTTP Request: GET https://www.google.com/sorry/index?continue=https://scholar.google.com/citations%3Fuser%3D_-B2zEYAAAAJ%26hl%3Den&hl=en&q=EgQtgmnfGKia28wGIi5eF0JL2EODiD3Ym_dSmDmJaS2uHwTu_JyLnD8hsbs1XzGIm3oznNpQPpli86SBMgJyUloBQw "HTTP/1.1 429 Too Many Requests"
+2026-02-19 08:43:22,732 - WARNING - Google Scholar block detected: unusual traffic detected (count=1)
+2026-02-19 08:43:22,733 - ERROR - Blocked by Google Scholar while loading profile: unusual traffic detected
+2026-02-19 08:43:22,733 - INFO - Parsing publication list from page...
+2026-02-19 08:43:22,738 - WARNING - Google Scholar block detected: unusual traffic detected (count=2)
+2026-02-19 08:43:22,738 - ERROR - Blocked by Google Scholar while loading profile: unusual traffic detected
+2026-02-19 08:43:22,738 - WARNING - No publications found on the profile
+2026-02-19 08:43:22,738 - INFO - Closing browser...
+2026-02-19 08:43:22,805 - ERROR - ✗ Failed to scrape any data
+2026-02-19 08:43:22,805 - INFO - ============================================================
+2026-02-19 08:43:22,805 - INFO - GOOGLE SCHOLAR SCRAPER FINISHED
+2026-02-19 08:43:22,805 - INFO - ============================================================

@@ -41,13 +41,22 @@ class GoogleScholarScraper:
         # Phase 2 defaults
         self.use_httpx = True
         self.concurrency = 8
-        self.max_retries = 3
+        # Increase retries slightly so the scraper has a better chance to recover
+        # from transient 429/redirect -> /sorry responses before giving up.
+        self.max_retries = 5
         self.backoff_factor = 0.5
-        self.user_agents = None  # optional list of UAs for rotation
+        self.user_agents: Optional[List[str]] = None  # optional list of UAs for rotation
+        self.proxies: Optional[List[str]] = None     # optional list of proxy servers (rotated)
 
         # runtime objects
         self.browser = None
         self.playwright = None
+        self._blocked_reason: Optional[str] = None  # reason text when Google blocks requests (captcha / unusual traffic)
+        self._block_count: int = 0                   # how many consecutive block detections we've seen
+        self.block_retry_limit: int = 3              # how many block detections before we treat as persistent
+        self.pause_on_block: bool = True             # whether to pause the batch when persistent block detected
+        self.blocked_pause_seconds: float = 300.0    # default pause duration (seconds)
+        self._profile_html_cache: Optional[str] = None  # cached profile HTML when httpx fallback is used
         self.logger = self._setup_logging()
         
     def _setup_logging(self) -> logging.Logger:
@@ -122,27 +131,72 @@ class GoogleScholarScraper:
             # built-in parser and log a helpful message.
             self.logger.warning("Couldn't use 'lxml' parser; falling back to 'html.parser'. To enable the faster 'lxml' parser install it with: pip install lxml")
             return BeautifulSoup(html, 'html.parser')
-    
+
+    def _detect_captcha_or_unusual_traffic(self, html: str) -> Optional[str]:
+        """Heuristics to detect CAPTCHA / 'unusual traffic' / block pages returned by Google Scholar.
+
+        Returns a short reason string when a blocking page is detected, otherwise None.
+        """
+        if not html:
+            return None
+        txt = html.lower()
+        # common Google blocking / captcha indicators
+        if 'our systems have detected unusual traffic' in txt or 'unusual traffic' in txt:
+            return 'unusual traffic detected'
+        if 'please type the characters you see in the image' in txt or 'to continue, please type' in txt:
+            return 'captcha challenge'
+        if 'recaptcha' in txt or 'g-recaptcha' in txt or 'id="captcha"' in txt:
+            return 'captcha challenge'
+        if "we're sorry" in txt and 'unusual traffic' in txt:
+            return 'blocked - sorry/unusual traffic'
+        return None
+
     def _random_delay(self):
         """Add a random delay between requests to avoid rate limiting."""
         delay = random.uniform(*self.delay_range)
         self.logger.debug(f"Waiting {delay:.1f} seconds...")
         time.sleep(delay)
+
+    def _record_block(self, reason: str) -> None:
+        """Record a blocking/captcha detection and increment the consecutive counter.
+
+        This does NOT pause — calling code (e.g. the batch processor) decides when to
+        pause or abort based on the counter and configuration.
+        """
+        self._blocked_reason = reason
+        self._block_count = getattr(self, '_block_count', 0) + 1
+        self.logger.warning(f"Google Scholar block detected: {reason} (count={self._block_count})")
+
+    def _clear_block(self) -> None:
+        """Clear block state after a successful fetch or manual reset."""
+        if self._blocked_reason is not None or getattr(self, '_block_count', 0) > 0:
+            self.logger.debug("Clearing Google Scholar block state")
+        self._blocked_reason = None
+        self._block_count = 0
     
     def _parse_publication_details_from_html(self, html: str) -> Optional[Dict]:
         """Parse publication details from HTML (shared parser used by both drivers)."""
         try:
+            # detect blocking/captcha pages first
+            block_reason = self._detect_captcha_or_unusual_traffic(html)
+            if block_reason:
+                self._record_block(block_reason)
+                return None
+
             soup = self._make_soup(html)
             self.logger.info("Parsing publication details...")
 
             details = {}
 
-            # Extract title
+            # Extract title - only set if present (don't overwrite a valid list title with 'N/A')
             title = soup.find('div', id='gsc_oci_title')
-            details['title'] = title.text.strip() if title else 'N/A'
-            self.logger.info(f"Found title: {details['title']}")
+            if title and title.text and title.text.strip():
+                details['title'] = title.text.strip()
+                self.logger.info(f"Found title: {details['title']}")
+            else:
+                self.logger.debug("No title found on publication detail page; leaving existing title unchanged")
 
-            # Extract fields
+            # Extract fields (only add keys when we actually have values)
             fields = soup.find_all('div', class_='gs_scl')
             self.logger.info(f"Found {len(fields)} field sections to parse")
 
@@ -155,11 +209,16 @@ class GoogleScholarScraper:
 
                 name = field_name_elem.text.strip().lower()
                 value = field_value_elem.text.strip()
+                if not value:
+                    continue
+
                 self.logger.debug(f"Processing field: {name} = {value}")
 
                 if name == 'authors':
-                    details['authors'] = self._parse_authors_to_array(value)
-                    self.logger.info(f"Found {len(details['authors'])} authors: {details['authors']}")
+                    authors = self._parse_authors_to_array(value)
+                    if authors:
+                        details['authors'] = authors
+                        self.logger.info(f"Found {len(details['authors'])} authors: {details['authors']}")
                 elif name == 'publication date':
                     details['publication_date'] = value
                     self.logger.info(f"Found publication date: {value}")
@@ -168,15 +227,21 @@ class GoogleScholarScraper:
                     self.logger.info(f"Found abstract (length: {len(value)} chars)")
                 elif name == 'total citations':
                     citation_info = field.find('a')
-                    if citation_info:
+                    if citation_info and citation_info.text.strip():
                         details['total_citations'] = citation_info.text.strip()
                         self.logger.info(f"Found total citations: {details['total_citations']}")
                     else:
-                        details['total_citations'] = 'N/A'
-                        self.logger.warning("No citation info found")
+                        self.logger.debug("No citation info found in 'total citations' field")
 
-            details['venue'] = self._extract_publication_venue(soup)
-            details['pdf_link'] = self._extract_pdf_link(soup)
+            # Venue and PDF link helpers may return 'N/A' when absent; only include them
+            # if they return useful values to avoid clobbering existing data.
+            venue = self._extract_publication_venue(soup)
+            if venue and venue != 'N/A':
+                details['venue'] = venue
+
+            pdf_link = self._extract_pdf_link(soup)
+            if pdf_link and pdf_link != 'N/A':
+                details['pdf_link'] = pdf_link
 
             self.logger.info("Publication details extraction completed")
             return details
@@ -199,6 +264,20 @@ class GoogleScholarScraper:
                 except Exception:
                     pass
                 html = self.playwright.page_content()
+                block_reason = self._detect_captcha_or_unusual_traffic(html)
+                if block_reason:
+                    self.logger.warning(f"Blocked by Google Scholar while fetching publication details (driver): {block_reason}; attempting httpx fallback...")
+                    if self.use_httpx:
+                        try:
+                            fetched = asyncio.run(self._fetch_detail_via_httpx_async(url))
+                            if fetched and not self._detect_captcha_or_unusual_traffic(fetched):
+                                self._clear_block()
+                                return self._parse_publication_details_from_html(fetched)
+                        except Exception:
+                            pass
+                    self._record_block(block_reason)
+                    self.logger.error(f"Blocked by Google Scholar while fetching publication details: {block_reason}")
+                    return None
                 return self._parse_publication_details_from_html(html)
 
             # Default: selenium
@@ -212,7 +291,23 @@ class GoogleScholarScraper:
                 EC.presence_of_element_located((By.TAG_NAME, "body"))
             )
 
-            return self._parse_publication_details_from_html(self.browser.page_source)
+            page_html = self.browser.page_source
+            block_reason = self._detect_captcha_or_unusual_traffic(page_html)
+            if block_reason:
+                self.logger.warning(f"Blocked by Google Scholar while fetching publication details (driver): {block_reason}; attempting httpx fallback...")
+                if self.use_httpx:
+                    try:
+                        fetched = asyncio.run(self._fetch_detail_via_httpx_async(url))
+                        if fetched and not self._detect_captcha_or_unusual_traffic(fetched):
+                            self._clear_block()
+                            return self._parse_publication_details_from_html(fetched)
+                    except Exception:
+                        pass
+                self._record_block(block_reason)
+                self.logger.error(f"Blocked by Google Scholar while fetching publication details: {block_reason}")
+                return None
+
+            return self._parse_publication_details_from_html(page_html)
 
         except Exception as e:
             self.logger.error(f"Error fetching publication details from {url}: {e}")
@@ -241,38 +336,118 @@ class GoogleScholarScraper:
         return 'N/A'
 
     def _pick_user_agent(self) -> str:
-        """Return a user-agent string (optional rotation)."""
-        default_ua = (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/120.0.0.0 Safari/537.36"
-        )
+        """Return a user-agent string (optional rotation).
+
+        If the user provides a UA file we pick from that list. Otherwise rotate
+        a small built-in set to reduce fingerprinting when running multiple
+        requests in the same process.
+        """
+        builtin_uas = [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15",
+            "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1",
+        ]
         if self.user_agents:
             return random.choice(self.user_agents)
-        return default_ua
+        return random.choice(builtin_uas)
+
+    def load_user_agents_from_file(self, path: str) -> None:
+        """Load newline-separated user-agent strings from a file."""
+        uas: List[str] = []
+        with open(path, 'r', encoding='utf-8') as f:
+            for ln in f:
+                ln = ln.strip()
+                if ln:
+                    uas.append(ln)
+        if not uas:
+            raise ValueError("User-agent file is empty")
+        self.user_agents = uas
+        self.logger.info(f"Loaded {len(uas)} user-agents from {path}")
+
+    def load_proxies_from_file(self, path: str) -> None:
+        """Load newline-separated proxy servers (e.g. http://host:port) from a file."""
+        proxies: List[str] = []
+        with open(path, 'r', encoding='utf-8') as f:
+            for ln in f:
+                ln = ln.strip()
+                if ln:
+                    proxies.append(ln)
+        if not proxies:
+            raise ValueError("Proxy file is empty")
+        self.proxies = proxies
+        self.logger.info(f"Loaded {len(proxies)} proxies from {path}")
+
+    def _pick_proxy(self) -> Optional[str]:
+        """Return a proxy URL (random rotation)."""
+        if not self.proxies:
+            return None
+        return random.choice(self.proxies)
 
     async def _fetch_detail_via_httpx_async(self, url: str) -> Optional[str]:
-        """Try to fetch a publication detail page over HTTP (async) with retries/backoff."""
+        """Try to fetch a publication detail page over HTTP (async) with retries/backoff.
+
+        Enhancements:
+        - jittered exponential backoff
+        - treat HTTP 429 / redirect-to-'/sorry' as transient blocking and retry
+        - try direct first, then fall back to configured proxies on subsequent attempts
+        - rotate UA on every attempt
+        """
         try:
             import httpx
         except Exception:
             self.logger.debug("httpx not installed; skipping httpx fast path")
             return None
 
-        headers = {"User-Agent": self._pick_user_agent()}
         attempt = 0
         while attempt < self.max_retries:
+            # rotate user-agent each attempt
+            headers = {"User-Agent": self._pick_user_agent()}
+
+            # If proxies are configured, prefer a direct attempt first and then
+            # use a proxy on subsequent retries (proxy-fallback behavior).
+            proxy = None
+            if self.proxies:
+                proxy = None if attempt == 0 else self._pick_proxy()
+            else:
+                proxy = None
+
             try:
                 async with httpx.AsyncClient(timeout=10, follow_redirects=True) as client:
-                    resp = await client.get(url, headers=headers)
+                    if proxy:
+                        resp = await client.get(url, headers=headers, proxies=proxy)
+                    else:
+                        resp = await client.get(url, headers=headers)
+
+                    # handle successful HTTP response body
                     if resp.status_code == 200 and resp.text:
-                        return resp.text
-                    self.logger.debug(f"httpx fetch status={resp.status_code} for {url}")
+                        # check for blocking pages inside body
+                        block_reason = self._detect_captcha_or_unusual_traffic(resp.text)
+                        if block_reason:
+                            self._record_block(block_reason)
+                            self.logger.warning(f"[httpx] blocking detected (attempt {attempt + 1}): {block_reason}; retrying with different UA/proxy")
+                        else:
+                            self._clear_block()
+                            return resp.text
+
+                    # treat rate-limiting / server-side throttling as transient
+                    if resp.status_code == 429:
+                        self._record_block('httpx 429')
+                        self.logger.warning(f"[httpx] received 429 Too Many Requests for {url} (attempt {attempt + 1}); will retry")
+                    elif 500 <= resp.status_code < 600:
+                        self.logger.warning(f"[httpx] server error {resp.status_code} for {url} (attempt {attempt + 1}); will retry")
+                    else:
+                        # other non-200 responses logged for debugging
+                        self.logger.debug(f"httpx fetch status={resp.status_code} for {url}")
+
             except Exception as e:
                 self.logger.debug(f"httpx fetch error (attempt {attempt + 1}) for {url}: {e}")
 
-            # backoff
-            await asyncio.sleep(self.backoff_factor * (2 ** attempt))
+            # jittered exponential backoff before next attempt
+            jitter = random.uniform(0.8, 1.25)
+            sleep_time = self.backoff_factor * (2 ** attempt) * jitter
+            self.logger.debug(f"[httpx] sleeping {sleep_time:.2f}s before retry (attempt {attempt + 1})")
+            await asyncio.sleep(sleep_time)
             attempt += 1
 
         return None
@@ -323,19 +498,37 @@ class GoogleScholarScraper:
                 headless=self.headless,
                 args=["--no-sandbox", "--disable-dev-shm-usage"],
             )
-            context = await browser.new_context(user_agent=self._pick_user_agent(), ignore_https_errors=True)
 
             async def _worker(idx: int):
                 async with sem:
-                    page = await context.new_page()
                     url = publications[idx].get('citation_url')
                     if not url:
                         fail_holder[0] += 1
-                        await page.close()
                         return
+
+                    # create a context per worker if proxies are used, otherwise reuse a shared context
+                    proxy = self._pick_proxy()
+                    if proxy:
+                        context = await browser.new_context(user_agent=self._pick_user_agent(), ignore_https_errors=True, proxy={"server": proxy})
+                    else:
+                        # create a shared context lazily
+                        nonlocal_context = getattr(_worker, "_shared_context", None)
+                        if nonlocal_context is None:
+                            _worker._shared_context = await browser.new_context(user_agent=self._pick_user_agent(), ignore_https_errors=True)
+                        context = _worker._shared_context
+
+                        page = await context.new_page()
                     try:
                         await page.goto(url, wait_until='load')
                         html = await page.content()
+                        # detect blocking on JS-driven detail pages
+                        block_reason = self._detect_captcha_or_unusual_traffic(html)
+                        if block_reason:
+                            self._record_block(block_reason)
+                            self.logger.error(f"Blocked by Google Scholar while fetching publication details (playwright): {block_reason}")
+                            fail_holder[0] += 1
+                            return
+
                         details = self._parse_publication_details_from_html(html)
                         if details:
                             publications[idx].update(details)
@@ -347,18 +540,21 @@ class GoogleScholarScraper:
                         fail_holder[0] += 1
                     finally:
                         await page.close()
+                        if proxy:
+                            try:
+                                await context.close()
+                            except Exception:
+                                pass
 
             tasks = [asyncio.create_task(_worker(i)) for i in indices]
             await asyncio.gather(*tasks)
 
-            try:
-                await context.close()
-            except Exception:
-                pass
-            try:
-                await browser.close()
-            except Exception:
-                pass
+            # close shared context if present
+            if hasattr(_worker, '_shared_context'):
+                try:
+                    await _worker._shared_context.close()
+                except Exception:
+                    pass
 
         return success_holder[0], fail_holder[0]
 
@@ -438,22 +634,26 @@ class GoogleScholarScraper:
             self.playwright.get(base_url)
             self._random_delay()
 
-            load_count = 0
-            self.logger.info("Loading all publications by clicking 'Load More' button (playwright)...")
-            while True:
-                try:
-                    btn = self.playwright.query_selector('#gsc_bpf_more')
-                    if btn and self.playwright.locator_is_enabled('#gsc_bpf_more'):
-                        self.playwright.click('#gsc_bpf_more')
-                        load_count += 1
-                        self.logger.info(f"Clicked 'Load More' button (attempt {load_count})")
-                        self._random_delay()
-                    else:
-                        break
-                except Exception as e:
-                    self.logger.info(f"No more 'Load More' button found or error occurred: {e}")
-                    break
-            return
+            # detect blocking/captcha immediately after page load; try httpx fallback if blocked
+            block_reason = self._detect_captcha_or_unusual_traffic(self.playwright.page_content())
+            if block_reason:
+                self.logger.warning(f"Blocked by Google Scholar while loading profile (driver): {block_reason}; attempting httpx fallback...")
+
+                if self.use_httpx:
+                    try:
+                        html = asyncio.run(self._fetch_detail_via_httpx_async(base_url))
+                        if html and not self._detect_captcha_or_unusual_traffic(html):
+                            self._profile_html_cache = html
+                            self._clear_block()
+                            self.logger.info("Successfully fetched profile HTML via httpx fallback")
+                            return
+                    except Exception as e:
+                        self.logger.debug(f"httpx fallback failed: {e}")
+
+                # fallback failed — record a block and stop
+                self._record_block(block_reason)
+                self.logger.error(f"Blocked by Google Scholar while loading profile: {block_reason}")
+                return
 
         # Selenium fallback (existing behavior)
         if self.browser is None:
@@ -462,6 +662,27 @@ class GoogleScholarScraper:
             
         self.browser.get(base_url)
         self._random_delay()
+
+        # detect blocking/captcha immediately after page load; try httpx fallback if blocked
+        block_reason = self._detect_captcha_or_unusual_traffic(self.browser.page_source)
+        if block_reason:
+            self.logger.warning(f"Blocked by Google Scholar while loading profile (driver): {block_reason}; attempting httpx fallback...")
+
+            if self.use_httpx:
+                try:
+                    html = asyncio.run(self._fetch_detail_via_httpx_async(base_url))
+                    if html and not self._detect_captcha_or_unusual_traffic(html):
+                        self._profile_html_cache = html
+                        self._clear_block()
+                        self.logger.info("Successfully fetched profile HTML via httpx fallback")
+                        return
+                except Exception as e:
+                    self.logger.debug(f"httpx fallback failed: {e}")
+
+            # fallback failed — record a block and stop
+            self._record_block(block_reason)
+            self.logger.error(f"Blocked by Google Scholar while loading profile: {block_reason}")
+            return
 
         # Click the "Load More" button until it's no longer present
         load_count = 0
@@ -495,23 +716,44 @@ class GoogleScholarScraper:
         """Parse the publication list from the loaded page or provided HTML."""
         self.logger.info("Parsing publication list from page...")
 
+        # If we previously fetched profile HTML via httpx fallback, prefer that
+        if html is None and self._profile_html_cache:
+            html = self._profile_html_cache
+            self._profile_html_cache = None
+
         if html is None:
             if self.driver == 'playwright':
                 if not self.playwright:
                     self.logger.error("Playwright is not initialized")
                     return []
-                soup = self._make_soup(self.playwright.page_content())
+                raw_html = self.playwright.page_content()
             else:
                 if self.browser is None:
                     self.logger.error("Browser is not initialized")
                     return []
-                soup = self._make_soup(self.browser.page_source)
+                raw_html = self.browser.page_source
+            # detect blocking / captcha pages early
+            block_reason = self._detect_captcha_or_unusual_traffic(raw_html)
+            if block_reason:
+                self._record_block(block_reason)
+                self.logger.error(f"Blocked by Google Scholar while loading profile: {block_reason}")
+                return []
+            soup = self._make_soup(raw_html)
         else:
+            block_reason = self._detect_captcha_or_unusual_traffic(html)
+            if block_reason:
+                self._record_block(block_reason)
+                self.logger.error(f"Blocked by Google Scholar while loading profile: {block_reason}")
+                return []
             soup = self._make_soup(html)
 
         publications = []
         
-        publication_rows = soup.find_all('tr', class_='gsc_a_tr')
+        # Find publication rows by class name (some Scholar profiles use <tr> while
+        # others render row-like blocks as <div class="gsc_a_tr">). Using
+        # `find_all(class_='gsc_a_tr')` covers both table-based and div-based
+        # layouts so we don't miss publications for certain profiles.
+        publication_rows = soup.find_all(class_='gsc_a_tr')
         self.logger.info(f"Found {len(publication_rows)} publication rows to process")
         
         for i, row in enumerate(publication_rows, 1):
@@ -595,15 +837,22 @@ class GoogleScholarScraper:
                 self.logger.info("Closing browser...")
                 self.browser.quit()
     
-    def save_to_json(self, data: List[Dict], user_id: str, output_dir: str = "output") -> str:
+    def save_to_json(self, data: List[Dict], user_id: str, output_dir: str = "output", name: Optional[str] = None) -> str:
         """Save scraped data to a JSON file.
 
         Default output directory is `./output` (created if missing).
+        If `name` is provided the filename becomes `<user_id>_<name>_scholar_data.json`.
         """
         # Create output directory if it doesn't exist
         os.makedirs(output_dir, exist_ok=True)
-        
-        output_file = os.path.join(output_dir, f'{user_id}_scholar_data.json')
+
+        # Build filename; sanitize `name` to avoid path separators or strange chars
+        if name:
+            safe_name = ''.join(c if (c.isalnum() or c in ('-', '_')) else '_' for c in name)
+            output_file = os.path.join(output_dir, f"{user_id}_{safe_name}_scholar_data.json")
+        else:
+            output_file = os.path.join(output_dir, f'{user_id}_scholar_data.json')
+
         self.logger.info(f"Saving {len(data)} publications to {output_file}...")
         
         try:
@@ -618,55 +867,68 @@ class GoogleScholarScraper:
     def load_authors_from_csv(self, csv_file: str) -> List[Tuple[str, str]]:
         """
         Load authors and their Google Scholar IDs from a CSV file.
-        
-        Expected CSV format:
-        name,user_id
-        "John Doe","abc123"
-        "Jane Smith","def456"
-        
+
+        This method is tolerant of several common CSV formats. It accepts either
+        the canonical `name,user_id` headers or variants such as
+        `Nama,GoogleScholarID,Status` (case-insensitive).
+
         Args:
             csv_file: Path to the CSV file
-            
+
         Returns:
-            List of tuples containing (name, user_id)
+            List of tuples containing (name, user_id). Rows missing a scholar id are skipped.
         """
-        authors = []
+        authors: List[Tuple[str, str]] = []
         try:
             with open(csv_file, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
-                
-                # Check if required columns exist
-                if not reader.fieldnames or 'name' not in reader.fieldnames or 'user_id' not in reader.fieldnames:
-                    raise ValueError("CSV must contain 'name' and 'user_id' columns")
-                
+
+                if not reader.fieldnames:
+                    raise ValueError("CSV file has no header row")
+
+                # Normalize fieldnames -> map lowercase -> original
+                fld_map = {fn.strip().lower(): fn for fn in reader.fieldnames}
+
+                # possible column names for name and user id (lowercased)
+                possible_name_cols = ['name', 'nama', 'full_name', 'display_name']
+                possible_id_cols = ['user_id', 'google_scholar_id', 'googlescholarid', 'googleid', 'scholar_id', 'googlescholarid']
+
+                name_col = next((fld_map[c] for c in possible_name_cols if c in fld_map), None)
+                id_col = next((fld_map[c] for c in possible_id_cols if c in fld_map), None)
+
+                if not name_col or not id_col:
+                    raise ValueError(
+                        "CSV must contain a name column (name|Nama) and a scholar id column (user_id|GoogleScholarID)"
+                    )
+
                 for row in reader:
-                    name = row['name'].strip()
-                    user_id = row['user_id'].strip()
-                    
-                    if name and user_id:  # Skip empty rows
-                        authors.append((name, user_id))
-                        self.logger.info(f"Loaded author: {name} (ID: {user_id})")
+                    raw_name = (row.get(name_col) or '').strip()
+                    raw_id = (row.get(id_col) or '').strip()
+
+                    if raw_name and raw_id:
+                        authors.append((raw_name, raw_id))
+                        self.logger.info(f"Loaded author: {raw_name} (ID: {raw_id})")
                     else:
-                        self.logger.warning(f"Skipping row with empty name or user_id: {row}")
-                        
+                        self.logger.info(f"Skipping row without a Google Scholar ID: {row}")
+
             self.logger.info(f"Successfully loaded {len(authors)} authors from {csv_file}")
             return authors
-            
-        except FileNotFoundError:
-            self.logger.error(f"CSV file not found: {csv_file}")
-            raise
+
         except Exception as e:
             self.logger.error(f"Error reading CSV file {csv_file}: {e}")
             raise
 
-    def process_authors_batch(self, csv_file: str, output_dir: str = "output") -> Dict[str, bool]:
+    def process_authors_batch(self, csv_file: str, output_dir: str = "output", author_concurrency: int = 1, label: Optional[str] = None) -> Dict[str, bool]:
         """
         Process multiple authors from a CSV file.
-        
+
         Args:
             csv_file: Path to the CSV file containing author information
             output_dir: Directory to save output files (default: ./output)
-            
+            author_concurrency: Number of author profiles to process in parallel (default: 1)
+            label: Optional label to include in output filenames (e.g. 'labA'). If provided,
+                   filenames will be `<user_id>_<label>_scholar_data.json`.
+
         Returns:
             Dictionary mapping user_id to success status (True/False)
         """
@@ -681,46 +943,94 @@ class GoogleScholarScraper:
         if not authors:
             self.logger.warning("No authors found in CSV file")
             return {}
-        
-        results = {}
+
+        results: Dict[str, bool] = {}
         total_authors = len(authors)
-        
-        for i, (name, user_id) in enumerate(authors, 1):
-            self.logger.info(f"Processing author {i}/{total_authors}: {name} (ID: {user_id})")
-            
-            try:
-                # Scrape the profile
-                scholar_data = self.scrape_profile(user_id)
-                
-                if scholar_data:
-                    # Save to JSON
-                    output_file = self.save_to_json(scholar_data, user_id, output_dir)
-                    results[user_id] = True
-                    self.logger.info(f"✓ Successfully processed {name}: {len(scholar_data)} publications saved to {output_file}")
-                else:
+
+        # If author_concurrency == 1, keep the simple sequential flow (preserves previous behavior)
+        if author_concurrency <= 1:
+            for i, (name, user_id) in enumerate(authors, 1):
+                self.logger.info(f"Processing author {i}/{total_authors}: {name} (ID: {user_id})")
+
+                try:
+                    # Scrape the profile (uses this instance's configuration)
+                    scholar_data = self.scrape_profile(user_id)
+
+                    if scholar_data:
+                        # Save to JSON
+                        output_file = self.save_to_json(scholar_data, user_id, output_dir, name=label)
+                        results[user_id] = True
+                        self.logger.info(f"✓ Successfully processed {name}: {len(scholar_data)} publications saved to {output_file}")
+                    else:
+                        results[user_id] = False
+                        self.logger.error(f"✗ Failed to scrape data for {name} (ID: {user_id})")
+
+                except Exception as e:
                     results[user_id] = False
-                    self.logger.error(f"✗ Failed to scrape data for {name} (ID: {user_id})")
-                    
-            except Exception as e:
-                results[user_id] = False
-                self.logger.error(f"✗ Error processing {name} (ID: {user_id}): {e}")
-            
-            # Add delay between authors to avoid rate limiting
-            if i < total_authors:
-                self.logger.info("Waiting between authors...")
-                self._random_delay()
-        
+                    self.logger.error(f"✗ Error processing {name} (ID: {user_id}): {e}")
+
+                # Add delay between authors to avoid rate limiting
+                if i < total_authors:
+                    self.logger.info("Waiting between authors...")
+                    self._random_delay()
+
+                # If we have seen persistent blocking, optionally pause the batch so
+                # the operator or automated system can recover (rotate IP/UA, etc.).
+                if self._block_count >= self.block_retry_limit and self.pause_on_block:
+                    self.logger.warning(
+                        f"Persistent Google Scholar blocking detected (count={self._block_count}). Pausing for {self.blocked_pause_seconds} seconds..."
+                    )
+                    time.sleep(self.blocked_pause_seconds)
+                    # clear the block state so we can continue after the pause
+                    self._clear_block()
+
+        else:
+            # Concurrent author processing using threads; each worker instantiates its own scraper
+            from concurrent.futures import ThreadPoolExecutor, as_completed
+
+            def _worker(name: str, user_id: str) -> Tuple[str, bool]:
+                """Worker that creates a fresh scraper instance and runs it for a single author."""
+                try:
+                    child = GoogleScholarScraper(headless=self.headless, delay_range=self.delay_range, driver=self.driver)
+                    # copy relevant runtime options
+                    child.use_httpx = self.use_httpx
+                    child.concurrency = self.concurrency
+                    child.max_retries = self.max_retries
+                    child.backoff_factor = self.backoff_factor
+                    child.user_agents = self.user_agents
+
+                    self.logger.info(f"[worker] Starting scrape for {name} (ID: {user_id})")
+                    scholar_data = child.scrape_profile(user_id)
+
+                    if scholar_data:
+                        child.save_to_json(scholar_data, user_id, output_dir, name=label)
+                        self.logger.info(f"[worker] ✓ {name} ({user_id}) -> {len(scholar_data)} pubs")
+                        return user_id, True
+                    else:
+                        self.logger.warning(f"[worker] ✗ No data for {name} ({user_id})")
+                        return user_id, False
+                except Exception as e:
+                    self.logger.error(f"[worker] ✗ Error processing {name} ({user_id}): {e}")
+                    return user_id, False
+
+            with ThreadPoolExecutor(max_workers=author_concurrency) as exe:
+                futures = {exe.submit(_worker, name, uid): (name, uid) for name, uid in authors}
+
+                for fut in as_completed(futures):
+                    uid, ok = fut.result()
+                    results[uid] = ok
+
         # Print summary
         successful = sum(1 for success in results.values() if success)
         failed = len(results) - successful
-        
+
         self.logger.info("=" * 60)
         self.logger.info(f"BATCH PROCESSING SUMMARY:")
         self.logger.info(f"Total authors: {total_authors}")
         self.logger.info(f"Successful: {successful}")
         self.logger.info(f"Failed: {failed}")
         self.logger.info("=" * 60)
-        
+
         return results
     
     def _extract_publication_venue(self, soup: BeautifulSoup) -> str:
@@ -819,11 +1129,21 @@ def main():
     parser.add_argument("--user-id", help="The Google Scholar user ID to scrape (single author mode)")
     parser.add_argument("--csv-file", help="Path to CSV file containing multiple authors (batch mode)")
     parser.add_argument("--output-dir", default="output", help="Output directory for JSON files (default: ./output)")
+    parser.add_argument("--name", default=None, help="Optional label to include in output filename (e.g. lab_name)")
     parser.add_argument("--no-headless", action="store_true", help="Run browser in non-headless mode")
     parser.add_argument("--delay-min", type=float, default=3.0, help="Minimum delay between requests (seconds)")
     parser.add_argument("--delay-max", type=float, default=7.0, help="Maximum delay between requests (seconds)")
     parser.add_argument("--driver", choices=["selenium", "playwright"], default="selenium", help="Browser driver to use (selenium or playwright)")
-    
+    parser.add_argument("--concurrency", type=int, default=8, help="Per-profile concurrency for fetching publication details (default: 8)")
+    parser.add_argument("--user-agent-file", help="Path to a newline-separated user-agent file (optional)")
+    parser.add_argument("--generate-ua-file", help="Write a default user-agent file to PATH and exit", metavar="PATH")
+    parser.add_argument("--proxy-file", help="Path to a newline-separated proxy file (optional)")
+    parser.add_argument("--proxy", help="Single proxy URL to use for all requests (overrides proxy-file)")
+    parser.add_argument("--author-concurrency", type=int, default=1, help="How many author profiles to process in parallel (default: 1)")
+    parser.add_argument("--no-pause-on-block", action="store_true", help="Do not pause when persistent Google Scholar blocks are detected")
+    parser.add_argument("--block-retry-limit", type=int, default=3, help="Number of blocking detections to tolerate before pausing (default: 3)")
+    parser.add_argument("--block-pause-seconds", type=float, default=300.0, help="Seconds to pause when a persistent block is detected (default: 300)")
+
     args = parser.parse_args()
 
     # Validate arguments
@@ -844,11 +1164,53 @@ def main():
         driver=args.driver
     )
 
+    # CLI-configurable runtime options
+    scraper.concurrency = args.concurrency
+    scraper.pause_on_block = not args.no_pause_on_block
+    scraper.block_retry_limit = max(1, args.block_retry_limit)
+    scraper.blocked_pause_seconds = max(0.0, float(args.block_pause_seconds))
+
+    # UA file generation (write and exit)
+    if args.generate_ua_file:
+        default_uas = [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1",
+        ]
+        with open(args.generate_ua_file, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(default_uas))
+        logger.info(f"Wrote default user-agent file: {args.generate_ua_file}")
+        return
+
+    # load UA list if provided
+    if args.user_agent_file:
+        try:
+            scraper.load_user_agents_from_file(args.user_agent_file)
+        except Exception as e:
+            logger.error(f"Failed to load user-agent file: {e}")
+            return
+
+    # load proxies if provided
+    if args.proxy_file:
+        try:
+            scraper.load_proxies_from_file(args.proxy_file)
+        except Exception as e:
+            logger.error(f"Failed to load proxy file: {e}")
+            return
+    elif args.proxy:
+        scraper.proxies = [args.proxy]
+
     try:
         if args.csv_file:
             # Batch processing mode
             logger.info(f"Starting batch processing from CSV: {args.csv_file}")
-            results = scraper.process_authors_batch(args.csv_file, args.output_dir)
+            results = scraper.process_authors_batch(
+                args.csv_file,
+                args.output_dir,
+                author_concurrency=args.author_concurrency,
+                label=args.name,
+            )
             
             if results:
                 successful = sum(1 for success in results.values() if success)
@@ -862,7 +1224,7 @@ def main():
 
             if scholar_data:
                 try:
-                    output_file = scraper.save_to_json(scholar_data, args.user_id, args.output_dir)
+                    output_file = scraper.save_to_json(scholar_data, args.user_id, args.output_dir, name=args.name)
                     logger.info(f"Total publications scraped: {len(scholar_data)}")
                     logger.info(f"Data saved to: {output_file}")
                 except Exception as e:
