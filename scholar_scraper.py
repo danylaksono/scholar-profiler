@@ -1,5 +1,6 @@
 
 import argparse
+import asyncio
 import csv
 import json
 import os
@@ -16,23 +17,37 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
-from webdriver_manager.chrome import ChromeDriverManager
+
 
 
 class GoogleScholarScraper:
     """A class to scrape Google Scholar profiles and publication details."""
     
-    def __init__(self, headless: bool = True, delay_range: tuple = (2, 5)):
+    def __init__(self, headless: bool = True, delay_range: tuple = (2, 5), driver: str = "selenium"):
         """
         Initialize the Google Scholar scraper.
         
         Args:
             headless: Whether to run browser in headless mode
             delay_range: Range of random delays between requests (min, max) in seconds
+            driver: Browser driver to use ('selenium' or 'playwright')
         """
+        if driver not in ("selenium", "playwright"):
+            raise ValueError("driver must be 'selenium' or 'playwright'")
         self.headless = headless
         self.delay_range = delay_range
+        self.driver = driver
+
+        # Phase 2 defaults
+        self.use_httpx = True
+        self.concurrency = 8
+        self.max_retries = 3
+        self.backoff_factor = 0.5
+        self.user_agents = None  # optional list of UAs for rotation
+
+        # runtime objects
         self.browser = None
+        self.playwright = None
         self.logger = self._setup_logging()
         
     def _setup_logging(self) -> logging.Logger:
@@ -61,6 +76,13 @@ class GoogleScholarScraper:
             chrome_options.add_experimental_option('useAutomationExtension', False)
             chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
+            # webdriver-manager is an optional runtime dependency; import here so tests that don't need it don't fail
+            try:
+                from webdriver_manager.chrome import ChromeDriverManager
+            except Exception as e:
+                self.logger.error("webdriver_manager is required for Selenium driver but is not installed")
+                raise
+
             self.logger.info("Installing ChromeDriver...")
             service = Service(ChromeDriverManager().install())
             browser = webdriver.Chrome(service=service, options=chrome_options)
@@ -73,6 +95,33 @@ class GoogleScholarScraper:
         except Exception as e:
             self.logger.error(f"Error setting up Chrome browser: {e}")
             raise
+
+    def _setup_playwright(self):
+        """Set up Playwright (sync) driver as an alternative to Selenium."""
+        try:
+            from playwright_driver import PlaywrightDriver
+        except Exception:
+            self.logger.error("Playwright is not installed. Install with: pip install playwright")
+            raise
+
+        self.logger.info("Setting up Playwright browser...")
+        self.playwright = PlaywrightDriver(headless=self.headless, delay_range=self.delay_range, logger=self.logger)
+        self.playwright.start()
+        self.logger.info("Playwright browser setup completed successfully")
+        return self.playwright
+
+    def _make_soup(self, html: str) -> BeautifulSoup:
+        """Create a BeautifulSoup object, preferring 'lxml' but falling back.
+
+        This avoids hard failure when the 'lxml' parser isn't installed.
+        """
+        try:
+            return BeautifulSoup(html, 'lxml')
+        except Exception:
+            # lxml may not be installed in the environment; fall back to the
+            # built-in parser and log a helpful message.
+            self.logger.warning("Couldn't use 'lxml' parser; falling back to 'html.parser'. To enable the faster 'lxml' parser install it with: pip install lxml")
+            return BeautifulSoup(html, 'html.parser')
     
     def _random_delay(self):
         """Add a random delay between requests to avoid rate limiting."""
@@ -80,28 +129,14 @@ class GoogleScholarScraper:
         self.logger.debug(f"Waiting {delay:.1f} seconds...")
         time.sleep(delay)
     
-    def _get_publication_details(self, url: str) -> Optional[Dict]:
-        """Fetch and parse publication details from its dedicated page using Selenium."""
-        self.logger.info(f"Fetching publication details from: {url}")
+    def _parse_publication_details_from_html(self, html: str) -> Optional[Dict]:
+        """Parse publication details from HTML (shared parser used by both drivers)."""
         try:
-            # Navigate to the publication page
-            if self.browser is None:
-                self.logger.error("Browser is not initialized")
-                return None
-                
-            self.browser.get(url)
-            self._random_delay()
-            
-            # Wait for the page to load
-            WebDriverWait(self.browser, 10).until(
-                EC.presence_of_element_located((By.TAG_NAME, "body"))
-            )
-            
-            soup = BeautifulSoup(self.browser.page_source, 'lxml')
+            soup = self._make_soup(html)
             self.logger.info("Parsing publication details...")
 
             details = {}
-            
+
             # Extract title
             title = soup.find('div', id='gsc_oci_title')
             details['title'] = title.text.strip() if title else 'N/A'
@@ -110,20 +145,19 @@ class GoogleScholarScraper:
             # Extract fields
             fields = soup.find_all('div', class_='gs_scl')
             self.logger.info(f"Found {len(fields)} field sections to parse")
-            
+
             for field in fields:
                 field_name_elem = field.find('div', class_='gsc_oci_field')
                 field_value_elem = field.find('div', class_='gsc_oci_value')
-                
+
                 if not field_name_elem or not field_value_elem:
                     continue
-                    
+
                 name = field_name_elem.text.strip().lower()
                 value = field_value_elem.text.strip()
                 self.logger.debug(f"Processing field: {name} = {value}")
-                
+
                 if name == 'authors':
-                    # Convert authors to array format
                     details['authors'] = self._parse_authors_to_array(value)
                     self.logger.info(f"Found {len(details['authors'])} authors: {details['authors']}")
                 elif name == 'publication date':
@@ -133,7 +167,6 @@ class GoogleScholarScraper:
                     details['abstract'] = value
                     self.logger.info(f"Found abstract (length: {len(value)} chars)")
                 elif name == 'total citations':
-                    # Find the link within the 'Total citations' section
                     citation_info = field.find('a')
                     if citation_info:
                         details['total_citations'] = citation_info.text.strip()
@@ -142,15 +175,45 @@ class GoogleScholarScraper:
                         details['total_citations'] = 'N/A'
                         self.logger.warning("No citation info found")
 
-            # Extract publication venue/source
             details['venue'] = self._extract_publication_venue(soup)
-            
-            # Handle PDF link extraction more safely
             details['pdf_link'] = self._extract_pdf_link(soup)
 
             self.logger.info("Publication details extraction completed")
             return details
-            
+        except Exception as e:
+            self.logger.error(f"Error parsing publication HTML: {e}")
+            return None
+
+    def _get_publication_details(self, url: str) -> Optional[Dict]:
+        """Fetch and parse publication details from its dedicated page (driver-agnostic)."""
+        self.logger.info(f"Fetching publication details from: {url}")
+        try:
+            if self.driver == 'playwright':
+                if not self.playwright:
+                    self.logger.error("Playwright is not initialized")
+                    return None
+                self.playwright.get(url)
+                self._random_delay()
+                try:
+                    self.playwright.wait_for_selector('#gsc_oci_title', timeout=10000)
+                except Exception:
+                    pass
+                html = self.playwright.page_content()
+                return self._parse_publication_details_from_html(html)
+
+            # Default: selenium
+            if self.browser is None:
+                self.logger.error("Browser is not initialized")
+                return None
+
+            self.browser.get(url)
+            self._random_delay()
+            WebDriverWait(self.browser, 10).until(
+                EC.presence_of_element_located((By.TAG_NAME, "body"))
+            )
+
+            return self._parse_publication_details_from_html(self.browser.page_source)
+
         except Exception as e:
             self.logger.error(f"Error fetching publication details from {url}: {e}")
             return None
@@ -176,10 +239,223 @@ class GoogleScholarScraper:
             self.logger.warning(f"Error extracting PDF link: {e}")
         
         return 'N/A'
+
+    def _pick_user_agent(self) -> str:
+        """Return a user-agent string (optional rotation)."""
+        default_ua = (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        )
+        if self.user_agents:
+            return random.choice(self.user_agents)
+        return default_ua
+
+    async def _fetch_detail_via_httpx_async(self, url: str) -> Optional[str]:
+        """Try to fetch a publication detail page over HTTP (async) with retries/backoff."""
+        try:
+            import httpx
+        except Exception:
+            self.logger.debug("httpx not installed; skipping httpx fast path")
+            return None
+
+        headers = {"User-Agent": self._pick_user_agent()}
+        attempt = 0
+        while attempt < self.max_retries:
+            try:
+                async with httpx.AsyncClient(timeout=10, follow_redirects=True) as client:
+                    resp = await client.get(url, headers=headers)
+                    if resp.status_code == 200 and resp.text:
+                        return resp.text
+                    self.logger.debug(f"httpx fetch status={resp.status_code} for {url}")
+            except Exception as e:
+                self.logger.debug(f"httpx fetch error (attempt {attempt + 1}) for {url}: {e}")
+
+            # backoff
+            await asyncio.sleep(self.backoff_factor * (2 ** attempt))
+            attempt += 1
+
+        return None
+
+    async def _fetch_all_details_async(self, publications: List[Dict]) -> List[int]:
+        """Concurrent HTTP fetching of publication detail pages. Returns indices that failed and need driver fallback."""
+        sem = asyncio.Semaphore(self.concurrency)
+        failed_indices: List[int] = []
+
+        async def _worker(idx: int, pub: Dict):
+            async with sem:
+                url = pub.get('citation_url')
+                if not url:
+                    failed_indices.append(idx)
+                    return
+
+                html = await self._fetch_detail_via_httpx_async(url)
+                if html:
+                    details = self._parse_publication_details_from_html(html)
+                    if details:
+                        pub.update(details)
+                        self.logger.info(f"[httpx] ✓ Updated publication {idx + 1}: {pub.get('title', '')[:40]}")
+                        return
+                # mark for fallback
+                failed_indices.append(idx)
+
+        tasks = [asyncio.create_task(_worker(i, p)) for i, p in enumerate(publications)]
+        await asyncio.gather(*tasks)
+        return failed_indices
+
+    async def _fetch_details_with_playwright_async(self, publications: List[Dict], indices: List[int]) -> Tuple[int, int]:
+        """Use Playwright (async) to concurrently fetch pages for JS-only fallbacks.
+
+        Returns a tuple (successful_count, failed_count).
+        """
+        try:
+            from playwright.async_api import async_playwright
+        except Exception as e:
+            self.logger.warning(f"Playwright async not available: {e}")
+            return 0, len(indices)
+
+        success_holder = [0]
+        fail_holder = [0]
+        sem = asyncio.Semaphore(self.concurrency)
+
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=self.headless,
+                args=["--no-sandbox", "--disable-dev-shm-usage"],
+            )
+            context = await browser.new_context(user_agent=self._pick_user_agent(), ignore_https_errors=True)
+
+            async def _worker(idx: int):
+                async with sem:
+                    page = await context.new_page()
+                    url = publications[idx].get('citation_url')
+                    if not url:
+                        fail_holder[0] += 1
+                        await page.close()
+                        return
+                    try:
+                        await page.goto(url, wait_until='load')
+                        html = await page.content()
+                        details = self._parse_publication_details_from_html(html)
+                        if details:
+                            publications[idx].update(details)
+                            success_holder[0] += 1
+                        else:
+                            fail_holder[0] += 1
+                    except Exception as e:
+                        self.logger.debug(f"Playwright fetch error for {url}: {e}")
+                        fail_holder[0] += 1
+                    finally:
+                        await page.close()
+
+            tasks = [asyncio.create_task(_worker(i)) for i in indices]
+            await asyncio.gather(*tasks)
+
+            try:
+                await context.close()
+            except Exception:
+                pass
+            try:
+                await browser.close()
+            except Exception:
+                pass
+
+        return success_holder[0], fail_holder[0]
+
+    def _fetch_details_concurrently(self, publications: List[Dict]) -> Tuple[int, int]:
+        """Public synchronous entry that performs concurrent HTTP fetches and falls back to driver for misses."""
+        successful = 0
+        failed = 0
+
+        if self.use_httpx:
+            try:
+                failed_indices = asyncio.run(self._fetch_all_details_async(publications))
+            except Exception as e:
+                self.logger.warning(f"Async httpx fetch failed, falling back to sequential driver: {e}")
+                failed_indices = list(range(len(publications)))
+
+            # Count successful updates from httpx
+            for i, p in enumerate(publications):
+                # we consider that a publication updated if it contains 'title' different from initial stub
+                if i not in failed_indices and p.get('title') and not p.get('title').startswith('N/A'):
+                    successful += 1
+
+            # Fallback to driver for failed indices
+            if failed_indices:
+                self.logger.info(f"Falling back to driver for {len(failed_indices)} publications")
+
+                if self.driver == 'playwright':
+                    try:
+                        pw_success, pw_failed = asyncio.run(self._fetch_details_with_playwright_async(publications, failed_indices))
+                        successful += pw_success
+                        failed += pw_failed
+                    except Exception as e:
+                        self.logger.warning(f"Playwright async fallback failed: {e}; falling back to sequential driver.")
+                        # sequential fallback to whichever driver is configured
+                        for idx in failed_indices:
+                            pub = publications[idx]
+                            details = self._get_publication_details(pub['citation_url'])
+                            if details:
+                                pub.update(details)
+                                successful += 1
+                            else:
+                                failed += 1
+                            self._random_delay()
+                else:
+                    for idx in failed_indices:
+                        pub = publications[idx]
+                        details = self._get_publication_details(pub['citation_url'])
+                        if details:
+                            pub.update(details)
+                            successful += 1
+                        else:
+                            failed += 1
+                        self._random_delay()
+
+            return successful, failed
+
+        # If httpx disabled, do sequential driver-based fetching
+        for i, pub in enumerate(publications, 1):
+            details = self._get_publication_details(pub['citation_url'])
+            if details:
+                pub.update(details)
+                successful += 1
+            else:
+                failed += 1
+            if i < len(publications):
+                self._random_delay()
+
+        return successful, failed
     
     def _load_all_publications(self, base_url: str) -> None:
         """Load all publications by clicking the 'Load More' button."""
         self.logger.info(f"Navigating to: {base_url}")
+        if self.driver == 'playwright':
+            if not self.playwright:
+                self.logger.error("Playwright is not initialized")
+                return
+
+            self.playwright.get(base_url)
+            self._random_delay()
+
+            load_count = 0
+            self.logger.info("Loading all publications by clicking 'Load More' button (playwright)...")
+            while True:
+                try:
+                    btn = self.playwright.query_selector('#gsc_bpf_more')
+                    if btn and self.playwright.locator_is_enabled('#gsc_bpf_more'):
+                        self.playwright.click('#gsc_bpf_more')
+                        load_count += 1
+                        self.logger.info(f"Clicked 'Load More' button (attempt {load_count})")
+                        self._random_delay()
+                    else:
+                        break
+                except Exception as e:
+                    self.logger.info(f"No more 'Load More' button found or error occurred: {e}")
+                    break
+            return
+
+        # Selenium fallback (existing behavior)
         if self.browser is None:
             self.logger.error("Browser is not initialized")
             return
@@ -215,14 +491,24 @@ class GoogleScholarScraper:
                 self.logger.info(f"No more 'Load More' button found or error occurred: {e}")
                 break
     
-    def _parse_publication_list(self) -> List[Dict]:
-        """Parse the publication list from the loaded page."""
+    def _parse_publication_list(self, html: Optional[str] = None) -> List[Dict]:
+        """Parse the publication list from the loaded page or provided HTML."""
         self.logger.info("Parsing publication list from page...")
-        if self.browser is None:
-            self.logger.error("Browser is not initialized")
-            return []
-            
-        soup = BeautifulSoup(self.browser.page_source, 'lxml')
+
+        if html is None:
+            if self.driver == 'playwright':
+                if not self.playwright:
+                    self.logger.error("Playwright is not initialized")
+                    return []
+                soup = self._make_soup(self.playwright.page_content())
+            else:
+                if self.browser is None:
+                    self.logger.error("Browser is not initialized")
+                    return []
+                soup = self._make_soup(self.browser.page_source)
+        else:
+            soup = self._make_soup(html)
+
         publications = []
         
         publication_rows = soup.find_all('tr', class_='gsc_a_tr')
@@ -268,9 +554,14 @@ class GoogleScholarScraper:
         self.logger.info(f"Starting to scrape Google Scholar profile for user: {user_id}")
         
         try:
-            self.browser = self._setup_browser()
             base_url = f"https://scholar.google.com/citations?user={user_id}&hl=en"
-            
+
+            # Set up the chosen driver
+            if self.driver == 'playwright':
+                self._setup_playwright()
+            else:
+                self.browser = self._setup_browser()
+
             # Load all publications
             self._load_all_publications(base_url)
             
@@ -281,25 +572,10 @@ class GoogleScholarScraper:
                 self.logger.warning("No publications found on the profile")
                 return []
 
-            # Scrape detailed information for each publication
-            self.logger.info("Starting to fetch detailed information for each publication...")
-            successful_details = 0
-            failed_details = 0
-            
-            for i, pub in enumerate(publications, 1):
-                self.logger.info(f"Processing publication {i}/{len(publications)}: {pub['title'][:50]}...")
-                details = self._get_publication_details(pub['citation_url'])
-                if details:
-                    pub.update(details)
-                    successful_details += 1
-                    self.logger.info(f"✓ Successfully updated details for publication {i}")
-                else:
-                    failed_details += 1
-                    self.logger.warning(f"✗ Failed to get details for publication {i}")
-                
-                # Add delay between requests to avoid rate limiting
-                if i < len(publications):  # Don't delay after the last request
-                    self._random_delay()
+            # Scrape detailed information for each publication (concurrent httpx where possible)
+            self.logger.info("Starting to fetch detailed information for each publication (concurrent)...")
+
+            successful_details, failed_details = self._fetch_details_concurrently(publications)
 
             self.logger.info(f"Detail scraping completed: {successful_details} successful, {failed_details} failed")
             self.logger.info(f"Total publications processed: {len(publications)}")
@@ -309,12 +585,21 @@ class GoogleScholarScraper:
             self.logger.error(f"Error during profile scraping: {e}")
             return None
         finally:
-            if self.browser:
+            if self.driver == 'playwright' and self.playwright:
+                self.logger.info("Closing Playwright browser...")
+                try:
+                    self.playwright.stop()
+                except Exception:
+                    pass
+            elif self.browser:
                 self.logger.info("Closing browser...")
                 self.browser.quit()
     
-    def save_to_json(self, data: List[Dict], user_id: str, output_dir: str = ".") -> str:
-        """Save scraped data to a JSON file."""
+    def save_to_json(self, data: List[Dict], user_id: str, output_dir: str = "output") -> str:
+        """Save scraped data to a JSON file.
+
+        Default output directory is `./output` (created if missing).
+        """
         # Create output directory if it doesn't exist
         os.makedirs(output_dir, exist_ok=True)
         
@@ -374,13 +659,13 @@ class GoogleScholarScraper:
             self.logger.error(f"Error reading CSV file {csv_file}: {e}")
             raise
 
-    def process_authors_batch(self, csv_file: str, output_dir: str = ".") -> Dict[str, bool]:
+    def process_authors_batch(self, csv_file: str, output_dir: str = "output") -> Dict[str, bool]:
         """
         Process multiple authors from a CSV file.
         
         Args:
             csv_file: Path to the CSV file containing author information
-            output_dir: Directory to save output files
+            output_dir: Directory to save output files (default: ./output)
             
         Returns:
             Dictionary mapping user_id to success status (True/False)
@@ -533,10 +818,11 @@ def main():
     parser = argparse.ArgumentParser(description="Scrape Google Scholar profiles.")
     parser.add_argument("--user-id", help="The Google Scholar user ID to scrape (single author mode)")
     parser.add_argument("--csv-file", help="Path to CSV file containing multiple authors (batch mode)")
-    parser.add_argument("--output-dir", default=".", help="Output directory for JSON files (default: current directory)")
+    parser.add_argument("--output-dir", default="output", help="Output directory for JSON files (default: ./output)")
     parser.add_argument("--no-headless", action="store_true", help="Run browser in non-headless mode")
     parser.add_argument("--delay-min", type=float, default=3.0, help="Minimum delay between requests (seconds)")
     parser.add_argument("--delay-max", type=float, default=7.0, help="Maximum delay between requests (seconds)")
+    parser.add_argument("--driver", choices=["selenium", "playwright"], default="selenium", help="Browser driver to use (selenium or playwright)")
     
     args = parser.parse_args()
 
@@ -554,7 +840,8 @@ def main():
     # Create scraper instance
     scraper = GoogleScholarScraper(
         headless=not args.no_headless,
-        delay_range=(args.delay_min, args.delay_max)
+        delay_range=(args.delay_min, args.delay_max),
+        driver=args.driver
     )
 
     try:

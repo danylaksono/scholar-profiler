@@ -5,13 +5,13 @@
             "Dany Laksono",
             "Trias Aditya"
         ],
-        "cited_by": "75",
+        "cited_by": "87",
         "year": "2019",
         "venue": "ISPRS International Journal of Geo-Information",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:4JMBOYKVnBMC",
         "publication_date": "2019/8/15",
         "abstract": "Developers have long used game engines for visualizing virtual worlds for players to explore. However, using real-world data in a game engine is always a challenging task, since most game engines have very little support for geospatial data. This paper presents our findings from exploring the Unity3D game engine for visualizing large-scale topographic data from mixed sources of terrestrial laser scanner models and topographic map data. Level of detail (LOD) 3 3D models of two buildings of the Universitas Gadjah Mada campus were obtained using a terrestrial laser scanner converted into the FBX format. Mapbox for Unity was used to provide georeferencing support for the 3D model. Unity3D also used road and place name layers via Mapbox for Unity based on OpenStreetMap (OSM) data. LOD1 buildings were modeled from topographic map data using Mapbox, and 3D models from the terrestrial laser scanner replaced two of these buildings. Building information and attributes, as well as visual appearances, were added to 3D features. The Unity3D game engine provides a rich set of libraries and assets for user interactions, and custom C# scripts were used to provide a bird’s-eye-view mode of 3D zoom, pan, and orbital display. In addition to basic 3D navigation tools, a first-person view of the scene was utilized to enable users to gain a walk-through experience while virtually inspecting the objects on the ground. For a fly-through experience, a drone view was offered to help users inspect objects from the air. The result was a multiplatform 3D visualization capable of displaying 3D models in LOD3, as well as providing user interfaces for …",
-        "total_citations": "Cited by 75",
+        "total_citations": "Cited by 87",
         "pdf_link": "https://www.mdpi.com/2220-9964/8/8/361"
     },
     {
@@ -19,14 +19,14 @@
         "authors": [
             "Dany Laksono"
         ],
-        "cited_by": "35",
+        "cited_by": "36",
         "year": "2018",
         "venue": "2018 4th International Conference on Science and Technology (ICST)",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TQgYirikUcIC",
         "publication_date": "2018/8/7",
         "abstract": "During the last decade, we saw an explosion of geospatial data being produced. Most of which coming from GPS-enabled devices available for general consumers. The large amount of geotagged data coined the term `Geospatial Big Data', indicating the semi-structured and unstructured nature of such data. SQL relational databases have been known in the past to handle geospatial data very well. However, the abundance of geospatial big data pushed forward the need for NoSQL database which is expected to perform better in terms of handling and storing geospatial big data. This paper discusses the quantitative comparison of performance between the SQL (i.e., PostGIS) and NoSQL (i.e., MongoDB) databases in handling geospatial big data. A NodeJS-based angular-framework web app was developed to test the real-world performance of MongoDB and PostGIS in handling a large amount of simulated …",
-        "total_citations": "Cited by 35",
-        "pdf_link": "https://danylaksono.com/files/pdf/research/(2018)%20Testing%20Spatial%20Data%20Deliverance%20in%20SQL%20and%20NoSQL%20Database%20Using%20NodeJS%20Fullstack%20Web%20App.pdf"
+        "total_citations": "Cited by 36",
+        "pdf_link": "N/A"
     },
     {
         "title": "3D cadastre web map: Prospects and developments",
@@ -55,13 +55,13 @@
             "D Diyono",
             "Didik Ariyanto"
         ],
-        "cited_by": "16",
+        "cited_by": "18",
         "year": "2020",
         "venue": "ISPRS International Journal of Geo-Information",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:TFP_iSt0sucC",
         "publication_date": "2020/5/7",
         "abstract": "Major cities and urban areas are beginning to develop and use 3D properties and public facilities. Consequently, 3D cadastral surveys are increasingly being employed for strata unit ownership registration as a part of land administration services. At present, most national land information systems do not support 2D and 3D cadastral visualizations. A field survey or validation survey is required to determine the geometry of 3D spatial units for property registration. However, the results of 3D surveys and mapping are not stored in the land information system. This work aims to integrate 2D and 3D geospatial data of property units collected from cadastral surveys with their corresponding legal data. It reviews the workflow for the use of 3D survey data for first-titling of 3D properties in Indonesia. A scenario of use and a prototype were developed based on existing practices and the possibility of extending Indonesia’s Land Administration Domain Model (LADM) to represent 3D units. Data submitted to the prototype as 3D geometries was survey data from 3D cadastral surveys or validation surveys utilizing terrestrial survey methods. The prototype used PostGIS and Cesium Ion to store 3D geometries of data from six 3D surveys. Registrars in local land offices could use the prototype to undertake strata unit registration that establishes a relationship among geospatial features and their survey documents and legal documents. Cesium JS was used as a 3D browser, customized as a web application, to manage and visualize 3D survey data to support strata title registration. The results demonstrate that the first titling of 3D cadaster objects could be conducted …",
-        "total_citations": "Cited by 16",
+        "total_citations": "Cited by 18",
         "pdf_link": "https://www.mdpi.com/2220-9964/9/5/310"
     },
     {
@@ -74,31 +74,14 @@
             "Kayat Kayat",
             "Hanhan A Sofiyuddin"
         ],
-        "cited_by": "16",
+        "cited_by": "18",
         "year": "2018",
         "venue": "Journal of Degraded and Mining Lands Management",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:mB3voiENLucC",
         "publication_date": "2018",
         "abstract": "Rote Island is one of the islands in southern of Indonesia. This region experiences very high geological and geodynamic processes. This is evidenced by the abundance of seabed rising, and there is a dead sea lake area that has a higher salinity than the sea. Biodiversity on Rote Island has endemic and unique flora and fauna. This study aims to create an integrated system of inland waters resources on Rote Island with a multidisciplinary approach. Inland water resources on Rote Island number more than 80 lakes and ponds. An inland water resource on Rote Island is a saltwater environment. The extraction of geobiophysical information on inland water resources is needed by studying various aspects of multidisciplinary. The aspects studied are limnology, water quality, conservation of forest resources, geology, geodynamics, water resources, geodesy and geomatics engineering. All geobiophysical information needs to be integrated into an integration system. This is useful for efficiency and effectiveness in the utilization of data and information. This integration system (geovisualization) is in the form of WebGIS and storytelling maps. This integration system is dynamic so it can update its latest spatial information. This integration system can be used to promote Rote island tourism. This integration system can be accessed via the website geopark4rote. com. This integration system can be applied in other regions so reached one map policy and a system for inland water resources will be realized in Indonesia.",
-        "total_citations": "Cited by 16",
-        "pdf_link": "http://download.garuda.kemdikbud.go.id/article.php?article=802429&val=7328&title=Comprehensive%20integration%20system%20of%20saltwater%20environment%20on%20Rote%20Island%20using%20a%20multidisciplinary%20approach"
-    },
-    {
-        "title": "Hasil Studi Pola Kebakaran Lahan Gambut melalui Citra Satelit Sentinel-2 dengan Pengimplementasian Machine Learning Metode Random Forest: Kajian Literatur",
-        "authors": [
-            "Annisa Rizky Kusuma",
-            "Fauzan Maulana Shodiq",
-            "Muhammad Faris Hazim",
-            "Dany Puguh Laksono"
-        ],
-        "cited_by": "9",
-        "year": "2021",
-        "venue": "JGISE: Journal of Geospatial Information Science and Engineering",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:JV2RwH3_ST0C",
-        "publication_date": "2021",
-        "abstract": "Kebakaran lahan gambut merupakan peristiwa yang sulit diprediksi perilakunya. Karakteristik tanah gambut yang kompleks dan faktor-faktor alam lain seperti arah angin, status vegetasi, dan kandungan air membuat kasus ini menjadi salah satu kasus menarik yang masih menjadi objek penelitian yang belum tuntas hingga saat ini. Ketika memasuki musim kemarau kondisi kadar air di dalam tanah gambut akan semakin berkurang, maka potensi terjadinya kebakaran akan semakin tinggi. Pada studi ini dilakukan analisis faktor penyebab kebakaran dengan area cakupan yang luas melalui satelit Sentinel-2. Citra satelit yang diperoleh nantinya akan diolah oleh machine learning untuk memprediksi penyebaran api. Hasil literatur yang telah dilakukan diperoleh bahwa Ground Water Level (GWL), kematangan gambut, suhu, curah hujan dan kelembaban, serta kerapatan vegetasi dapat diidentifikasi melalui perhitungan indeks. Indeks yang digunakan diantaranya indeks Differenced Normalized Difference Vegetation Index (dNDVI) dan",
-        "total_citations": "Cited by 9",
-        "pdf_link": "https://www.academia.edu/download/91863873/32916.pdf"
+        "total_citations": "Cited by 18",
+        "pdf_link": "https://www.researchgate.net/profile/Dany-Laksono/publication/328002961_Comprehensive_integration_system_of_saltwater_environment_on_Rote_Island_using_a_multidisciplinary_approach/links/5c91d6fb92851cf0ae89ac37/Comprehensive-integration-system-of-saltwater-environment-on-Rote-Island-using-a-multidisciplinary-approach.pdf"
     },
     {
         "title": "Crowdsourced hotspot validation and data visualisation for location-based haze mitigation",
@@ -117,20 +100,6 @@
         "pdf_link": "N/A"
     },
     {
-        "title": "Open source stack for Structure from Motion 3D reconstruction: A geometric overview",
-        "authors": [
-            "Dany Laksono"
-        ],
-        "cited_by": "9",
-        "year": "2016",
-        "venue": "2016 6th International Annual Engineering Seminar (InAES)",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:ZeXyd9-uunAC",
-        "publication_date": "2016/8/1",
-        "abstract": "Given a series of overlapped images, it is possible to reconstruct camera position and orientation, as well as 3D coordinates of object in the images. Such method is known as Structure from Motion (SfM), which is currently implemented in various commercial and open source software. The first software commonly don't provide Sfm algorithm. While the latter software are commonly developed partially. This research aims to perform a SfM reconstruction using a stack of open source SfM software, with each software serves different purposes in producing 3D models from images. A python script were employed to produce seamless integration of the software. Geometric evaluations were performed to the result of SfM reconstruction on three datasets obtained using mobile handheld camera. The deliverables of the stack were compared to result of commercial software using cloud-to-cloud comparison to obtain …",
-        "total_citations": "Cited by 9",
-        "pdf_link": "https://www.researchgate.net/profile/Dany-Laksono/publication/312561280_Open_source_stack_for_Structure_from_Motion_3D_reconstruction_A_geometric_overview/links/5c91d02e45851506d71d5338/Open-source-stack-for-Structure-from-Motion-3D-reconstruction-A-geometric-overview.pdf"
-    },
-    {
         "title": "A usability evaluation of a 3D map display for pedestrian navigation",
         "authors": [
             "Trias Aditya",
@@ -139,14 +108,31 @@
             "Nur Izzahudin",
             "Febrian Susanta"
         ],
-        "cited_by": "8",
+        "cited_by": "9",
         "year": "2018",
         "venue": "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:-f6ydRqryjwC",
         "publication_date": "2018/9/12",
         "abstract": "This paper is focused to address the map display usability for finding given POI addresses in a popular urban city area. LOD 1 of 3D representations of city buildings are presented into a 2.5D map for pedestrian navigation test. This 3D map display is evaluated against familiar 2D map system on the test participants’ smartphones. 16 participants were involved in the field test. The typical walking model of a searching task that is focused only to look for a certain address of building is chosen as the way finding model during the field test. Three kinds of navigation processes i.e. self-orientation, spatial knowledge acquisition and navigation decision for searching task were evaluated for each test participant. Usability measures of 3D map-based display over 2D-map based display for pedestrian navigation were collected from test participants’ mobile devices. In addition to that, activities of test participants in terms of acceleration and orientation information are used to support analysis of pattern and trends of test participants. As the testing app is also intended to support smart city application, its ability to provide user report on complaints was also assessed. Most participants agreed with the statements in the questionnaire that were organized into three sections, i.e. addressing participants’ interaction, participants’ responses in navigation processes and crowdsensing. The results suggest that 3D map-based pedestrian navigation is more usable to be used to look for a certain address of building in central tourist area of urban city.",
-        "total_citations": "Cited by 8",
+        "total_citations": "Cited by 9",
         "pdf_link": "https://isprs-archives.copernicus.org/articles/XLII-4-W10/3/2018/isprs-archives-XLII-4-W10-3-2018.pdf"
+    },
+    {
+        "title": "Hasil Studi Pola Kebakaran Lahan Gambut melalui Citra Satelit Sentinel-2 dengan Pengimplementasian Machine Learning Metode Random Forest: Kajian Literatur",
+        "authors": [
+            "Annisa Rizky Kusuma",
+            "Fauzan Maulana Shodiq",
+            "Muhammad Faris Hazim",
+            "Dany Puguh Laksono"
+        ],
+        "cited_by": "8",
+        "year": "2021",
+        "venue": "J. Geospatial Inf. Sci. Eng",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:JV2RwH3_ST0C",
+        "publication_date": "2021",
+        "abstract": "Kebakaran lahan gambut merupakan peristiwa yang sulit diprediksi perilakunya. Karakteristik tanah gambut yang kompleks dan faktor-faktor alam lain seperti arah angin, status vegetasi, dan kandungan air membuat kasus ini menjadi salah satu kasus menarik yang masih menjadi objek penelitian yang belum tuntas hingga saat ini. Ketika memasuki musim kemarau kondisi kadar air di dalam tanah gambut akan semakin berkurang, maka potensi terjadinya kebakaran akan semakin tinggi. Pada studi ini dilakukan analisis faktor penyebab kebakaran dengan area cakupan yang luas melalui satelit Sentinel-2. Citra satelit yang diperoleh nantinya akan diolah oleh machine learning untuk memprediksi penyebaran api. Hasil literatur yang telah dilakukan diperoleh bahwa Ground Water Level (GWL), kematangan gambut, suhu, curah hujan dan kelembaban, serta kerapatan vegetasi dapat diidentifikasi melalui perhitungan indeks. Indeks yang digunakan diantaranya indeks Differenced Normalized Difference Vegetation Index (dNDVI) dan",
+        "total_citations": "Cited by 8",
+        "pdf_link": "https://www.academia.edu/download/91863873/32916.pdf"
     },
     {
         "title": "LOD 1: 3D CityModel for Implementing SmartCity Concept",
@@ -161,7 +147,58 @@
         "publication_date": "2017/12/27",
         "abstract": "Smartcity refers to uses of information communication and internet of things technology for managing and monitoring urban dynamics and assets through interactive and visual platform in support of sustainable city developments. Maps and spatial information are commonly used as an interface of various smart city platforms to capture, model, and spatially represent the assets and dynamics of the city. Integration of 3D models and relevant urban data for enabling spatial query will be the focus of this paper. This paper investigates the applicability of 3DCityDB as a data store for integrating cadaster, utilities, infrastructures, and 3D buildings for providing urban land monitoring of urban tourist areas. 3D building models are generated from OpenStreetMap and aerial photographs are represented as CityGML. RDF and Linked data are used to integrate the collections of 2D/3D geometry and attributes from government …",
         "total_citations": "Cited by 8",
-        "pdf_link": "https://www.danylaksono.com/files/pdf/research/(2017)%20LOD1%203D%20City%20Model%20%20for%20Implementing%20SmartCity%20Concept.pdf"
+        "pdf_link": "https://dl.acm.org/doi/pdf/10.1145/3176653.3176734"
+    },
+    {
+        "title": "Open source stack for Structure from Motion 3D reconstruction: A geometric overview",
+        "authors": [
+            "Dany Laksono"
+        ],
+        "cited_by": "8",
+        "year": "2016",
+        "venue": "2016 6th International Annual Engineering Seminar (InAES)",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:ZeXyd9-uunAC",
+        "publication_date": "2016/8/1",
+        "abstract": "Given a series of overlapped images, it is possible to reconstruct camera position and orientation, as well as 3D coordinates of object in the images. Such method is known as Structure from Motion (SfM), which is currently implemented in various commercial and open source software. The first software commonly don't provide Sfm algorithm. While the latter software are commonly developed partially. This research aims to perform a SfM reconstruction using a stack of open source SfM software, with each software serves different purposes in producing 3D models from images. A python script were employed to produce seamless integration of the software. Geometric evaluations were performed to the result of SfM reconstruction on three datasets obtained using mobile handheld camera. The deliverables of the stack were compared to result of commercial software using cloud-to-cloud comparison to obtain …",
+        "total_citations": "Cited by 8",
+        "pdf_link": "https://www.researchgate.net/profile/Dany-Laksono/publication/312561280_Open_source_stack_for_Structure_from_Motion_3D_reconstruction_A_geometric_overview/links/5c91d02e45851506d71d5338/Open-source-stack-for-Structure-from-Motion-3D-reconstruction-A-geometric-overview.pdf"
+    },
+    {
+        "title": "Expedition Oe: A visual-storytelling map on Rote Island’s Lakes",
+        "authors": [
+            "Dany Laksono",
+            "A Julzarika",
+            "L Subehi",
+            "HA Sofiyuddin",
+            "EK Dewi",
+            "MFI Nugraha"
+        ],
+        "cited_by": "7",
+        "year": "2018",
+        "venue": "JGISE: Journal of Geospatial Information Science and Engineering",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:e5wmG9Sq2KIC",
+        "publication_date": "2018",
+        "abstract": "Rote Island has long been known as a tourism destination, especially for its beaches and small islands which are well known surfing spots. However, many other aspects of Rote Island, such as its inland waters, left unexplored and are unknown to tourists or stakeholders. The lack of infrastructure is one of the factors causing underdevelopment in these area. This paper reports the outcome of an expedition set to uncover the uniqueness of Rote Island’s tourism potential, especially on its inland waters. The expedition involves researcher from some of Indonesian institutions related to inland waters, such as LAPAN, LIPI, PUPERA, KLHK and KKP to conduct some preliminary research on Rote Island’s saltwater lake. Mobile devices equipped with GIS software were used to obtain data during the survey. Some of the findings including the misleading toponyms found in online sources of the lakes, the biogeophysical …",
+        "total_citations": "Cited by 7",
+        "pdf_link": "N/A"
+    },
+    {
+        "title": "I-SRI, an SDI Readiness Index for Local Government in Indonesia",
+        "authors": [
+            "Heri Sutanta",
+            "Trias Aditya",
+            "Purnama B. Santosa, Diyono",
+            "Dany Laksono",
+            "Annisa Farida"
+        ],
+        "cited_by": "7",
+        "year": "2014",
+        "venue": "FIG World Conference",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:HDshCWvjkbEC",
+        "publication_date": "2014",
+        "abstract": "I-SRI, an SDI Readiness Index for Local Government in Indonesia Outline Page 1 I-SRI, an SDI \nReadiness Index for Local Government in Indonesia Heri Sutanta, Trias Aditya, Purnama Budi, \nDiyono, Dany Laksono, Annisa Farida Research Centre for Spatial Data Infrastructure \nDevelopment (Pusat Pengembangan Infrastruktur Data Spasial) Universitas Gadjah Mada XXV \nInternational Federation of Surveyors Congress, Kuala Lumpur, Malaysia, 16 – 21 June 2014 \nIntroduction SDI Development in Indonesia SDI Readiness Index for Local Government Results \nKey findings and Future Works Outline XXV International Federation of Surveyors Congress, \nKuala Lumpur, Malaysia, 16 – 21 June 2014 Page 2 SDI has been developed for around \ntwenty years Success stories varies from countries and from different level of governments \nSDI Readiness Index (SRI) can facilitate mapping of progress as well as impediments in …",
+        "total_citations": "Cited by 7",
+        "pdf_link": "http://w.fig.net/resources/proceedings/fig_proceedings/fig2014/ppt/ts04h/TS04H_sutanta_aditya_et_al_7298_ppt.pdf"
     },
     {
         "title": "Interactive 3D city visualization from structure motion data using game engine",
@@ -180,36 +217,39 @@
         "pdf_link": "https://isprs-archives.copernicus.org/articles/XLII-4-W16/737/2019/isprs-archives-XLII-4-W16-737-2019.pdf"
     },
     {
-        "title": "Expedition Oe: A visual-storytelling map on Rote Island’s Lakes",
+        "title": "THE LATEST BATHYMETRY AND TOPOGRAPHY EXTRACTION OF LAKE LEDULU FROM MULTI-SOURCE GEOSPATIAL DATA",
         "authors": [
-            "Dany Laksono"
+            "Atriyon Julzarika",
+            "Dany Laksono",
+            "Luki Subehi",
+            "Elisa Iswandono",
+            "Alfred Onisimus Maximus Dima",
+            "Media Fitri Isma Nugraha",
+            "Kayat Kayat"
         ],
-        "cited_by": "6",
-        "year": "2018",
-        "venue": "JGISE: Journal of Geospatial Information Science and Engineering",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:e5wmG9Sq2KIC",
-        "publication_date": "2018",
-        "abstract": "Rote Island has long been known as a tourism destination, especially for its beaches and small islands which are well known surfing spots. However, many other aspects of Rote Island, such as its inland waters, left unexplored and are unknown to tourists or stakeholders. The lack of infrastructure is one of the factors causing underdevelopment in these areas. This paper reports the outcome of an expedition set to uncover the uniqueness of Rote Island’s tourism potential, especially on its inland waters. The expedition involves multidisciplinary researchers from some of Indonesian institutions related to inland waters, such as LAPAN, LIPI, PUPERA, KLHK and KKP to conduct some preliminary research on Rote Island’s saltwater lake. Mobile devices equipped with GIS software were used to obtain data during the survey. Some of the findings including the misleading toponyms found in online sources of the lakes, the biogeophysical condition of the lakes, as well as vegetations and wildlife of the area. The Rote Island Snake-necked Turtle (Chelodina Mccordi) is one of the near-extinct species which habitat needs to be identified and wellpreserved, thus tourism should take into account natural preservation in the lakes and its surroundings. Based on the results we suggest that a Geopark should be initialized in and around Rote Island’s lakes. These findings are presented as a storytelling map, both to attract tourism and to emphasize the geospatial aspects of the lakes. A WebGIS is also developed to integrate data from different institutions to aide decision making. The result is geopark4rote. com, which present the storytelling map and WebGIS to be …",
-        "total_citations": "Cited by 6",
-        "pdf_link": "https://www.academia.edu/download/92859016/23684.pdf"
+        "cited_by": "5",
+        "year": "2023",
+        "venue": "Geographia Technica",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:ZHo1McVdvXMC",
+        "publication_date": "2023/9",
+        "abstract": "Topography is the basic geospatial information that is used as the main reference in the extraction of thematic geospatial information. It consists of terrestrial topography (topography) and underwater topography (bathymetry). One of the problems related to topography is the availability of detailed and up-to-date topographic and bathymetry data. This research proposes the latest bathymetry and topography extraction modeling with multi-source geospatial data including PlanetScope, Sentinel-1, Landsat images, and in-situ field data. The study area is located in Lake Ledulu, Rote Island, Indonesia. Bathymetry and topography were extracted using PlanetScope imagery and in-situ field data using the least squares adjustment computation approach. The mathematical design model uses the latest DTM method, which correlated with in-situ data. Time-series Landsat and PlanetScope are used to extract the lake bank boundaries with water using the harmonic method. DEM integration method is used to integrate bathymetry and topography. The updated topography and bathymetry are performed by adding the true vertical deformation extracted from Sentinel-1 imagery using the D-InSAR method. The results obtained are the latest bathymetry and topography of Lake Ledulu in 2022 or so-called DTM (2022). Then DTM (2022) is tested for profile checking and vertical accuracy at the confidence level of 95% according to the ASPRS 2014. The DTM (2022) of Lake Ledulu has a vertical accuracy of+ 61.54 cm or according to 1: 5000–1: 10000 scale mapping. DTM (2022) is also used to determine the dynamics of the volume of Lake Ledulu and its changes …",
+        "total_citations": "Cited by 5",
+        "pdf_link": "https://www.researchgate.net/profile/Atriyon-Julzarika/publication/373971134_THE_LATEST_BATHYMETRY_AND_TOPOGRAPHY_EXTRACTION_OF_LAKE_LEDULU_FROM_MULTI-SOURCE_GEOSPATIAL_DATA/links/651cd69cb0df2f20a20e83ef/THE-LATEST-BATHYMETRY-AND-TOPOGRAPHY-EXTRACTION-OF-LAKE-LEDULU-FROM-MULTI-SOURCE-GEOSPATIAL-DATA.pdf"
     },
     {
-        "title": "I-SRI, an SDI Readiness Index for Local Government in Indonesia",
+        "title": "Geogame on the peat: Designing effective gameplay in geogames app for haze mitigation",
         "authors": [
-            "Heri Sutanta",
             "Trias Aditya",
-            "Purnama B. Santosa, Diyono",
-            "Dany Laksono",
-            "Annisa Farida"
+            "Dany Laksono"
         ],
-        "cited_by": "4",
-        "year": "2014",
-        "venue": "FIG World Conference",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:HDshCWvjkbEC",
-        "publication_date": "2014",
-        "abstract": "I-SRI, an SDI Readiness Index for Local Government in Indonesia Outline Page 1 I-SRI, an SDI \nReadiness Index for Local Government in Indonesia Heri Sutanta, Trias Aditya, Purnama Budi, \nDiyono, Dany Laksono, Annisa Farida Research Centre for Spatial Data Infrastructure \nDevelopment (Pusat Pengembangan Infrastruktur Data Spasial) Universitas Gadjah Mada XXV \nInternational Federation of Surveyors Congress, Kuala Lumpur, Malaysia, 16 – 21 June 2014 \nIntroduction SDI Development in Indonesia SDI Readiness Index for Local Government Results \nKey findings and Future Works Outline XXV International Federation of Surveyors Congress, \nKuala Lumpur, Malaysia, 16 – 21 June 2014 Page 2 SDI has been developed for around \ntwenty years Success stories varies from countries and from different level of governments \nSDI Readiness Index (SRI) can facilitate mapping of progress as well as impediments in …",
-        "total_citations": "Cited by 4",
-        "pdf_link": "http://w.fig.net/resources/proceedings/fig_proceedings/fig2014/ppt/ts04h/TS04H_sutanta_aditya_et_al_7298_ppt.pdf"
+        "cited_by": "5",
+        "year": "2018",
+        "venue": "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:hFOr9nPyWt4C",
+        "publication_date": "2018/9/19",
+        "abstract": "The Southeast Asian Haze in 2014 and 2015 is the worst transboundary haze episodes recorded to date. The haze mainly originated from burning of biomass material in peatland area, caused major health problems and economic losses. Peat forest conversion to forest and agriculture industry by utilizing drainage canals is one of main fire drivers that need to be restored, while conflicts on land and livelihood further adding complexity on the issue. Water and peatland management are among the key activities for reducing the peat fire risk and for eliminating the transboundary haze problems. Geospatial data have been collected in peatland areas in Indonesia to support hydrological restoration plans to prevent drying of peat biomasses. Aside from satellite and UAV data, crowdsourcing could also be conducted by engaging residents in collecting spatial data on peat environment while at the same time raising awareness on peatland management and peat fire prevention. This paper elaborates our findings in developing a Geogame App for mitigating haze in peatland area. The study area is situated in Padang Island, Riau, Indonesia. The gamification was implemented as a location-based, augmented reality adventure game. The storyline revolves around peat-related theme, with game elements represent different aspects of peatland management. The game incorporates real-world data as a game element, which also serves as a platform for collecting data around the users. Game mockup and use case scenario are provided to model the spatial data collected through the game for decision makers related to peat fire management.",
+        "total_citations": "Cited by 5",
+        "pdf_link": "https://isprs-archives.copernicus.org/articles/XLII-4/5/2018/isprs-archives-XLII-4-5-2018.pdf"
     },
     {
         "title": "3D modelling, validation and visualization of 3D parcels in first registration for 3D cadastre-Indonesia case",
@@ -220,15 +260,16 @@
             "Febrian F Susanta",
             "Nurrohmat Widjajanti",
             "Mohammad B Setiawan",
-            "Nurhidayat AGAM"
+            "Nurhidayat AGAM",
+            "T Wibisono"
         ],
-        "cited_by": "3",
+        "cited_by": "4",
         "year": "2021",
-        "venue": "7th International FIG 3D Cadastre Workshop, New York, NY, USA",
+        "venue": "7th International FIG Workshop on 3D Cadastres, New York, USA",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:M3NEmzRMIkIC",
         "publication_date": "2021/10/11",
         "abstract": "Developments of legal, institutional and technical aspects in realizing property registration of 3D parcels situated above and below 2D parcels are still evolving in many countries. 3D cadastres have to deal with various institutional/legal gaps and challenging information integration regarding the Rights-Restrictions-Responsibilities (3R) of 2D parcels. This paper aims to present a proof of concept implementing 3D cadastre of a new regulation of land registration in Indonesia (Government Regulation Number 18/2021 on Rights to Manage, Land Rights, Strata Title and Land Registration). This study presents the modelling and validation of 3D cadastral objects for realizing the first registration using the new regulation on 3D cadastre. The study encompasses 2D & 3D data integration, 3D modelling, field validation and visualization of 3D units. The 2D parcels were extracted from the land registration map, collected from the Central Jakarta and the South Jakarta land offices. The 3D constructions to be registered were obtained from PT. MRT in the form of as-built drawings of floor plans and selected cross-sections. The 3D models were created by reconstructing 2D floor plans and cross-sections using Autodesk Revit to create an IFC file of 3D units from geometries of floors, walls and ceilings. Surveyors validated 3D representations of 3D units of two MRT terminals. Field validation includes determining the legal spaces against the 3D constructions and validating floor areas and volumes of 3D units. After field validation is done and agreed upon by stakeholders, 3D models were converted into CityGML to create representations of legal spaces of 3D …",
-        "total_citations": "Cited by 3",
+        "total_citations": "Cited by 4",
         "pdf_link": "https://gdmc.nl/3Dcadastres/literature/3Dcad_2021_14.pdf"
     },
     {
@@ -236,7 +277,7 @@
         "authors": [
             "S Ni Luh Kompyang",
             "Bambang Kun Cahyono",
-            "Dany Puguh Laksono",
+            "Dany Puguh Laksono, Djurdjani",
             "Gondang Riyadi"
         ],
         "cited_by": "3",
@@ -244,24 +285,25 @@
         "venue": "IOP Conference Series: Earth and Environmental Science",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:isC4tDSrTZIC",
         "publication_date": "2020/6/1",
-        "abstract": "Kotagede is one of sub-districts in the Special Region of Yogyakarta which has several potentials especially in the cultural tourism industry. Long time ago, it was being the capital of Mataram Islam Kingdom. As a center of The Kingdom, Kotagede becomes one of the most important historical tourist spots in Yogyakarta. It is also a heritage city with great potentials to support the prosperity of its residents. The cultural site in Kotagede could be presented in the form of web based Geographical Information System (GIS) related to the spatial aspects, also by combining with 360 photosphere as its dynamic visualization. This WebGIS was made by integrating Google Camera, ArcGIS Online, ArcGIS Desktop, Pannellum website, and Cloudinary website. Usability testing was conducted with the System Usability Scale (SUS) as the testing instrument. Cultural site information in the WebGIS can be displayed in the form of an …",
+        "abstract": "Kotagede is one of sub-districts in the Special Region of Yogyakarta which has several potentials especially in the cultural tourism industry. Long time ago, it was being the capital of Mataram Islam Kingdom. As a center of The Kingdom, Kotagede becomes one of the most important historical tourist spots in Yogyakarta. It is also a heritage city with great potentials to support the prosperity of its residents. The cultural site in Kotagede could be presented in the form of web based Geographical Information System (GIS) related to the spatial aspects, also by combining with 360° photosphere as its dynamic visualization. This WebGIS was made by integrating Google Camera, ArcGIS Online, ArcGIS Desktop, Pannellum website, and Cloudinary website. Usability testing was conducted with the System Usability Scale (SUS) as the testing instrument. Cultural site information in the WebGIS can be displayed in the form of an …",
         "total_citations": "Cited by 3",
         "pdf_link": "https://iopscience.iop.org/article/10.1088/1755-1315/500/1/012071/pdf"
     },
     {
-        "title": "Geogame on the peat: Designing effective gameplay in geogames app for haze mitigation",
+        "title": "Survey Pemetaan Batas Bidang Tanah Kolaboratif Lintas Ruang dan Lintas Waktu dengan Piranti AR/VR",
         "authors": [
             "Trias Aditya",
-            "Dany Laksono"
+            "Fajar Nugroho Adib",
+            "Dany Puguh Laksono"
         ],
         "cited_by": "3",
-        "year": "2018",
-        "venue": "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:hFOr9nPyWt4C",
-        "publication_date": "2018/9/19",
-        "abstract": "The Southeast Asian Haze in 2014 and 2015 is the worst transboundary haze episodes recorded to date. The haze mainly originated from burning of biomass material in peatland area, caused major health problems and economic losses. Peat forest conversion to forest and agriculture industry by utilizing drainage canals is one of main fire drivers that need to be restored, while conflicts on land and livelihood further adding complexity on the issue. Water and peatland management are among the key activities for reducing the peat fire risk and for eliminating the transboundary haze problems. Geospatial data have been collected in peatland areas in Indonesia to support hydrological restoration plans to prevent drying of peat biomasses. Aside from satellite and UAV data, crowdsourcing could also be conducted by engaging residents in collecting spatial data on peat environment while at the same time raising awareness on peatland management and peat fire prevention. This paper elaborates our findings in developing a Geogame App for mitigating haze in peatland area. The study area is situated in Padang Island, Riau, Indonesia. The gamification was implemented as a location-based, augmented reality adventure game. The storyline revolves around peat-related theme, with game elements represent different aspects of peatland management. The game incorporates real-world data as a game element, which also serves as a platform for collecting data around the users. Game mockup and use case scenario are provided to model the spatial data collected through the game for decision makers related to peat fire management.",
+        "year": "2019",
+        "venue": "N/A",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:maZDTaKrznsC",
+        "publication_date": "2019",
+        "abstract": "Dari pembelajaran pelaksanaan Pendaftaran Tanah Sistematis Lengkap (PTSL) mulai tahun 2017 sampai dengan 2019, ketidakhadiran para pihak dalam proses verifikasi dan penetapan batas menjadi kendala besar untuk mewujudkan kelengkapan (completeness) pada pekerjaan pendaftaran pertama kali dan peningkatan kualitas. Meski pemerintah telah meluncurkan proyek pendaftaran tanah berbasis masyarakat sebagai usaha untuk mengoptimalkan penerapan prinsip-prinsip Fit for Purpose Land Administration (FFP-LA), namun ketidak-hadiran para pihak dan tingkat partisipasi yang rendah tetap saja sering ditemui. Metode interaksi antara surveyor dengan para pihak dalam survei dan pemetaan kadastral yang sering diterapkan adalah pertemuan fisik dengan interaksi sama ruang dan sama waktu. Sementara itu, metode interaksi yang dapat diwujudkan dalam lingkungan kolaboratif tidak hanya sama ruang dan sama waktu, namun dapat juga sama ruang beda waktu, beda ruang sama waktu dan beda ruang beda waktu. Paper ini bertujuan untuk mengeksplorasi skenario pemanfaatan teknologi kolaborasi dengan Augmented Reality (AR) dan Virtual Reality (VR) serta teknologi komunikasi interaktif untuk mendukung survei dan pemetaan kadastral lintas ruang lintas waktu.",
         "total_citations": "Cited by 3",
-        "pdf_link": "https://isprs-archives.copernicus.org/articles/XLII-4/5/2018/isprs-archives-XLII-4-5-2018.pdf"
+        "pdf_link": "https://www.researchgate.net/profile/Trias-Aditya-2/publication/343054222_Survey_Pemetaan_Batas_Bidang_Tanah_Kolaboratif_Lintas_Ruang_dan_Lintas_Waktu_dengan_Piranti_ARVR/links/5f13d8d7299bf1e548c35cec/Survey-Pemetaan-Batas-Bidang-Tanah-Kolaboratif-Lintas-Ruang-dan-Lintas-Waktu-dengan-Piranti-AR-VR.pdf"
     },
     {
         "title": "CloudSfM: 3D Reconstruction using structure from motion web service",
@@ -308,51 +350,27 @@
         "cited_by": "2",
         "year": "2024",
         "venue": "arXiv preprint arXiv:2407.07818",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:zA6iFVUQeVQC",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:zA6iFVUQeVQC",
         "publication_date": "2024/7/10",
         "abstract": "This study introduces the Misclassification Likelihood Matrix (MLM) as a novel tool for quantifying the reliability of neural network predictions under distribution shifts. The MLM is obtained by leveraging softmax outputs and clustering techniques to measure the distances between the predictions of a trained neural network and class centroids. By analyzing these distances, the MLM provides a comprehensive view of the model's misclassification tendencies, enabling decision-makers to identify the most common and critical sources of errors. The MLM allows for the prioritization of model improvements and the establishment of decision thresholds based on acceptable risk levels. The approach is evaluated on the MNIST dataset using a Convolutional Neural Network (CNN) and a perturbed version of the dataset to simulate distribution shifts. The results demonstrate the effectiveness of the MLM in assessing the reliability of predictions and highlight its potential in enhancing the interpretability and risk mitigation capabilities of neural networks. The implications of this work extend beyond image classification, with ongoing applications in autonomous systems, such as self-driving cars, to improve the safety and reliability of decision-making in complex, real-world environments.",
         "total_citations": "Cited by 2",
         "pdf_link": "https://arxiv.org/pdf/2407.07818"
     },
     {
-        "title": "Konsep AUPB untuk Keamanan Data dalam Standardisasi dan Sistem Geocoding Alamat Perkotaan dan Perdesaan Indonesia",
+        "title": "The 15-minute city of mass public transportation in yogyakarta: case of trans jogja bus",
         "authors": [
-            "Dyah Ayu Widowati",
-            "Heri Sutanta",
-            "Diyono Diyono",
-            "Dedi Atunggal",
-            "Dany Laksono",
-            "Sumaryono Sumaryono",
-            "Fakhruddin Mustofa"
+            "Febrian Fitryanik Susanta",
+            "Rochmad Muryamto",
+            "Dany Puguh Laksono"
         ],
         "cited_by": "2",
-        "year": "2023",
-        "venue": "Refleksi Hukum: Jurnal Ilmu Hukum",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&citation_for_view=LsZIhbcAAAAJ:SeFeTyx0c_EC",
-        "publication_date": "2023/9/25",
-        "abstract": "This article aims to formulate the embodiment of the AUPB concept in the standardization and geocoding system of Indonesian urban and rural addresses. Furthermore, it analyses the synchronization of data security principles in standardization and geocoding systems for urban and rural addresses in Indonesia. Conceptually, the process of address standardization and geocoding in the context of AUPB is closely related to the orderly administration of government, accountability of government agencies and/or officials, and implementation of statutory provisions. Overall, the element of AUPB that plays the most role in the standardization process and the address geocoding system is the principle of legal certainty. The principle of openness is attached to data security, and both are synchronized in implementing standardization and geocoding systems for urban and rural addresses in Indonesia. Even though all columns in the address database are stored in Elasticsearch, only specific columns can be accessed by general users through the Geocoding System website. Hence, the addresses presented are general data and do not contain personal data.",
+        "year": "2024",
+        "venue": "Eighth Geoinformation Science Symposium 2023: Geoinformation Science for Sustainable Planet",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:3s1wT3WcHBgC",
+        "publication_date": "2024/1/29",
+        "abstract": "The Trans Jogja Bus system is an essential urban transportation service in Yogyakarta and its surrounding areas. With numerous bus stops strategically located throughout the Yogyakarta Urban Area, it aims to provide convenient boarding and disembarkation points for passengers. To improve the commuting experience for passengers, it is crucial to ensure that the Trans Jogja shelters are easily accessible and equipped with a comprehensive range of amenities, covering all regions within the urban area. To evaluate the service level of Trans Jogja Bus stops, the service area from each bus stop is modeled as an interactive isochronous service area map. These maps depict the coverage area of each bus stop based on network analysis, considering travel time to the road network. Each bus stop is a single node with four distinct travel time values: 3, 6, 9, 12, and 15 minutes. By employing this interactive modeling …",
         "total_citations": "Cited by 2",
-        "pdf_link": "https://ejournal.uksw.edu/refleksihukum/article/download/8154/2535"
-    },
-    {
-        "title": "THE LATEST BATHYMETRY AND TOPOGRAPHY EXTRACTION OF LAKE LEDULU FROM MULTI-SOURCE GEOSPATIAL DATA",
-        "authors": [
-            "Atriyon Julzarika",
-            "Dany Laksono",
-            "Luki Subehi",
-            "Elisa Iswandono",
-            "Alfred Onisimus Maximus Dima",
-            "Media Fitri Isma Nugraha",
-            "Kayat Kayat"
-        ],
-        "cited_by": "2",
-        "year": "2023",
-        "venue": "Geographia Technica",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:ZHo1McVdvXMC",
-        "publication_date": "2023/9",
-        "abstract": "Topography is the basic geospatial information that is used as the main reference in the extraction of thematic geospatial information. It consists of terrestrial topography (topography) and underwater topography (bathymetry). One of the problems related to topography is the availability of detailed and up-to-date topographic and bathymetry data. This research proposes the latest bathymetry and topography extraction modeling with multi-source geospatial data including PlanetScope, Sentinel-1, Landsat images, and in-situ field data. The study area is located in Lake Ledulu, Rote Island, Indonesia. Bathymetry and topography were extracted using PlanetScope imagery and in-situ field data using the least squares adjustment computation approach. The mathematical design model uses the latest DTM method, which correlated with in-situ data. Time-series Landsat and PlanetScope are used to extract the lake bank boundaries with water using the harmonic method. DEM integration method is used to integrate bathymetry and topography. The updated topography and bathymetry are performed by adding the true vertical deformation extracted from Sentinel-1 imagery using the D-InSAR method. The results obtained are the latest bathymetry and topography of Lake Ledulu in 2022 or so-called DTM (2022). Then DTM (2022) is tested for profile checking and vertical accuracy at the confidence level of 95% according to the ASPRS 2014. The DTM (2022) of Lake Ledulu has a vertical accuracy of+ 61.54 cm or according to 1: 5000–1: 10000 scale mapping. DTM (2022) is also used to determine the dynamics of the volume of Lake Ledulu and its changes …",
-        "total_citations": "Cited by 2",
-        "pdf_link": "https://www.researchgate.net/profile/Atriyon-Julzarika/publication/373971134_THE_LATEST_BATHYMETRY_AND_TOPOGRAPHY_EXTRACTION_OF_LAKE_LEDULU_FROM_MULTI-SOURCE_GEOSPATIAL_DATA/links/651cd69cb0df2f20a20e83ef/THE-LATEST-BATHYMETRY-AND-TOPOGRAPHY-EXTRACTION-OF-LAKE-LEDULU-FROM-MULTI-SOURCE-GEOSPATIAL-DATA.pdf"
+        "pdf_link": "N/A"
     },
     {
         "title": "Pemanfaatan Citra Sentinel-5P untuk Pembuatan Peta Perbandingan Konsentrasi NO2 Selama Pandemi COVID-19 di DKI Jakarta Menggunakan Google Earth Engine",
@@ -368,20 +386,41 @@
         "pdf_link": "N/A"
     },
     {
-        "title": "Survey Pemetaan Batas Bidang Tanah Kolaboratif Lintas Ruang dan Lintas Waktu dengan Piranti AR/VR",
+        "title": "VisUnit: Literate Visualisation Studies Assembled from Reusable Test-Suites",
         "authors": [
-            "Trias Aditya",
-            "Fajar Nugroho Adib",
-            "Dany Puguh Laksono"
+            "Radu Jianu",
+            "Aidan Slingsby",
+            "Dany Laksono",
+            "Mershack Okoe"
         ],
-        "cited_by": "2",
-        "year": "2019",
-        "venue": "N/A",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:maZDTaKrznsC",
-        "publication_date": "2019",
-        "abstract": "Dari pembelajaran pelaksanaan Pendaftaran Tanah Sistematis Lengkap (PTSL) mulai tahun 2017 sampai dengan 2019, ketidakhadiran para pihak dalam proses verifikasi dan penetapan batas menjadi kendala besar untuk mewujudkan kelengkapan (completeness) pada pekerjaan pendaftaran pertama kali dan peningkatan kualitas. Meski pemerintah telah meluncurkan proyek pendaftaran tanah berbasis masyarakat sebagai usaha untuk mengoptimalkan penerapan prinsip-prinsip Fit for Purpose Land Administration (FFP-LA), namun ketidak-hadiran para pihak dan tingkat partisipasi yang rendah tetap saja sering ditemui. Metode interaksi antara surveyor dengan para pihak dalam survei dan pemetaan kadastral yang sering diterapkan adalah pertemuan fisik dengan interaksi sama ruang dan sama waktu. Sementara itu, metode interaksi yang dapat diwujudkan dalam lingkungan kolaboratif tidak hanya sama ruang dan sama waktu, namun dapat juga sama ruang beda waktu, beda ruang sama waktu dan beda ruang beda waktu. Paper ini bertujuan untuk mengeksplorasi skenario pemanfaatan teknologi kolaborasi dengan Augmented Reality (AR) dan Virtual Reality (VR) serta teknologi komunikasi interaktif untuk mendukung survei dan pemetaan kadastral lintas ruang lintas waktu.",
-        "total_citations": "Cited by 2",
-        "pdf_link": "https://www.researchgate.net/profile/Trias-Aditya-2/publication/343054222_Survey_Pemetaan_Batas_Bidang_Tanah_Kolaboratif_Lintas_Ruang_dan_Lintas_Waktu_dengan_Piranti_ARVR/links/5f13d8d7299bf1e548c35cec/Survey-Pemetaan-Batas-Bidang-Tanah-Kolaboratif-Lintas-Ruang-dan-Lintas-Waktu-dengan-Piranti-AR-VR.pdf"
+        "cited_by": "1",
+        "year": "2025",
+        "venue": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:dfsIfKJdRG4C",
+        "publication_date": "2025/4/26",
+        "abstract": "We make four contributions to lower the overhead of conducting visualisation user studies and promote the reuse and extension of their materials. (i) A declarative Javascript specification lets experimenters describe how studies are assembled from tested visualisations, datasets, tasks and chosen evaluation strategies. (ii) A VisUnit library translates these into sequences of visual stimuli and delivers them to participants. We move away from monolithic evaluation stimuli typical of previous work and construct studies around three ingredients – visual encodings, datasets, and tasks – that can be developed independently and recombined flexibly. (iii) This paves the way for developing benchmark data+tasks test-suites as independent, reusable resources to support multiple studies. (iv) Structuring user studies as “literate” visualisation notebooks brings together in the open all ingredients necessary for replication and …",
+        "total_citations": "Cited by 1",
+        "pdf_link": "https://dl.acm.org/doi/pdf/10.1145/3706598.3713104"
+    },
+    {
+        "title": "Konsep Aupb Untuk Keamanan Data Dalam Standardisasi Dan Sistem Geocoding Alamat Perkotaan Dan Perdesaan Indonesia",
+        "authors": [
+            "Dyah Ayu Widowati",
+            "Heri Sutanta",
+            "Diyono Diyono",
+            "Dedi Atunggal",
+            "Dany Laksono",
+            "Sumaryono Sumaryono",
+            "Fakhruddin Mustofa"
+        ],
+        "cited_by": "1",
+        "year": "2023",
+        "venue": "Refleksi Hukum: Jurnal Ilmu Hukum",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:SeFeTyx0c_EC",
+        "publication_date": "2023/9/25",
+        "abstract": "This article aims to formulate the embodiment of the AUPB concept in the standardization and geocoding system of Indonesian urban and rural addresses. Furthermore, it analyses the synchronization of data security principles in standardization and geocoding systems for urban and rural addresses in Indonesia. Conceptually, the process of address standardization and geocoding in the context of AUPB is closely related to the orderly administration of government, accountability of government agencies and/or officials, and implementation of statutory provisions. Overall, the element of AUPB that plays the most role in the standardization process and the address geocoding system is the principle of legal certainty. The principle of openness is attached to data security, and both are synchronized in implementing standardization and geocoding systems for urban and rural addresses in Indonesia. Even though all columns in the address database are stored in Elasticsearch, only specific columns can be accessed by general users through the Geocoding System website. Hence, the addresses presented are general data and do not contain personal data.",
+        "total_citations": "Cited by 1",
+        "pdf_link": "https://ejournal.uksw.edu/refleksihukum/article/download/8154/2535"
     },
     {
         "title": "NATURAL COMPOUNDS AQUATIC PLANT BIODIVERSITY OF LAKE LEDULU, ROTE DEAD SEA AREA-INDONESIA FOR RECOMMENDATIONS OF CONSERVATION.",
@@ -412,25 +451,24 @@
         "venue": "Prosiding Seminar Nasional Teknologi Terapan SV UGM",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:hMod-77fHWUC",
         "publication_date": "2015",
-        "abstract": "Analisis mengenai kemudahan akses suatu populasi penduduk terhadap rumah sakit dapat dilakukan dengan memetakan daerah layanan (service area) tiap rumah sakit. Salah satu metode untuk menentukan daerah layanan adalah dengan menghitung keseluruhan waktu tempuh menuju penyedia layanan tersebut, yang dapat diwujudkan dalam bentuk peta isochrones. Penelitian ini dilakukan untuk mengevaluasi tingkat aksesibilitas rumah sakit pada suatu populasi penduduk dengan menggunakan perangkat lunak open source. Data jaringan jalan diperoleh dari pemetaan partisipatif menggunakan platform OpenStreetMap (OSM), sedangkan data populasi penduduk menggunakan estimasi WorldPop. Analisis travel time dilakukan dengan menggunakan pgRouting dan QGIS dengan menggunakan hitungan impedansi dari jarak tempuh tiap ruas jalan. Hasil analisis dalam bentuk peta isochrones yang dibandingkan dengan data populasi menunjukkan bahwa distribusi rumah sakit di Provinsi Yogyakarta kurang tersebar dengan merata, yang ditunjukkan oleh beban layanan dan waktu tempuh yang tidak seimbang pada kelompok populasi penduduk di Yogyakarta.",
+        "abstract": "Analisis mengenai kemudahan akses suatu populasi penduduk terhadap rumah sakit dapat dilakukan dengan memetakan daerah layanan (service area) tiap rumah sakit. Salah satu metode untuk menentukan daerah layanan adalah dengan menghitung keseluruhan waktu tempuh menuju penyedia layanan tersebut, yang dapat diwujudkan dalam bentuk peta isochrones. Penelitian ini dilakukan untuk mengevaluasi tingkat aksesibilitas rumah sakit pada suatu populasi penduduk dengan menggunakan perangkat lunak open source. Data jaringan jalan diperoleh dari pemetaan partisipatif menggunakan platform OpenStreetMap (OSM), sedangkan data populasi penduduk menggunakan estimasi WorldPop. Analisis travel time dilakukan dengan menggunakan pgRouting dan QGIS dengan menggunakan hitungan impedansi dari jarak tempuh tiap ruas jalan. Hasil analisis dalam bentuk peta isochrones yang …",
         "total_citations": "Cited by 1",
-        "pdf_link": "https://www.danylaksono.com/files/pdf/research/(2015)%20Evaluasi%20Daerah%20Layanan%20Rumah%20Sakit%20di%20Yogyakarta%20dengan%20Perangkat%20Lunak%20Open%20Source.pdf"
+        "pdf_link": "N/A"
     },
     {
-        "title": "VisUnit: Literate Visualisation Studies Assembled from Reusable Test-Suites",
+        "title": "Interactive Visual Analytics for Local Decarbonisation Planning: Empowering Policy-Aligned Scenario Exploration",
         "authors": [
-            "Radu Jianu",
-            "Aidan Slingsby",
-            "Dany Laksono",
-            "Mershack Okoe"
+            "D Laksono",
+            "R Jianu",
+            "A Slingsby"
         ],
         "cited_by": "",
         "year": "2025",
-        "venue": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:dfsIfKJdRG4C",
-        "publication_date": "2025/4/26",
-        "abstract": "We make four contributions to lower the overhead of conducting visualisation user studies and promote the reuse and extension of their materials. (i) A declarative Javascript specification lets experimenters describe how studies are assembled from tested visualisations, datasets, tasks and chosen evaluation strategies. (ii) A VisUnit library translates these into sequences of visual stimuli and delivers them to participants. We move away from monolithic evaluation stimuli typical of previous work and construct studies around three ingredients – visual encodings, datasets, and tasks – that can be developed independently and recombined flexibly. (iii) This paves the way for developing benchmark data+tasks test-suites as independent, reusable resources to support multiple studies. (iv) Structuring user studies as “literate” visualisation notebooks brings together in the open all ingredients necessary for replication and …",
-        "pdf_link": "https://dl.acm.org/doi/pdf/10.1145/3706598.3713104"
+        "venue": "Computer Graphics & Visual Computing (CGVC) 2025",
+        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:cFHS6HbyZ2cC",
+        "publication_date": "2025/9/9",
+        "abstract": "Developing equitable and effective decarbonisation plans is a critical challenge for UK local authorities, who must balance complex technical, social, and economic factors. While computational models can propose optimal solutions based on a single objective, they often fail to account for the nuanced trade-offs and competing priorities inherent in public policy. We address this with a visual analytics system designed to support a human-in-the-loop planning process. Our primary contributions are threefold: (i) a modular, component-based planning paradigm that makes the construction of complex, multi-objective strategies cognitively manageable; (ii) a multi-scale visualisation framework that uses a model-driven glyph design to represent multivariate and temporal data uniformly across geographic scales, enabling fair and just assessment; and (iii) a tightlyintegrated workflow that allows planners to iteratively explore data, compose interventions, simulate outcomes, and refine their strategies in real-time. We demonstrate through an application scenario how our system empowers planners to move beyond monolithic optimisation and engage in a transparent, evidence-based dialogue with their data, ultimately supporting the creation of more robust and equitable decarbonisation plans.",
+        "pdf_link": "https://openaccess.city.ac.uk/id/eprint/35850/1/Decarbonisation_Planner___CGVC2025%20-%20revise%20name.pdf"
     },
     {
         "title": "Exploring the Evolution of Decarbonisation Scenarios with Gridded-glyphmaps Visualisations",
@@ -477,21 +515,6 @@
         "pdf_link": "https://openaccess.city.ac.uk/id/eprint/33111/1/06_evs20241062.pdf"
     },
     {
-        "title": "The 15-minute city of mass public transportation in Yogyakarta: case of Trans Jogja bus",
-        "authors": [
-            "Febrian Fitryanik Susanta",
-            "Rochmad Muryamto",
-            "Dany Puguh Laksono"
-        ],
-        "cited_by": "",
-        "year": "2024",
-        "venue": "Eighth Geoinformation Science Symposium 2023: Geoinformation Science for Sustainable Planet",
-        "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:3s1wT3WcHBgC",
-        "publication_date": "2024/1/29",
-        "abstract": "The Trans Jogja Bus system is an essential urban transportation service in Yogyakarta and its surrounding areas. With numerous bus stops strategically located throughout the Yogyakarta Urban Area, it aims to provide convenient boarding and disembarkation points for passengers. To improve the commuting experience for passengers, it is crucial to ensure that the Trans Jogja shelters are easily accessible and equipped with a comprehensive range of amenities, covering all regions within the urban area. To evaluate the service level of Trans Jogja Bus stops, the service area from each bus stop is modeled as an interactive isochronous service area map. These maps depict the coverage area of each bus stop based on network analysis, considering travel time to the road network. Each bus stop is a single node with four distinct travel time values: 3, 6, 9, 12, and 15 minutes. By employing this interactive modeling …",
-        "pdf_link": "N/A"
-    },
-    {
         "title": "Developing Address Model and Geocoding Framework for Urban Area in Indonesia",
         "authors": [
             "Heri Sutanta",
@@ -525,13 +548,13 @@
         "title": "Realizing the Dead Sea Lakes Region in Rote Islands to be a geopark using multidisciplinary spatial information approach",
         "authors": [
             "A Julzarika",
-            "DP Laksono",
+            "DP Laksono, Kayat",
             "L Subehi",
             "EK Dewi",
             "HA Sofiyuddin",
             "MFI Nugraha",
             "N Anggraini",
-            "A Setianto",
+            "A Setianto, Janwes",
             "D Yudhatama"
         ],
         "cited_by": "",
@@ -565,7 +588,7 @@
         "year": "",
         "venue": "N/A",
         "citation_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LsZIhbcAAAAJ&cstart=20&pagesize=80&citation_for_view=LsZIhbcAAAAJ:blknAaTinKkC",
-        "abstract": "Nama suatu daerah seringkali dapat memberikan gambaran aspek historis, linguistik dan budaya dari daerah tersebut. Toponimi atau ilmu yang membahas penamaan suatu unsur topografi merupakan salah satu aspek penting dalam penyajian peta. Keseluruhan nama unsur topografi suatu wilayah disebut dengan gasetir. Basisdata gasetir yang memuat nama unsur suatu objek topografi pada suatu wilayah diantaranya dikumpulkan melalui sebuah platform bernama Geonames. Dalam hal ini, Geonames menyusun basisdata dari sebelas juta nama unsur topografis di seluru dunia, yang seluruhnya dapat diakses dari www. geonames. org. Geonames juga menyediakan layanan pencarian (webservice API) yang dapat digunakan pada berbagai peta online.Analisis terhadap data toponimi dapat memberikan berbagai informasi yang berharga, diantaranya adalah persebaran bahasa daerah di berbagai wilayah di Indonesia. Diantara analisis yang dapat digunakan adalah melalui metode analitis visual berbasis spasial (spatial visual analytics). Metode analitis visual dapat digunakan untuk menyajikan informasi dalam bentuk visualisasi interaktif dimana pengguna akan mendapatkan gambaran lebih jauh mengenai data yang ditampilkan dibandingkan dengan menggunakan gambaran peta statis. Dalam penelitian ini, sejumlah lebih dari 300.000 basisdata gasetir dari Geonames di wilayah Indonesia akan digunakan sebagai bahan penyusunan antarmuka interaktif dengan menggunakan metode analitis visual dalam bentuk heatmap. Platform Carto (dulu disebut dengan CartoDB) digunakan untuk menyimpan basisdata yang kemudian …",
-        "pdf_link": "https://www.danylaksono.com/files/pdf/research/(2017)%20Analitis%20Visual%20Gasetir%20Geonames%20Indonesia%20menggunakan%20CartoJS.pdf"
+        "abstract": "Nama suatu daerah seringkali dapat memberikan gambaran aspek historis, linguistik dan budaya dari daerah tersebut. Toponimi atau ilmu yang membahas penamaan suatu unsur topografi merupakan salah satu aspek penting dalam penyajian peta. Keseluruhan nama unsur topografi suatu wilayah disebut dengan gasetir. Basisdata gasetir yang memuat nama unsur suatu objek topografi pada suatu wilayah diantaranya dikumpulkan melalui sebuah platform bernama Geonames. Dalam hal ini, Geonames menyusun basisdata dari sebelas juta nama unsur topografis di seluru dunia, yang seluruhnya dapat diakses dari www. geonames. org. Geonames juga menyediakan layanan pencarian (webservice API) yang dapat digunakan pada berbagai peta online.Analisis terhadap data toponimi dapat memberikan berbagai informasi yang berharga, diantaranya adalah persebaran bahasa daerah di berbagai wilayah …",
+        "pdf_link": "N/A"
     }
 ]
