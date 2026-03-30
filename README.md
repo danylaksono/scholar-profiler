@@ -97,6 +97,8 @@ Examples:
 
   `python scholar_scraper.py --user-id "abc123def456" --output-dir ./data --name labA`
 
+- If a user ID starts with `-`, use either `--user-id=-0SOAIQAAAAJ` or `--user-id -0SOAIQAAAAJ`.
+
 - Batch with concurrency and a proxy file:
 
   `python scholar_scraper.py --csv-file authors.csv --output-dir ./data --author-concurrency 4 --proxy-file proxies.txt`

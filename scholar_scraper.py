@@ -5,6 +5,7 @@ import csv
 import json
 import os
 import random
+import sys
 import time
 import logging
 from typing import List, Dict, Optional, Tuple
@@ -1144,7 +1145,23 @@ def main():
     parser.add_argument("--block-retry-limit", type=int, default=3, help="Number of blocking detections to tolerate before pausing (default: 3)")
     parser.add_argument("--block-pause-seconds", type=float, default=300.0, help="Seconds to pause when a persistent block is detected (default: 300)")
 
-    args = parser.parse_args()
+    argv = sys.argv[1:]
+    if "--user-id" in argv:
+        try:
+            idx = argv.index("--user-id")
+            if idx + 1 < len(argv):
+                next_token = argv[idx + 1]
+                # argparse can treat values that start with '-' as options. For
+                # this specific flag, rewrite as --user-id=<value> so IDs like
+                # '-0SOAIQAAAAJ' parse correctly.
+                if next_token.startswith("-") and not next_token.startswith("--"):
+                    argv[idx] = f"--user-id={next_token}"
+                    del argv[idx + 1]
+        except Exception:
+            # Fall back to argparse's normal error handling.
+            pass
+
+    args = parser.parse_args(argv)
 
     # Validate arguments
     if not args.user_id and not args.csv_file:
